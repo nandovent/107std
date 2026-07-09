@@ -1,2 +1,3 @@
-# 107std
-Site da 107 Studios
+# 107 Studios
+
+Site oficial da 107 Studios.
