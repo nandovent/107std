@@ -1,3 +1,3 @@
-# 107 Studios
+# 107 Studios Site v02
 
-Site oficial da 107 Studios.
+Estrutura organizada do site.
