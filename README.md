@@ -1,10 +1,7 @@
-# 107 Studios HTML Kit v02
+# 107 Studios HTML Kit v04
 
-Correções desta versão:
-- hero mobile redesenhado
-- estrela removida em telas menores
-- textos não ficam mais atrás da faixa laranja
-- faixa laranja passa a fazer parte do fluxo no celular
-- cards quebram títulos em múltiplas linhas
-- tipografia reduzida por breakpoint
-- paddings e raios menores no mobile
+Atualizações:
+- estrela oficial da identidade visual adicionada ao hero
+- ícone salvo em assets/images/icone-estrela-107.png
+- case final da Festa da Tainha 2026 inserido em cases/festa-da-tainha-2026/index.html
+- home e demais páginas mantidas na estrutura HTML estática

@@ -149,198 +149,190 @@ img,video{max-width:100%;display:block}
 }
 
 
-/* ===== V02 — CORREÇÕES RESPONSIVAS E DE QUEBRA ===== */
+/* ===== V03 — HERO LIMPO, SEM SOBREPOSIÇÕES ===== */
+
+.hero {
+  min-height: auto;
+}
+
+.hero .pad {
+  min-height: 720px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, .55fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 34px 44px;
+  align-items: stretch;
+}
+
+.hero-head {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.hero-copy {
+  grid-column: 1;
+  align-self: center;
+  max-width: 100%;
+  padding-right: 0;
+}
+
+.hero .display {
+  max-width: 820px;
+  font-size: clamp(62px, 7.4vw, 106px);
+  line-height: .82;
+  margin: 30px 0 22px;
+}
+
+.hero .copy {
+  max-width: 680px;
+}
+
+.hero-visual {
+  grid-column: 2;
+  grid-row: 2 / 4;
+  position: relative;
+  min-height: 100%;
+  border-radius: 28px;
+  background: var(--orange);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual .hero-star {
+  position: relative;
+  inset: auto;
+  width: min(46%, 190px);
+  z-index: 3;
+}
+
+.hero-visual .hero-number {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  font-size: clamp(120px, 18vw, 250px);
+  line-height: .72;
+  letter-spacing: -.14em;
+  color: rgba(252,250,227,.09);
+  z-index: 1;
+}
+
+.hero-ribbon {
+  grid-column: 1;
+  position: static;
+  width: max-content;
+  max-width: 100%;
+  transform: rotate(-2.5deg);
+  padding: 15px 24px 14px;
+  font-size: clamp(20px, 2.4vw, 32px);
+  line-height: .95;
+  z-index: 4;
+}
+
+.hero-shape {
+  display: none;
+}
+
+.hero-footer {
+  display: none;
+}
 
 .card h3,
-.person strong,
-.feature .metric,
-.display,
-.title {
+.card .metric,
+.person strong {
   overflow-wrap: anywhere;
   word-break: normal;
-  hyphens: none;
 }
 
 .card h3 {
   max-width: 100%;
+  font-size: clamp(28px, 3.2vw, 46px);
 }
 
-.hero-copy {
-  max-width: min(920px, 72%);
-}
-
-.hero .copy {
-  max-width: 670px;
-}
-
-@media (max-width: 1100px) {
-  .hero-star {
-    right: 70px;
-    top: 235px;
-    width: 120px;
+@media (max-width: 980px) {
+  .hero .pad {
+    min-height: 680px;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 28px;
   }
 
-  .hero-copy {
-    max-width: 78%;
+  .hero .display {
+    font-size: clamp(54px, 8vw, 82px);
   }
 
-  .hero-ribbon {
-    bottom: 72px;
-  }
-
-  .card h3 {
-    font-size: clamp(26px, 3.2vw, 42px);
+  .hero-visual {
+    border-radius: 24px;
   }
 }
 
-@media (max-width: 900px) {
-  .hero {
+@media (max-width: 760px) {
+  .hero .pad {
     min-height: auto;
-  }
-
-  .hero .pad {
-    min-height: 720px;
-  }
-
-  .hero-copy {
-    max-width: 100%;
-    padding-right: 0;
-  }
-
-  .hero-star {
-    display: none;
-  }
-
-  .hero-shape {
-    right: -260px;
-    bottom: -250px;
-    width: 620px;
-    height: 620px;
-    opacity: .92;
-  }
-
-  .hero-number {
-    font-size: 170px;
-  }
-
-  .hero-ribbon {
-    left: -18px;
-    right: auto;
-    bottom: 34px;
-    width: auto;
-    max-width: calc(100% - 18px);
-    padding: 14px 24px 13px;
-    font-size: clamp(18px, 3.6vw, 28px);
-    white-space: normal;
-  }
-
-  .hero-footer {
-    display: none;
-  }
-
-  .card h3 {
-    font-size: clamp(28px, 4vw, 42px);
-  }
-}
-
-@media (max-width: 700px) {
-  .shell {
-    width: calc(100% - 12px);
-  }
-
-  .nav {
-    border-radius: 18px;
-    padding: 8px 10px;
-  }
-
-  .nav-logo {
-    width: 82px;
-  }
-
-  .panel {
-    border-radius: 18px;
-  }
-
-  .pad {
-    padding: 20px;
-  }
-
-  .hero .pad {
-    min-height: 620px;
+    display: block;
   }
 
   .hero-head {
-    margin-bottom: 28px;
+    margin-bottom: 34px;
   }
 
-  .hero-logo {
-    width: 118px;
+  .hero-copy {
+    max-width: 100%;
   }
 
-  .hero-meta {
-    font-size: 8px;
-    line-height: 1.35;
-  }
-
-  .eyebrow {
-    font-size: 9px;
-    padding: 9px 12px 8px;
-  }
-
-  .display {
-    margin-top: 28px;
-    font-size: clamp(42px, 12.6vw, 58px);
-    line-height: .88;
-    letter-spacing: -.065em;
+  .hero .display {
+    font-size: clamp(44px, 12.5vw, 64px);
+    line-height: .86;
   }
 
   .hero .copy {
+    font-size: 17px;
     max-width: 100%;
-    font-size: 16px;
-    line-height: 1.22;
-    margin-bottom: 0;
-  }
-
-  .hero-shape,
-  .hero-number {
-    display: none;
   }
 
   .hero-ribbon {
-    position: static;
-    transform: rotate(-2deg);
     width: 100%;
-    max-width: 100%;
-    margin-top: auto;
-    padding: 13px 16px 12px;
-    font-size: clamp(17px, 5.2vw, 22px);
-    line-height: .95;
+    margin: 28px 0 26px;
+    font-size: clamp(18px, 5vw, 23px);
+    white-space: normal;
+  }
+
+  .hero-visual {
+    min-height: 300px;
+    width: 100%;
+    border-radius: 22px;
+  }
+
+  .hero-visual .hero-star {
+    display: block;
+    width: 125px;
+  }
+
+  .hero-visual .hero-number {
+    display: block;
+    font-size: 145px;
   }
 
   .grid {
     gap: 12px;
   }
 
+  .span-4,
+  .span-5,
+  .span-6,
+  .span-7,
+  .span-8,
+  .span-12 {
+    grid-column: span 12;
+  }
+
   .card {
-    min-height: 170px;
-    padding: 22px;
-  }
-
-  .feature {
-    min-height: 250px;
-  }
-
-  .case-card {
-    min-height: 290px;
+    min-height: 180px;
   }
 
   .card h3 {
-    font-size: clamp(27px, 9vw, 40px);
+    font-size: clamp(28px, 9vw, 38px);
     line-height: .92;
-  }
-
-  .card p {
-    font-size: 15px;
   }
 }
 
@@ -353,41 +345,68 @@ img,video{max-width:100%;display:block}
     padding: 18px;
   }
 
-  .hero .pad {
-    min-height: 590px;
-  }
-
   .hero-head {
     gap: 10px;
   }
 
   .hero-logo {
-    width: 104px;
+    width: 108px;
   }
 
   .hero-meta {
-    max-width: 120px;
-    text-align: right;
+    max-width: 118px;
     font-size: 7.5px;
   }
 
-  .display {
-    font-size: clamp(39px, 12vw, 50px);
-  }
-
-  .title {
-    font-size: clamp(36px, 11vw, 48px);
+  .hero .display {
+    font-size: clamp(39px, 12vw, 51px);
   }
 
   .hero-ribbon {
     font-size: 17px;
+    padding: 13px 15px 12px;
+  }
+
+  .hero-visual {
+    min-height: 240px;
+  }
+
+  .hero-visual .hero-star {
+    width: 98px;
+  }
+
+  .hero-visual .hero-number {
+    font-size: 118px;
   }
 
   .card h3 {
-    font-size: clamp(25px, 8.5vw, 34px);
+    font-size: clamp(25px, 8.2vw, 34px);
   }
+}
 
-  .feature .metric {
-    font-size: clamp(56px, 18vw, 82px);
-  }
+
+/* ===== V04 — ÍCONE OFICIAL DA ESTRELA 107 ===== */
+.hero-visual .hero-star-image{
+  position:relative;
+  z-index:3;
+  width:min(62%, 260px);
+  height:auto;
+  object-fit:contain;
+  opacity:1;
+  filter:none;
+}
+
+/* desativa a estrela desenhada em CSS apenas no hero novo */
+.hero-visual .hero-star{display:none!important}
+
+@media(max-width:980px){
+  .hero-visual .hero-star-image{width:min(70%,220px)}
+}
+
+@media(max-width:760px){
+  .hero-visual .hero-star-image{width:min(72%,190px)}
+}
+
+@media(max-width:430px){
+  .hero-visual .hero-star-image{width:min(74%,165px)}
 }
