@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{const p=location.pathname;document.querySelectorAll(".nav a").forEach(a=>{const h=a.getAttribute("href");if(h==="/"&&p==="/")a.classList.add("active");if(h!=="/"&&p.startsWith(h))a.classList.add("active")})});
