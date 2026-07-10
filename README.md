@@ -1,17 +1,10 @@
-# 107 Studios HTML Kit v01
+# 107 Studios HTML Kit v02
 
-Estrutura:
-- index.html
-- portfolio/
-- cases/
-- equipe/
-- freelas/
-- contato/
-- assets/css/style.css
-- assets/js/script.js
-
-Publicação:
-1. Copie todo o conteúdo para a pasta local do repositório.
-2. GitHub Desktop: Commit.
-3. Push origin.
-4. A Vercel publica automaticamente.
+Correções desta versão:
+- hero mobile redesenhado
+- estrela removida em telas menores
+- textos não ficam mais atrás da faixa laranja
+- faixa laranja passa a fazer parte do fluxo no celular
+- cards quebram títulos em múltiplas linhas
+- tipografia reduzida por breakpoint
+- paddings e raios menores no mobile
