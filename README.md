@@ -1,11 +1,11 @@
-# 107 Studios — Home + Portfólio v01
+# 107 Studios — Home + Portfólio v02
 
-Novidades:
-- Prévia do portfólio na Home.
-- Página /portfolio/.
-- Primeira categoria: Filmes Institucionais.
-- Primeiro vídeo Vimeo: 1209079889.
-- Player responsivo e carregado sob demanda.
-- Botão Home na página do portfólio.
+Correções:
+- Informações do filme agora ficam abaixo do player.
+- Hero continua apontando para assets/videos/hero.mp4.
+- O placeholder vazio foi removido para não sobrescrever seu vídeo real.
+- Coloque ou preserve o arquivo hero.mp4 dentro de assets/videos/.
 
-Suba todo o conteúdo desta pasta na raiz do repositório.
+Ao atualizar:
+- Não apague o hero.mp4 que já está no repositório.
+- Copie os demais arquivos por cima.
