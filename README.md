@@ -1,14 +1,13 @@
-# 107 Studios — Cases Integrado v02
+# 107 Studios — Site v03
 
-Atualizações:
-- Case Festa da Tainha integrado ao Design System da 107.
-- Montserrat aplicada em toda a página.
-- Menu interno removido.
-- Barra superior minimalista com apenas Home.
-- Cantos, espaçamentos, cards e botões alinhados ao site.
-- Página de Cases continua funcionando como catálogo.
-- O case completo permanece em:
-  /cases/festa-da-tainha-2026/
+Ajuste incremental sobre a última versão mestre enviada.
 
-Importante:
-- Preserve assets/videos/hero.mp4 ao atualizar o repositório.
+Alterado apenas no case Festa da Tainha:
+- hero alinhado ao Design System
+- logo flat oficial
+- ícone laranja oficial
+- faixa, estrela CSS, bloco laranja e 107 sobreposto removidos
+- layout sem sobreposições
+- apenas botão Home na navegação do case
+
+Preserve assets/videos/hero.mp4 ao atualizar.
