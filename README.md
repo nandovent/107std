@@ -1,11 +1,14 @@
-# 107 Studios — Home + Portfólio v02
+# 107 Studios — Cases Integrado v02
 
-Correções:
-- Informações do filme agora ficam abaixo do player.
-- Hero continua apontando para assets/videos/hero.mp4.
-- O placeholder vazio foi removido para não sobrescrever seu vídeo real.
-- Coloque ou preserve o arquivo hero.mp4 dentro de assets/videos/.
+Atualizações:
+- Case Festa da Tainha integrado ao Design System da 107.
+- Montserrat aplicada em toda a página.
+- Menu interno removido.
+- Barra superior minimalista com apenas Home.
+- Cantos, espaçamentos, cards e botões alinhados ao site.
+- Página de Cases continua funcionando como catálogo.
+- O case completo permanece em:
+  /cases/festa-da-tainha-2026/
 
-Ao atualizar:
-- Não apague o hero.mp4 que já está no repositório.
-- Copie os demais arquivos por cima.
+Importante:
+- Preserve assets/videos/hero.mp4 ao atualizar o repositório.
