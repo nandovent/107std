@@ -1,7 +1,11 @@
-# 107 Home Teste v02.4
+# 107 Studios — Home + Portfólio v01
 
-Atualizações:
-- Logo menor e afastada das bordas.
-- Navbar mais baixa.
-- Links do menu mais compactos.
-- Regras sincronizadas com o Design System v03.4.
+Novidades:
+- Prévia do portfólio na Home.
+- Página /portfolio/.
+- Primeira categoria: Filmes Institucionais.
+- Primeiro vídeo Vimeo: 1209079889.
+- Player responsivo e carregado sob demanda.
+- Botão Home na página do portfólio.
+
+Suba todo o conteúdo desta pasta na raiz do repositório.
