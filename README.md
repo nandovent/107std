@@ -1,13 +1,10 @@
-# 107 Studios — Site v03
+# 107 Studios — v04.2
 
-Ajuste incremental sobre a última versão mestre enviada.
+Alterações:
+- REDE → EXECUÇÃO
+- Especialistas por projeto. → Especialistas em campo
+- CASE 001 → CENTRAL DE MÍDIA OFICIAL
+- Título do bloco de portfólio → FILMES QUE FAZEM SEU PROJETO GANHAR VIDA
+- Removido: “Começamos pelos filmes institucionais.”
 
-Alterado apenas no case Festa da Tainha:
-- hero alinhado ao Design System
-- logo flat oficial
-- ícone laranja oficial
-- faixa, estrela CSS, bloco laranja e 107 sobreposto removidos
-- layout sem sobreposições
-- apenas botão Home na navegação do case
-
-Preserve assets/videos/hero.mp4 ao atualizar.
+Demais elementos preservados.
