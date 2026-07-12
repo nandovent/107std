@@ -1,10 +1,10 @@
-# 107 Studios — v04.2
+# 107 Studios — v04.3
 
-Alterações:
+Alterações confirmadas na Home:
 - REDE → EXECUÇÃO
-- Especialistas por projeto. → Especialistas em campo
+- Especialistas em campo.
 - CASE 001 → CENTRAL DE MÍDIA OFICIAL
-- Título do bloco de portfólio → FILMES QUE FAZEM SEU PROJETO GANHAR VIDA
-- Removido: “Começamos pelos filmes institucionais.”
+- FILMES QUE FAZEM SEU PROJETO GANHAR VIDA.
+- Removido o trecho “Começamos pelos filmes institucionais.”
 
 Demais elementos preservados.
