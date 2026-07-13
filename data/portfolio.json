@@ -1,11 +1,20 @@
 [
   {
+    "id": "a46e4217-966a-42cc-85f5-b44aad6fadd0",
+    "categoria": "Filmes Institucionais",
+    "titulo": "DREAMIS MANIFESTO",
+    "descricao": "TESTE TESTE TESTE",
+    "link": "https://youtu.be/FOZyamGD-54",
+    "ordem": 1,
+    "publicado": true
+  },
+  {
     "id": "institucional-vimeo",
     "categoria": "Filmes Institucionais",
     "titulo": "Institucional",
     "descricao": "Trabalho institucional apresentado em formato cinematográfico.",
     "link": "https://vimeo.com/1209079889",
-    "ordem": 1,
+    "ordem": 2,
     "publicado": true
   },
   {
@@ -14,15 +23,6 @@
     "titulo": "Institucional",
     "descricao": "Segundo filme da categoria, incorporado pelo YouTube.",
     "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
-    "ordem": 2,
-    "publicado": true
-  },
-  {
-    "id": "a46e4217-966a-42cc-85f5-b44aad6fadd0",
-    "categoria": "Filmes Institucionais",
-    "titulo": "DREAMIS MANIFESTO",
-    "descricao": "TESTE TESTE TESTE",
-    "link": "https://youtu.be/FOZyamGD-54",
     "ordem": 3,
     "publicado": true
   }
