@@ -40,57 +40,141 @@
   </div>
 
   
-  <div class="portfolio-carousel-shell" data-carousel>
-    <div class="portfolio-toolbar">
-      <div class="portfolio-counter"><span data-current>01</span> / <span data-total>01</span></div>
-      <div class="portfolio-actions">
-        <button class="portfolio-icon-button" type="button" data-prev aria-label="Vídeo anterior">←</button>
-        <button class="portfolio-icon-button" type="button" data-next aria-label="Próximo vídeo">→</button>
-        <button class="portfolio-expand-button" type="button" data-expand>Expandir</button>
+  
+  <div class="portfolio-list-shell" data-list-carousel>
+    <div class="portfolio-list-actions">
+      <div class="portfolio-arrows">
+        <button class="portfolio-icon-button" type="button" data-list-prev aria-label="Vídeo anterior">←</button>
+        <button class="portfolio-icon-button" type="button" data-list-next aria-label="Próximo vídeo">→</button>
       </div>
+      <button class="portfolio-expand-button" type="button" data-list-expand>Expandir</button>
     </div>
 
-    <div class="portfolio-carousel-viewport">
-      <div class="portfolio-carousel-track" data-track>
-        <article class="portfolio-slide" data-slide>
+    <div class="portfolio-list-viewport">
+      <div class="portfolio-list-track" data-list-track>
+        <article class="portfolio-list-slide" data-list-slide>
           <div class="video-frame">
             <iframe src="https://player.vimeo.com/video/1209079889?title=0&byline=0&portrait=0&badge=0&autopause=0"
-              title="Filme institucional 001"
+              title="Filme institucional"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
               allowfullscreen loading="lazy"></iframe>
           </div>
-          <div class="video-meta"><span>Filme institucional</span><span>Vimeo</span></div>
           <div class="portfolio-info portfolio-info-below">
-            <span class="kicker">Filme 001</span>
+            <span class="kicker">Filme institucional</span>
             <h3>Institucional.</h3>
-            <p>Primeiro trabalho da categoria. Novos filmes entram seguindo este mesmo bloco.</p>
+            <p>Trabalho institucional apresentado em formato cinematográfico.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-list-slide" data-list-slide>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/yXfsIj4TptE?rel=0&modestbranding=1"
+              title="Filme institucional"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="portfolio-info portfolio-info-below">
+            <span class="kicker">Filme institucional</span>
+            <h3>Institucional.</h3>
+            <p>Segundo filme da categoria, incorporado pelo YouTube.</p>
           </div>
         </article>
       </div>
     </div>
   </div>
 
-  <div class="portfolio-grid-modal" data-grid-modal aria-hidden="true">
-    <div class="portfolio-grid-backdrop" data-close-grid></div>
+  <div class="portfolio-grid-modal" data-list-grid aria-hidden="true">
+    <div class="portfolio-grid-backdrop" data-list-close></div>
     <div class="portfolio-grid-dialog" role="dialog" aria-modal="true" aria-label="Todos os vídeos">
       <div class="portfolio-grid-header">
         <div>
           <span class="kicker">Todos os vídeos</span>
           <h3>Filmes institucionais.</h3>
         </div>
-        <button class="portfolio-icon-button" type="button" data-close-grid aria-label="Fechar">×</button>
+        <button class="portfolio-icon-button" type="button" data-list-close aria-label="Fechar">×</button>
       </div>
       <div class="portfolio-grid">
-        <button class="portfolio-grid-card" type="button" data-grid-index="0">
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="0">
           <div class="portfolio-grid-thumb">
-            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura do filme institucional 001">
+            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura de filme institucional">
             <span class="portfolio-grid-play">▶</span>
           </div>
-          <div class="portfolio-grid-copy">
-            <strong>Institucional.</strong>
-            <span>Filme 001</span>
-          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>Vimeo</span></div>
         </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="1">
+          <div class="portfolio-grid-thumb">
+            <img src="https://img.youtube.com/vi/yXfsIj4TptE/hqdefault.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>YouTube</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="0">
+          <div class="portfolio-grid-thumb">
+            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>Vimeo</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="1">
+          <div class="portfolio-grid-thumb">
+            <img src="https://img.youtube.com/vi/yXfsIj4TptE/hqdefault.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>YouTube</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="0">
+          <div class="portfolio-grid-thumb">
+            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>Vimeo</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="1">
+          <div class="portfolio-grid-thumb">
+            <img src="https://img.youtube.com/vi/yXfsIj4TptE/hqdefault.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>YouTube</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="0">
+          <div class="portfolio-grid-thumb">
+            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>Vimeo</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="1">
+          <div class="portfolio-grid-thumb">
+            <img src="https://img.youtube.com/vi/yXfsIj4TptE/hqdefault.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>YouTube</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="0">
+          <div class="portfolio-grid-thumb">
+            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>Vimeo</span></div>
+        </button>
+
+        <button class="portfolio-grid-card" type="button" data-list-grid-index="1">
+          <div class="portfolio-grid-thumb">
+            <img src="https://img.youtube.com/vi/yXfsIj4TptE/hqdefault.jpg" alt="Miniatura de filme institucional">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy"><strong>Institucional.</strong><span>YouTube</span></div>
+        </button>
+
       </div>
     </div>
   </div>

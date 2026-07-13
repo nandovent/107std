@@ -723,3 +723,14 @@ opacity:1 !important;
 body.modal-open{overflow:hidden}
 @media(max-width:800px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.portfolio-toolbar{align-items:flex-start;flex-direction:column}.portfolio-actions{width:100%}.portfolio-expand-button{margin-left:auto}.portfolio-grid-modal{padding:10px}.portfolio-grid-dialog{padding:20px;border-radius:22px}.portfolio-grid{grid-template-columns:1fr}}
+
+/* ===== PORTFÓLIO V04.5 — LISTA HORIZONTAL ===== */
+.portfolio-list-shell{display:grid;gap:16px}
+.portfolio-list-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.portfolio-arrows{display:flex;gap:10px}
+.portfolio-list-viewport{overflow:hidden;touch-action:pan-y;cursor:grab}
+.portfolio-list-viewport.is-dragging{cursor:grabbing;user-select:none}
+.portfolio-list-track{display:flex;gap:18px;transition:transform .45s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.portfolio-list-slide{flex:0 0 calc(100% - 110px);min-width:calc(100% - 110px)}
+@media(max-width:900px){.portfolio-list-slide{flex-basis:calc(100% - 44px);min-width:calc(100% - 44px)}}
+@media(max-width:520px){.portfolio-list-actions{justify-content:space-between}.portfolio-list-slide{flex-basis:100%;min-width:100%}}

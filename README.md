@@ -1,6 +1,8 @@
-# 107 Studios — v04.4
+# 107 Studios — v04.5
 
-- Removido o texto “Pouco texto. Tela grande. Play.”
-- Portfólio com carrossel, setas, arraste e botão Expandir.
-- Grade modal pronta para novos vídeos.
+- Portfólio em lista horizontal.
+- Dois vídeos ativos: Vimeo e YouTube.
+- Sem numeração.
+- Navegação por setas e arraste.
+- Botão Expandir com grade de 10 miniaturas alternadas.
 - Home preservada.
