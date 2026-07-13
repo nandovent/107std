@@ -1,0 +1,20 @@
+TESTE DO PAINEL DO PORTFÓLIO
+
+1. Suba este pacote no GitHub.
+2. Aguarde a Vercel publicar.
+3. Acesse https://app.pagescms.org
+4. Entre com o GitHub.
+5. Instale o Pages CMS no repositório 107std.
+6. Abra “Portfólio”.
+7. Adicione um item preenchendo:
+   Categoria
+   Título
+   Descrição
+   Link do YouTube ou Vimeo
+   Ordem
+   Publicado
+8. Clique em salvar.
+
+O Pages CMS altera data/portfolio.json no GitHub.
+A Vercel publica automaticamente.
+A página monta categoria, carrossel, miniatura e grade sozinha.
