@@ -1,0 +1,23 @@
+PAINEL PRÓPRIO DO PORTFÓLIO — CONFIGURAÇÃO ÚNICA
+
+1. Suba este pacote no GitHub.
+2. Na Vercel, abra o projeto 107std.
+3. Vá em Settings > Environment Variables.
+4. Crie estas variáveis para Production, Preview e Development:
+
+ADMIN_PASSWORD = escolha uma senha forte para entrar no painel
+GITHUB_TOKEN = token do GitHub com permissão Contents: Read and write somente no repositório 107std
+GITHUB_OWNER = nandovent
+GITHUB_REPO = 107std
+GITHUB_BRANCH = main
+
+5. Depois de salvar as variáveis, faça Redeploy do projeto.
+6. Abra: https://107std.com/admin/
+7. Entre com a senha definida em ADMIN_PASSWORD.
+8. Cadastre ou edite os vídeos e clique em Publicar alterações.
+
+COMO CRIAR O TOKEN NO GITHUB
+Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate new token.
+Repository access: Only select repositories > 107std.
+Permissions > Repository permissions > Contents: Read and write.
+Copie o token e cole apenas na variável GITHUB_TOKEN da Vercel. Nunca coloque o token em arquivo ou no GitHub.
