@@ -21,3 +21,17 @@ Settings > Developer settings > Personal access tokens > Fine-grained tokens > G
 Repository access: Only select repositories > 107std.
 Permissions > Repository permissions > Contents: Read and write.
 Copie o token e cole apenas na variável GITHUB_TOKEN da Vercel. Nunca coloque o token em arquivo ou no GitHub.
+
+
+COMO DEFINIR A ORDEM DOS VÍDEOS
+
+1. Entre em 107std.com/admin/
+2. Use ↑ para subir um vídeo.
+3. Use ↓ para descer um vídeo.
+4. Ou digite a posição desejada no campo “Posição”.
+5. Confira os números laranja 01, 02, 03...
+6. Clique em “Publicar alterações”.
+7. Aguarde o novo deploy da Vercel.
+8. Abra o portfólio e atualize a página.
+
+As mudanças de ordem só chegam ao site depois de clicar em “Publicar alterações”.
