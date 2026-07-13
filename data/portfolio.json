@@ -1,11 +1,20 @@
 [
   {
+    "id": "855b4f42-2c15-4df8-9538-ce494ac7db2d",
+    "categoria": "Videoclipes",
+    "titulo": "RENEE ROOTS - NA RAÇA",
+    "descricao": "Videoclipe gravado em Balneário Camboriú.",
+    "link": "https://www.youtube.com/watch?v=PBmBaXUPdgA",
+    "ordem": 1,
+    "publicado": true
+  },
+  {
     "id": "institucional-vimeo",
     "categoria": "Filmes Institucionais",
     "titulo": "Institucional",
     "descricao": "Trabalho institucional apresentado em formato cinematográfico.",
     "link": "https://vimeo.com/1209079889",
-    "ordem": 1,
+    "ordem": 2,
     "publicado": true
   },
   {
@@ -14,7 +23,7 @@
     "titulo": "Institucional",
     "descricao": "Segundo filme da categoria, incorporado pelo YouTube.",
     "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
-    "ordem": 2,
+    "ordem": 3,
     "publicado": true
   }
 ]
