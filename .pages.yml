@@ -1,0 +1,23 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: portfolio
+    label: Portfólio
+    type: file
+    path: data/portfolio.json
+    format: json
+    list: true
+
+    fields:
+      - { name: categoria, label: Categoria, type: string }
+      - { name: titulo, label: Título, type: string }
+      - { name: descricao, label: Descrição, type: text }
+      - { name: link, label: Link do vídeo, type: string }
+      - { name: ordem, label: Ordem, type: number }
+      - { name: publicado, label: Publicado, type: boolean }
+
+settings:
+  content:
+    merge: true
