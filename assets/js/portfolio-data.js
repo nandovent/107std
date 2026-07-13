@@ -51,7 +51,16 @@
     const next=carousel.querySelector('[data-list-next]');
     const expand=carousel.querySelector('[data-list-expand]');
     const modal=carousel.parentElement.querySelector('[data-list-grid]');
-    const grid=modal.querySelector('[data-generated-grid]');
+
+    // Categoria vazia: mantém o bloco “Em breve” sem tentar iniciar carrossel.
+    if(!viewport || !track || !slides.length){
+      if(prev) prev.disabled=true;
+      if(next) next.disabled=true;
+      if(expand) expand.disabled=true;
+      return;
+    }
+
+    const grid=modal?.querySelector('[data-generated-grid]');
 
     let index=0;
     let startX=0;
@@ -152,7 +161,7 @@
     update();
   };
 
-  fetch('../data/portfolio.json',{cache:'no-store'})
+  fetch('/data/portfolio.json',{cache:'no-store'})
     .then(response=>{
       if(!response.ok)throw new Error();
       return response.json();

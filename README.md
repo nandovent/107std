@@ -1,20 +1,7 @@
-# 107 Studios — v04.1 COMPLETO
+# 107 Studios — v04.1.1 COMPLETO
 
-Pacote completo para reconstruir a pasta do projeto.
-
-Inclui:
-- Home
-- Portfólio dinâmico
-- Cases
-- Case Festa da Tainha
-- Admin
-- API
-- CSS, JS, imagens e logos
-- data/portfolio.json com os dois vídeos cadastrados
-- configuração do Pages CMS, quando aplicável
-
-Não inclui:
-- assets/videos/hero.mp4
-
-Depois de extrair, coloque seu arquivo hero.mp4 em:
-assets/videos/hero.mp4
+Correção:
+- Portfólio volta a carregar com categorias vazias.
+- Videoclipes pode permanecer sem vídeos.
+- data/portfolio.json incluído.
+- Hero não incluído: coloque em assets/videos/hero.mp4.
