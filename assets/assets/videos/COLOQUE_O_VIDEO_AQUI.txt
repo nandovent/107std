@@ -1,0 +1,6 @@
+Coloque nesta pasta o arquivo real:
+
+hero.mp4
+
+O pacote não inclui um placeholder vazio para não sobrescrever o vídeo que já está publicado.
+Formato recomendado: H.264, 1920x1080, sem áudio, 8–12 Mbps.
