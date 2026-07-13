@@ -35,3 +35,18 @@ COMO DEFINIR A ORDEM DOS VÍDEOS
 8. Abra o portfólio e atualize a página.
 
 As mudanças de ordem só chegam ao site depois de clicar em “Publicar alterações”.
+
+
+CATEGORIAS
+
+- O painel agora mostra uma lista com as categorias existentes.
+- Categorias iniciais:
+  1. Filmes Institucionais
+  2. Videoclipes
+- Para criar outra:
+  1. Clique em “+ Novo vídeo”.
+  2. Em Categoria, selecione “+ Cadastrar nova categoria”.
+  3. Digite o nome.
+  4. Preencha título, descrição e link.
+  5. Clique em “Publicar alterações”.
+- O novo bloco, carrossel e grade são criados automaticamente no site.

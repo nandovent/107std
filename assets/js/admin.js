@@ -7,6 +7,9 @@ const statusEl=document.querySelector('#status');
 const list=document.querySelector('#video-list');
 const tpl=document.querySelector('#video-template');
 
+const BASE_CATEGORIES=['Filmes Institucionais','Videoclipes'];
+const NEW_CATEGORY_VALUE='__nova_categoria__';
+
 let items=[];
 let password=sessionStorage.getItem('107_admin_password')||'';
 
@@ -30,9 +33,40 @@ const api=async(method='GET',body)=>{
   return data;
 };
 
+const getCategories=()=>{
+  const fromItems=items
+    .map(item=>String(item.categoria||'').trim())
+    .filter(Boolean);
+
+  return [...new Set([...BASE_CATEGORIES,...fromItems])]
+    .sort((a,b)=>{
+      const aBase=BASE_CATEGORIES.indexOf(a);
+      const bBase=BASE_CATEGORIES.indexOf(b);
+
+      if(aBase>=0||bBase>=0){
+        if(aBase<0)return 1;
+        if(bBase<0)return -1;
+        return aBase-bBase;
+      }
+
+      return a.localeCompare(b,'pt-BR');
+    });
+};
+
+const selectedCategory=(editor)=>{
+  const select=editor.querySelector('[data-field="categoria"]');
+  const newInput=editor.querySelector('[data-field="nova-categoria"]');
+
+  if(select.value===NEW_CATEGORY_VALUE){
+    return newInput.value.trim();
+  }
+
+  return select.value.trim();
+};
+
 const readEditor=(el)=>({
   id:el.dataset.id||crypto.randomUUID(),
-  categoria:el.querySelector('[data-field="categoria"]').value.trim(),
+  categoria:selectedCategory(el),
   titulo:el.querySelector('[data-field="titulo"]').value.trim(),
   descricao:el.querySelector('[data-field="descricao"]').value.trim(),
   link:el.querySelector('[data-field="link"]').value.trim(),
@@ -55,7 +89,7 @@ const moveItem=(id,direction)=>{
   const index=items.findIndex(item=>item.id===id);
   const target=index+direction;
 
-  if(index<0||target<0||target>=items.length) return;
+  if(index<0||target<0||target>=items.length)return;
 
   [items[index],items[target]]=[items[target],items[index]];
   normalizeOrder();
@@ -68,7 +102,7 @@ const applyManualOrder=(id,newOrder)=>{
   items.sort((a,b)=>(a.ordem||999)-(b.ordem||999));
 
   const currentIndex=items.findIndex(item=>item.id===id);
-  if(currentIndex<0) return;
+  if(currentIndex<0)return;
 
   const [item]=items.splice(currentIndex,1);
   const targetIndex=Math.max(0,Math.min(items.length,Number(newOrder||1)-1));
@@ -77,6 +111,53 @@ const applyManualOrder=(id,newOrder)=>{
   normalizeOrder();
   render();
   setStatus('Ordem alterada. Clique em “Publicar alterações” para salvar.','ok');
+};
+
+const setupCategoryField=(editor,item)=>{
+  const select=editor.querySelector('[data-field="categoria"]');
+  const newField=editor.querySelector('.new-category-field');
+  const newInput=editor.querySelector('[data-field="nova-categoria"]');
+  const categories=getCategories();
+  const current=String(item.categoria||'').trim();
+
+  select.innerHTML='';
+
+  categories.forEach(category=>{
+    const option=document.createElement('option');
+    option.value=category;
+    option.textContent=category;
+    select.appendChild(option);
+  });
+
+  const newOption=document.createElement('option');
+  newOption.value=NEW_CATEGORY_VALUE;
+  newOption.textContent='+ Cadastrar nova categoria';
+  select.appendChild(newOption);
+
+  if(current&&categories.includes(current)){
+    select.value=current;
+    newField.hidden=true;
+    newInput.value='';
+  }else if(current){
+    select.value=NEW_CATEGORY_VALUE;
+    newField.hidden=false;
+    newInput.value=current;
+  }else{
+    select.value=categories[0]||BASE_CATEGORIES[0];
+    newField.hidden=true;
+    newInput.value='';
+  }
+
+  select.onchange=()=>{
+    const isNew=select.value===NEW_CATEGORY_VALUE;
+    newField.hidden=!isNew;
+
+    if(isNew){
+      newInput.focus();
+    }else{
+      newInput.value='';
+    }
+  };
 };
 
 const render=()=>{
@@ -94,7 +175,9 @@ const render=()=>{
     el.querySelector('.editor-title').textContent=item.titulo||'NOVO VÍDEO';
     el.querySelector('.position-badge').textContent=String(index+1).padStart(2,'0');
 
-    ['categoria','titulo','descricao','link','ordem'].forEach(field=>{
+    setupCategoryField(el,item);
+
+    ['titulo','descricao','link','ordem'].forEach(field=>{
       el.querySelector(`[data-field="${field}"]`).value=
         item[field]??(field==='ordem'?index+1:'');
     });
@@ -132,6 +215,7 @@ const render=()=>{
 
 const load=async()=>{
   setStatus('Carregando...');
+
   try{
     items=await api();
     items=items.map(item=>({...item,id:item.id||crypto.randomUUID()}));
@@ -170,7 +254,7 @@ document.querySelector('#new-video').onclick=()=>{
   items.sort((a,b)=>(a.ordem||999)-(b.ordem||999));
   items.push({
     id:crypto.randomUUID(),
-    categoria:'Filmes Institucionais',
+    categoria:BASE_CATEGORIES[0],
     titulo:'',
     descricao:'',
     link:'',
@@ -190,8 +274,12 @@ document.querySelector('#publish').onclick=async(event)=>{
   normalizeOrder();
 
   const invalid=items.find(item=>!item.categoria||!item.titulo||!item.link);
+
   if(invalid){
-    return setStatus('Preencha categoria, título e link em todos os vídeos.','error');
+    return setStatus(
+      'Preencha categoria, título e link em todos os vídeos. Para categoria nova, digite o nome no campo abaixo da seleção.',
+      'error'
+    );
   }
 
   event.target.disabled=true;

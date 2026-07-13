@@ -774,3 +774,40 @@ body.modal-open{overflow:hidden}
     -webkit-backdrop-filter:blur(2px);
   }
 }
+
+
+/* ===== PORTFÓLIO V03 — CATEGORIA VAZIA ===== */
+
+.portfolio-empty-category{
+  min-height:360px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:12px;
+  padding:40px;
+  border:1px solid var(--inkline);
+  border-radius:28px;
+  background:rgba(16,16,16,.035);
+}
+
+.portfolio-empty-category strong{
+  font-size:clamp(42px,6vw,76px);
+  line-height:.86;
+  letter-spacing:-.06em;
+  text-transform:uppercase;
+  font-weight:900;
+}
+
+.portfolio-empty-category span{
+  max-width:560px;
+  color:#6f6c63;
+  font-size:16px;
+  line-height:1.4;
+  font-weight:600;
+}
+
+.portfolio-list-actions button:disabled{
+  opacity:.28;
+  cursor:not-allowed;
+  transform:none!important;
+}

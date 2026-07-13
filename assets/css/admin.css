@@ -58,3 +58,27 @@
     justify-content:flex-end;
   }
 }
+
+
+/* ===== PAINEL V03 — CATEGORIAS ===== */
+
+.form-grid select{
+  width:100%;
+  min-height:48px;
+  padding:0 14px;
+  border:1px solid rgba(252,250,227,.16);
+  border-radius:14px;
+  background:#171717;
+  color:#fcfae3;
+  font:700 14px/1 'Montserrat',sans-serif;
+  outline:none;
+}
+
+.form-grid select:focus{
+  border-color:#ef431d;
+  box-shadow:0 0 0 3px rgba(239,67,29,.14);
+}
+
+.new-category-field[hidden]{
+  display:none!important;
+}

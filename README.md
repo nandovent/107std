@@ -1,9 +1,10 @@
-# 107 Studios — Painel do Portfólio v02
+# 107 Studios — Painel do Portfólio v03
 
 Atualizações:
-- Setas de ordenação corrigidas.
-- Campo Posição funcional.
-- Numeração visual dos itens no painel.
-- Setas desativadas quando o item já está no topo ou no fim.
-- Aviso para publicar depois de reorganizar.
-- Ordem normalizada automaticamente antes de salvar.
+- Novo bloco Videoclipes.
+- Mesma estrutura visual de Filmes Institucionais.
+- Campo Categoria virou seleção.
+- Mostra apenas categorias existentes.
+- Opção “Cadastrar nova categoria”.
+- Categorias novas criam automaticamente bloco, carrossel e grade.
+- Videoclipes aparece como “Em breve” até receber o primeiro vídeo.
