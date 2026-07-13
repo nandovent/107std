@@ -89,3 +89,121 @@ document.querySelectorAll('[data-list-carousel]').forEach((carousel)=>{
   window.addEventListener('resize',update);
   update();
 });
+
+// ===== PORTFÓLIO V04.6 — LISTA HORIZONTAL + GRADE AUTOMÁTICA =====
+document.querySelectorAll('[data-list-carousel]').forEach((carousel)=>{
+  const viewport = carousel.querySelector('.portfolio-list-viewport');
+  const track = carousel.querySelector('[data-list-track]');
+  const slides = [...carousel.querySelectorAll('[data-list-slide]')];
+  const prev = carousel.querySelector('[data-list-prev]');
+  const next = carousel.querySelector('[data-list-next]');
+  const expand = carousel.querySelector('[data-list-expand]');
+  const modal = document.querySelector('[data-list-grid]');
+  const grid = modal.querySelector('[data-generated-grid]');
+
+  let index = 0;
+  let startX = 0;
+  let deltaX = 0;
+  let dragging = false;
+
+  const step = ()=>{
+    if(!slides.length) return 0;
+    const styles = getComputedStyle(track);
+    const gap = parseFloat(styles.columnGap || styles.gap || 0);
+    return slides[0].getBoundingClientRect().width + gap;
+  };
+
+  const update = ()=>{
+    track.style.transform = `translateX(${-index * step()}px)`;
+    prev.disabled = index === 0;
+    next.disabled = index === slides.length - 1;
+  };
+
+  const go = (nextIndex)=>{
+    index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+    update();
+  };
+
+  const buildGrid = ()=>{
+    grid.innerHTML = "";
+
+    slides.forEach((slide, slideIndex)=>{
+      const title = slide.dataset.title || slide.querySelector("h3")?.textContent?.trim() || "Vídeo";
+      const label = slide.dataset.label || slide.querySelector(".kicker")?.textContent?.trim() || "Filme";
+      const source = slide.dataset.source || "";
+      const thumb = slide.dataset.thumb || "";
+
+      const card = document.createElement("button");
+      card.className = "portfolio-grid-card";
+      card.type = "button";
+      card.dataset.listGridIndex = String(slideIndex);
+      card.innerHTML = `
+        <div class="portfolio-grid-thumb">
+          <img src="${thumb}" alt="Miniatura de ${title}">
+          <span class="portfolio-grid-play">▶</span>
+        </div>
+        <div class="portfolio-grid-copy">
+          <strong>${title}</strong>
+          <span>${label}${source ? " · " + source : ""}</span>
+        </div>
+      `;
+
+      card.addEventListener("click",()=>{
+        go(slideIndex);
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden","true");
+        document.body.classList.remove("modal-open");
+        carousel.scrollIntoView({behavior:"smooth",block:"center"});
+      });
+
+      grid.appendChild(card);
+    });
+  };
+
+  prev.addEventListener('click',()=>go(index - 1));
+  next.addEventListener('click',()=>go(index + 1));
+
+  viewport.addEventListener('pointerdown',(event)=>{
+    if(event.target.closest('iframe,button,a')) return;
+    dragging = true;
+    startX = event.clientX;
+    deltaX = 0;
+    viewport.classList.add('is-dragging');
+    viewport.setPointerCapture(event.pointerId);
+  });
+
+  viewport.addEventListener('pointermove',(event)=>{
+    if(dragging) deltaX = event.clientX - startX;
+  });
+
+  const finishDrag = ()=>{
+    if(!dragging) return;
+    dragging = false;
+    viewport.classList.remove('is-dragging');
+
+    if(Math.abs(deltaX) > 60){
+      go(index + (deltaX < 0 ? 1 : -1));
+    }
+  };
+
+  viewport.addEventListener('pointerup',finishDrag);
+  viewport.addEventListener('pointercancel',finishDrag);
+
+  expand.addEventListener('click',()=>{
+    buildGrid();
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('modal-open');
+  });
+
+  modal.querySelectorAll('[data-list-close]').forEach((button)=>{
+    button.addEventListener('click',()=>{
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden','true');
+      document.body.classList.remove('modal-open');
+    });
+  });
+
+  window.addEventListener('resize',update);
+  update();
+});

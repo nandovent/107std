@@ -734,3 +734,43 @@ body.modal-open{overflow:hidden}
 .portfolio-list-slide{flex:0 0 calc(100% - 110px);min-width:calc(100% - 110px)}
 @media(max-width:900px){.portfolio-list-slide{flex-basis:calc(100% - 44px);min-width:calc(100% - 44px)}}
 @media(max-width:520px){.portfolio-list-actions{justify-content:space-between}.portfolio-list-slide{flex-basis:100%;min-width:100%}}
+
+
+/* ===== PORTFÓLIO V04.6 — BORDA SUAVE + GRADE AUTOMÁTICA ===== */
+
+.portfolio-list-viewport{
+  position:relative;
+}
+
+.portfolio-list-viewport::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  width:120px;
+  pointer-events:none;
+  background:linear-gradient(
+    90deg,
+    rgba(252,250,227,0) 0%,
+    rgba(252,250,227,.42) 48%,
+    rgba(252,250,227,.94) 100%
+  );
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  mask-image:linear-gradient(90deg,transparent,black 55%);
+  -webkit-mask-image:linear-gradient(90deg,transparent,black 55%);
+  z-index:4;
+}
+
+.portfolio-list-slide{
+  position:relative;
+}
+
+@media(max-width:520px){
+  .portfolio-list-viewport::after{
+    width:58px;
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
+  }
+}

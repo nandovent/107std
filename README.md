@@ -1,8 +1,9 @@
-# 107 Studios — v04.5
+# 107 Studios — v04.6
 
-- Portfólio em lista horizontal.
-- Dois vídeos ativos: Vimeo e YouTube.
-- Sem numeração.
-- Navegação por setas e arraste.
-- Botão Expandir com grade de 10 miniaturas alternadas.
-- Home preservada.
+Alterações:
+- Removido o “01” do topo da categoria.
+- Degradê aplicado na lateral direita da lista.
+- Leve desfoque aplicado na borda direita.
+- A grade agora é gerada automaticamente a partir dos vídeos da lista principal.
+- Títulos, labels, fontes e miniaturas são puxados dos próprios blocos.
+- Para adicionar vídeos no futuro, basta duplicar um slide e alterar seus dados.
