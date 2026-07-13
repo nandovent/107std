@@ -27,7 +27,7 @@
 <section class="panel reveal">
   <span class="kicker">Portfólio</span>
   <h1 class="display">O trabalho fala primeiro.</h1>
-  <p class="copy">Uma seleção de filmes organizada por categoria. Pouco texto. Tela grande. Play.</p>
+  
 </section>
 
 <section class="panel light reveal">
@@ -39,33 +39,62 @@
     <div class="category-number">01</div>
   </div>
 
-  <div class="portfolio-category">
-    
-    <article class="portfolio-item portfolio-item-stacked">
-      <div>
-        <div class="video-frame">
-          <iframe
-            src="https://player.vimeo.com/video/1209079889?title=0&byline=0&portrait=0&badge=0&autopause=0"
-            title="Filme institucional 001"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-        <div class="video-meta">
-          <span>Filme institucional</span>
-          <span>Vimeo</span>
-        </div>
+  
+  <div class="portfolio-carousel-shell" data-carousel>
+    <div class="portfolio-toolbar">
+      <div class="portfolio-counter"><span data-current>01</span> / <span data-total>01</span></div>
+      <div class="portfolio-actions">
+        <button class="portfolio-icon-button" type="button" data-prev aria-label="Vídeo anterior">←</button>
+        <button class="portfolio-icon-button" type="button" data-next aria-label="Próximo vídeo">→</button>
+        <button class="portfolio-expand-button" type="button" data-expand>Expandir</button>
       </div>
+    </div>
 
-      <div class="portfolio-info portfolio-info-below">
-        <span class="kicker">Filme 001</span>
-        <h3>Institucional.</h3>
-        <p>Primeiro trabalho da categoria. Novos filmes entram seguindo este mesmo bloco.</p>
+    <div class="portfolio-carousel-viewport">
+      <div class="portfolio-carousel-track" data-track>
+        <article class="portfolio-slide" data-slide>
+          <div class="video-frame">
+            <iframe src="https://player.vimeo.com/video/1209079889?title=0&byline=0&portrait=0&badge=0&autopause=0"
+              title="Filme institucional 001"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-meta"><span>Filme institucional</span><span>Vimeo</span></div>
+          <div class="portfolio-info portfolio-info-below">
+            <span class="kicker">Filme 001</span>
+            <h3>Institucional.</h3>
+            <p>Primeiro trabalho da categoria. Novos filmes entram seguindo este mesmo bloco.</p>
+          </div>
+        </article>
       </div>
-    </article>
-
+    </div>
   </div>
+
+  <div class="portfolio-grid-modal" data-grid-modal aria-hidden="true">
+    <div class="portfolio-grid-backdrop" data-close-grid></div>
+    <div class="portfolio-grid-dialog" role="dialog" aria-modal="true" aria-label="Todos os vídeos">
+      <div class="portfolio-grid-header">
+        <div>
+          <span class="kicker">Todos os vídeos</span>
+          <h3>Filmes institucionais.</h3>
+        </div>
+        <button class="portfolio-icon-button" type="button" data-close-grid aria-label="Fechar">×</button>
+      </div>
+      <div class="portfolio-grid">
+        <button class="portfolio-grid-card" type="button" data-grid-index="0">
+          <div class="portfolio-grid-thumb">
+            <img src="https://vumbnail.com/1209079889.jpg" alt="Miniatura do filme institucional 001">
+            <span class="portfolio-grid-play">▶</span>
+          </div>
+          <div class="portfolio-grid-copy">
+            <strong>Institucional.</strong>
+            <span>Filme 001</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section class="panel reveal">
