@@ -25,5 +25,14 @@
     "link": "https://www.youtube.com/watch?v=QyC2te8Vcos",
     "ordem": 3,
     "publicado": true
+  },
+  {
+    "id": "208e6f97-191f-4092-8542-d1684e473603",
+    "categoria": "Filmes Institucionais",
+    "titulo": "MANIFESTO DREAMIS - CURITIBA",
+    "descricao": "Filme gravado em Curitiba - PR",
+    "link": "https://www.youtube.com/watch?v=FOZyamGD-54",
+    "ordem": 4,
+    "publicado": true
   }
 ]
