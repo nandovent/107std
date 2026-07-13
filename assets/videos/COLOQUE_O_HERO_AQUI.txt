@@ -1,0 +1,5 @@
+Coloque nesta pasta o arquivo:
+
+hero.mp4
+
+O vídeo do Hero não acompanha os ZIPs para evitar uploads pesados e substituições desnecessárias.

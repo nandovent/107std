@@ -1,10 +1,20 @@
-# 107 Studios — Painel do Portfólio v03
+# 107 Studios — v04.1 COMPLETO
 
-Atualizações:
-- Novo bloco Videoclipes.
-- Mesma estrutura visual de Filmes Institucionais.
-- Campo Categoria virou seleção.
-- Mostra apenas categorias existentes.
-- Opção “Cadastrar nova categoria”.
-- Categorias novas criam automaticamente bloco, carrossel e grade.
-- Videoclipes aparece como “Em breve” até receber o primeiro vídeo.
+Pacote completo para reconstruir a pasta do projeto.
+
+Inclui:
+- Home
+- Portfólio dinâmico
+- Cases
+- Case Festa da Tainha
+- Admin
+- API
+- CSS, JS, imagens e logos
+- data/portfolio.json com os dois vídeos cadastrados
+- configuração do Pages CMS, quando aplicável
+
+Não inclui:
+- assets/videos/hero.mp4
+
+Depois de extrair, coloque seu arquivo hero.mp4 em:
+assets/videos/hero.mp4

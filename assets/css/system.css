@@ -811,3 +811,7 @@ body.modal-open{overflow:hidden}
   cursor:not-allowed;
   transform:none!important;
 }
+
+/* ===== PORTFÓLIO V04.1 — DESCRIÇÃO NAS MINIATURAS ===== */
+.portfolio-grid-description{display:-webkit-box;min-height:2.7em;overflow:hidden;color:#6f6c63;font-size:12px;line-height:1.35;letter-spacing:0;text-transform:none;font-weight:600;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2}
+.portfolio-grid-copy strong{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2}

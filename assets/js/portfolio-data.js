@@ -120,7 +120,7 @@
           </div>
           <div class="portfolio-grid-copy">
             <strong>${esc(slide.dataset.title)}</strong>
-            <span>${esc(slide.dataset.label)} · ${esc(slide.dataset.source)}</span>
+            <span class="portfolio-grid-description">${esc(slide.dataset.description||"")}</span>
           </div>
         `;
 
@@ -205,6 +205,7 @@
                           data-title="${esc(video.titulo)}"
                           data-label="${esc(category)}"
                           data-source="${esc(video.video.platform)}"
+                          data-description="${esc(video.descricao)}"
                           data-thumb="${esc(video.video.thumb)}">
                           <div class="video-frame">
                             <iframe
