@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');:root{--cream:#FCFAE3;--orange:#EF431D;--black:#101010;--coal:#1D1D1D;--line:rgba(252,250,227,.16)}*{box-sizing:border-box}body{margin:0;background:var(--coal);color:var(--cream);font-family:Montserrat,sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.04;background:repeating-linear-gradient(135deg,transparent 0 31px,var(--cream) 32px 33px)}.admin-shell{width:min(1100px,calc(100% - 24px));margin:auto;padding:24px 0 60px}.admin-header{display:flex;align-items:center;gap:26px;padding:26px;border:1px solid var(--line);border-radius:30px;background:var(--black);margin-bottom:18px}.admin-header img{width:90px}.admin-header span{color:#aaa89b;font-size:11px;letter-spacing:.14em;font-weight:800}.admin-header h1{font-size:clamp(42px,7vw,82px);line-height:.8;letter-spacing:-.07em;margin:10px 0 0;font-weight:900}.login-card,.admin-app{padding:32px;border:1px solid var(--line);border-radius:30px;background:var(--black)}.login-card{max-width:520px;margin:60px auto}.login-card h2{font-size:48px;margin:0 0 12px}.login-card p{color:#aaa89b}.login-card input,.form-grid input,.form-grid textarea{width:100%;background:#1d1d1d;color:var(--cream);border:1px solid var(--line);border-radius:16px;padding:15px;font:600 15px Montserrat}.login-card button,.toolbar button,.toolbar a,.editor-top button{border:0;border-radius:999px;padding:14px 18px;background:var(--orange);color:var(--cream);font:800 11px Montserrat;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.login-card button{margin-top:14px;width:100%}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}.toolbar .ghost,.editor-top .ghost,.toolbar a{background:transparent;border:1px solid var(--line);text-decoration:none}.toolbar #publish{margin-left:auto}.status{min-height:22px;margin:12px 0;color:#aaa89b;font-weight:600}.status.error{color:#ff8f78}.status.ok{color:#b8e994}.video-list{display:grid;gap:16px}.video-editor{padding:24px;border:1px solid var(--line);border-radius:24px;background:#151515}.editor-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.editor-title{font-size:22px;text-transform:uppercase}.editor-top>div{display:flex;gap:8px}.editor-top .danger{background:#8f2515}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-grid label{display:grid;gap:8px;color:#aaa89b;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.form-grid .full{grid-column:1/-1}.form-grid .check{display:flex;align-items:center}.form-grid .check input{width:auto}.link{display:inline-flex;align-items:center}.toolbar button:disabled{opacity:.5;cursor:wait}@media(max-width:650px){.admin-header{align-items:flex-start}.admin-header img{width:65px}.login-card,.admin-app{padding:22px}.toolbar #publish{margin-left:0}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.editor-top{align-items:flex-start;flex-direction:column}}
+
+/* ===== PAINEL V02 — ORDENAÇÃO ===== */
+
+.editor-heading{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+
+.position-badge{
+  flex:0 0 auto;
+  display:inline-grid;
+  place-items:center;
+  min-width:38px;
+  height:38px;
+  padding:0 10px;
+  border-radius:999px;
+  background:#ef431d;
+  color:#fcfae3;
+  font-size:11px;
+  line-height:1;
+  letter-spacing:.08em;
+  font-weight:900;
+}
+
+.editor-title{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.move-up:disabled,
+.move-down:disabled{
+  opacity:.28;
+  cursor:not-allowed;
+  transform:none!important;
+}
+
+.form-grid label small{
+  display:block;
+  margin-top:8px;
+  color:rgba(252,250,227,.48);
+  font-size:10px;
+  line-height:1.35;
+  font-weight:600;
+}
+
+@media(max-width:620px){
+  .editor-top{
+    align-items:flex-start;
+  }
+
+  .editor-top>div:last-child{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+}
+
+
+/* ===== PAINEL V03 — CATEGORIAS ===== */
+
+.form-grid select{
+  width:100%;
+  min-height:48px;
+  padding:0 14px;
+  border:1px solid rgba(252,250,227,.16);
+  border-radius:14px;
+  background:#171717;
+  color:#fcfae3;
+  font:700 14px/1 'Montserrat',sans-serif;
+  outline:none;
+}
+
+.form-grid select:focus{
+  border-color:#ef431d;
+  box-shadow:0 0 0 3px rgba(239,67,29,.14);
+}
+
+.new-category-field[hidden]{
+  display:none!important;
+}

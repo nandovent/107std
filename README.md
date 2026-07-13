@@ -1,17 +1,10 @@
-# 107 Studios — v04.0 Final
+# 107 Studios — Painel do Portfólio v03
 
-Base consolidada:
-- Home
-- Portfólio dinâmico
-- Cases
-- Painel próprio em /admin/
-- Categorias existentes no painel
-- Criação de nova categoria
-- Bloco Videoclipes
-- Ordenação por setas e posição
-- Carrossel, degradê e grade automática
-
-Importante:
-- Este pacote NÃO inclui data/
-- Este pacote NÃO inclui assets/videos/
-- Preserve essas duas pastas ao atualizar.
+Atualizações:
+- Novo bloco Videoclipes.
+- Mesma estrutura visual de Filmes Institucionais.
+- Campo Categoria virou seleção.
+- Mostra apenas categorias existentes.
+- Opção “Cadastrar nova categoria”.
+- Categorias novas criam automaticamente bloco, carrossel e grade.
+- Videoclipes aparece como “Em breve” até receber o primeiro vídeo.

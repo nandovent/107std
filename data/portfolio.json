@@ -1,38 +1,20 @@
 [
   {
-    "id": "855b4f42-2c15-4df8-9538-ce494ac7db2d",
-    "categoria": "Videoclipes",
-    "titulo": "RENEE ROOTS - NA RAÇA",
-    "descricao": "Videoclipe gravado em Balneário Camboriú.",
-    "link": "https://www.youtube.com/watch?v=PBmBaXUPdgA",
-    "ordem": 1,
-    "publicado": true
-  },
-  {
     "id": "institucional-vimeo",
     "categoria": "Filmes Institucionais",
     "titulo": "Institucional",
     "descricao": "Trabalho institucional apresentado em formato cinematográfico.",
     "link": "https://vimeo.com/1209079889",
-    "ordem": 2,
+    "ordem": 1,
     "publicado": true
   },
   {
     "id": "institucional-youtube",
-    "categoria": "AFTERMOVIES",
-    "titulo": "AFTERMOVIE DREAMIS - LANÇAMENTO TAUÁ",
-    "descricao": "Feito em Curitiba - PR",
-    "link": "https://www.youtube.com/watch?v=QyC2te8Vcos",
-    "ordem": 3,
-    "publicado": true
-  },
-  {
-    "id": "208e6f97-191f-4092-8542-d1684e473603",
     "categoria": "Filmes Institucionais",
-    "titulo": "MANIFESTO DREAMIS - CURITIBA",
-    "descricao": "Filme gravado em Curitiba - PR",
-    "link": "https://www.youtube.com/watch?v=FOZyamGD-54",
-    "ordem": 4,
+    "titulo": "Institucional",
+    "descricao": "Segundo filme da categoria, incorporado pelo YouTube.",
+    "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
+    "ordem": 2,
     "publicado": true
   }
 ]
