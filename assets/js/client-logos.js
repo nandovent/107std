@@ -1,4 +1,7 @@
 (()=>{
+  const isHome=document.body?.dataset?.page==='home'||/^\/?(?:index\.html)?$/.test(window.location.pathname.replace(/\/+$/,''));
+  if(!isHome)return;
+
   const fallback=[
     {id:'teste-1',nome:'107 Studios',arquivo:'/assets/images/logo-dark.png',publicado:true,ordem:1},
     {id:'teste-2',nome:'107 Studios',arquivo:'/assets/images/logo-orange.png',publicado:true,ordem:2},
