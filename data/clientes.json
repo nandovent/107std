@@ -1,8 +1,50 @@
 [
-  {"id":"teste-1","nome":"107 Studios - Preto","arquivo":"/assets/images/logo-dark.png","ordem":1,"publicado":true},
-  {"id":"teste-2","nome":"107 Studios - Laranja","arquivo":"/assets/images/logo-orange.png","ordem":2,"publicado":true},
-  {"id":"teste-3","nome":"107 Studios - Claro","arquivo":"/assets/images/logo-light.png","ordem":3,"publicado":true},
-  {"id":"teste-4","nome":"107 Studios - Preto","arquivo":"/assets/images/logo-dark.png","ordem":4,"publicado":true},
-  {"id":"teste-5","nome":"107 Studios - Laranja","arquivo":"/assets/images/logo-orange.png","ordem":5,"publicado":true},
-  {"id":"teste-6","nome":"107 Studios - Claro","arquivo":"/assets/images/logo-light.png","ordem":6,"publicado":true}
+  {
+    "id": "teste-1",
+    "nome": "107 Studios - Preto",
+    "arquivo": "/assets/clientes/teste-1.png",
+    "ordem": 1,
+    "publicado": true,
+    "escala": 145
+  },
+  {
+    "id": "teste-2",
+    "nome": "107 Studios - Laranja",
+    "arquivo": "/assets/images/logo-orange.png",
+    "ordem": 2,
+    "publicado": true,
+    "escala": 80
+  },
+  {
+    "id": "teste-3",
+    "nome": "107 Studios - Claro",
+    "arquivo": "/assets/images/logo-light.png",
+    "ordem": 3,
+    "publicado": true,
+    "escala": 100
+  },
+  {
+    "id": "teste-4",
+    "nome": "107 Studios - Preto",
+    "arquivo": "/assets/images/logo-dark.png",
+    "ordem": 4,
+    "publicado": true,
+    "escala": 100
+  },
+  {
+    "id": "teste-5",
+    "nome": "107 Studios - Laranja",
+    "arquivo": "/assets/images/logo-orange.png",
+    "ordem": 5,
+    "publicado": true,
+    "escala": 100
+  },
+  {
+    "id": "teste-6",
+    "nome": "107 Studios - Claro",
+    "arquivo": "/assets/images/logo-light.png",
+    "ordem": 6,
+    "publicado": true,
+    "escala": 100
+  }
 ]
