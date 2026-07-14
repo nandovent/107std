@@ -93,27 +93,59 @@
     prev.onclick=()=>go(index-1);
     next.onclick=()=>go(index+1);
 
+    let suppressPosterClick=false;
+
     viewport.onpointerdown=event=>{
-      if(event.target.closest('iframe,button,a'))return;
+      if(event.target.closest('.portfolio-icon-button,.portfolio-expand-button,a,iframe'))return;
       dragging=true;
       startX=event.clientX;
       deltaX=0;
+      suppressPosterClick=false;
       viewport.classList.add('is-dragging');
+      viewport.setPointerCapture?.(event.pointerId);
     };
 
     viewport.onpointermove=event=>{
-      if(dragging)deltaX=event.clientX-startX;
+      if(!dragging)return;
+      deltaX=event.clientX-startX;
+      if(Math.abs(deltaX)>8)suppressPosterClick=true;
+      track.style.transition='none';
+      track.style.transform=`translateX(${(-index*step())+deltaX}px)`;
     };
 
-    viewport.onpointerup=viewport.onpointercancel=()=>{
+    viewport.onpointerup=viewport.onpointercancel=event=>{
       if(!dragging)return;
       dragging=false;
       viewport.classList.remove('is-dragging');
+      viewport.releasePointerCapture?.(event.pointerId);
+      track.style.transition='';
 
-      if(Math.abs(deltaX)>60){
+      if(Math.abs(deltaX)>50){
         go(index+(deltaX<0?1:-1));
+      }else{
+        update();
       }
+
+      setTimeout(()=>{suppressPosterClick=false},0);
     };
+
+    carousel.querySelectorAll('[data-video-poster]').forEach(poster=>{
+      poster.onclick=event=>{
+        if(suppressPosterClick){
+          event.preventDefault();
+          return;
+        }
+
+        const frame=poster.closest('[data-video-frame]');
+        const iframe=document.createElement('iframe');
+        iframe.src=poster.dataset.embed||'';
+        iframe.title=poster.dataset.videoTitle||'Vídeo';
+        iframe.allow='autoplay; fullscreen; picture-in-picture';
+        iframe.allowFullscreen=true;
+        iframe.loading='lazy';
+        frame.replaceChildren(iframe);
+      };
+    });
 
     const buildGrid=()=>{
       grid.innerHTML='';
@@ -216,13 +248,17 @@
                           data-source="${esc(video.video.platform)}"
                           data-description="${esc(video.descricao)}"
                           data-thumb="${esc(video.video.thumb)}">
-                          <div class="video-frame">
-                            <iframe
-                              src="${esc(video.video.embed)}"
-                              title="${esc(video.titulo)}"
-                              allow="autoplay; fullscreen; picture-in-picture"
-                              allowfullscreen
-                              loading="lazy"></iframe>
+                          <div class="video-frame" data-video-frame>
+                            <button
+                              class="portfolio-video-poster"
+                              type="button"
+                              data-video-poster
+                              data-embed="${esc(video.video.embed)}"
+                              data-video-title="${esc(video.titulo)}"
+                              aria-label="Reproduzir ${esc(video.titulo)}">
+                              <img src="${esc(video.video.thumb)}" alt="Miniatura de ${esc(video.titulo)}" loading="lazy">
+                              <span class="portfolio-poster-play" aria-hidden="true">▶</span>
+                            </button>
                           </div>
 
                           <div class="portfolio-info portfolio-info-below">

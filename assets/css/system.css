@@ -815,3 +815,58 @@ body.modal-open{overflow:hidden}
 /* ===== PORTFÓLIO V04.1 — DESCRIÇÃO NAS MINIATURAS ===== */
 .portfolio-grid-description{display:-webkit-box;min-height:2.7em;overflow:hidden;color:#6f6c63;font-size:12px;line-height:1.35;letter-spacing:0;text-transform:none;font-weight:600;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2}
 .portfolio-grid-copy strong{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2}
+
+
+/* ===== PORTFÓLIO V04.1.2 — AJUSTES MOBILE ===== */
+.portfolio-info-below h3,
+.portfolio-info-below p,
+.portfolio-info-below a,
+.portfolio-list-slide h3,
+.portfolio-list-slide p{
+  color:var(--black)!important;
+  -webkit-text-fill-color:var(--black)!important;
+  text-decoration:none!important;
+}
+
+.portfolio-video-poster{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  padding:0;
+  border:0;
+  background:#080808;
+  cursor:pointer;
+  touch-action:pan-y;
+}
+.portfolio-video-poster img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+}
+.portfolio-poster-play{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:76px;
+  height:76px;
+  display:grid;
+  place-items:center;
+  border-radius:999px;
+  background:var(--orange);
+  color:var(--cream)!important;
+  -webkit-text-fill-color:var(--cream)!important;
+  font-size:24px;
+  line-height:1;
+  padding-left:4px;
+  pointer-events:none;
+}
+.portfolio-list-viewport.is-dragging .portfolio-video-poster{cursor:grabbing}
+
+@media(max-width:520px){
+  .portfolio-list-viewport{touch-action:pan-y;overscroll-behavior-x:contain}
+  .portfolio-list-track{transition:transform .32s cubic-bezier(.22,.61,.36,1)}
+  .portfolio-poster-play{width:68px;height:68px;font-size:21px}
+}
