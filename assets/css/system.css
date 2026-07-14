@@ -879,11 +879,33 @@ body.modal-open{overflow:hidden}
 .portfolio-grid-description{
   font-weight:700;
 }
-/* ===== CLIENTES — CARROSSEL DE LOGOS / DESIGN SYSTEM ===== */
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  letter-spacing:-.025em;
+}
+.portfolio-grid-description{
+  font-weight:700;
+}
+
+/* ===== CLIENTES — CARROSSEL DE LOGOS ===== */
+.client-logo-section{position:relative;overflow:hidden;padding:38px 0 34px;background:var(--black);color:var(--cream);border-top:1px solid rgba(252,250,227,.12);border-bottom:1px solid rgba(252,250,227,.12)}
+.client-logo-heading{width:min(1360px,calc(100% - 48px));margin:0 auto 24px}
+.client-logo-heading span{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(252,250,227,.58)}
+.client-logo-viewport{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%)}
+.client-logo-viewport::before,.client-logo-viewport::after{content:"";position:absolute;z-index:2;top:0;bottom:0;width:12%;pointer-events:none;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.client-logo-viewport::before{left:0;mask-image:linear-gradient(90deg,#000,transparent);-webkit-mask-image:linear-gradient(90deg,#000,transparent)}
+.client-logo-viewport::after{right:0;mask-image:linear-gradient(270deg,#000,transparent);-webkit-mask-image:linear-gradient(270deg,#000,transparent)}
+.client-logo-track{display:flex;align-items:center;width:max-content;animation:clientLogoMarquee 30s linear infinite;will-change:transform}
+.client-logo-viewport:hover .client-logo-track{animation-play-state:paused}
+.client-logo-item{width:190px;height:62px;display:grid;place-items:center;padding:8px 28px;flex:0 0 auto}
+.client-logo-item img{display:block;max-width:132px;max-height:34px;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:.82;user-select:none}
+@keyframes clientLogoMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:600px){.client-logo-section{padding:30px 0 28px}.client-logo-heading{width:calc(100% - 34px);margin-bottom:18px}.client-logo-item{width:145px;height:52px;padding:7px 20px}.client-logo-item img{max-width:105px;max-height:27px}.client-logo-track{animation-duration:24s}.client-logo-viewport::before,.client-logo-viewport::after{width:16%}}
+@media(prefers-reduced-motion:reduce){.client-logo-track{animation:none;transform:none}.client-logo-viewport{overflow-x:auto}}
+
+/* ===== CLIENTES V04.1.8 — ALINHADO AO DESIGN SYSTEM ===== */
 .client-logo-section{
-  position:relative;
   width:100%;
-  overflow:hidden;
   margin:0 0 18px;
   padding:42px 0 38px;
   border:1px solid var(--line);
@@ -893,50 +915,53 @@ body.modal-open{overflow:hidden}
   box-shadow:0 18px 48px rgba(0,0,0,.14);
 }
 .client-logo-heading{
+  width:auto;
   margin:0 32px 30px;
 }
 .client-logo-heading span{
   display:block;
-  font-family:'Montserrat',sans-serif;
-  font-size:clamp(26px,3.2vw,44px);
-  font-weight:900;
+  max-width:920px;
+  color:var(--orange);
+  font-size:clamp(24px,3.2vw,42px);
   line-height:.9;
   letter-spacing:-.055em;
   text-transform:uppercase;
-  color:var(--orange);
+  font-weight:900;
 }
 .client-logo-viewport{
-  position:relative;
-  overflow:hidden;
   padding:4px 0;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);
-  mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);
 }
-.client-logo-viewport::before,.client-logo-viewport::after{
-  content:"";
-  position:absolute;
-  z-index:2;
-  top:0;
-  bottom:0;
-  width:12%;
-  pointer-events:none;
-  backdrop-filter:blur(5px);
-  -webkit-backdrop-filter:blur(5px);
+.client-logo-item{
+  width:190px;
+  height:68px;
+  padding:10px 28px;
 }
-.client-logo-viewport::before{left:0;mask-image:linear-gradient(90deg,#000,transparent);-webkit-mask-image:linear-gradient(90deg,#000,transparent)}
-.client-logo-viewport::after{right:0;mask-image:linear-gradient(270deg,#000,transparent);-webkit-mask-image:linear-gradient(270deg,#000,transparent)}
-.client-logo-track{display:flex;align-items:center;width:max-content;animation:clientLogoMarquee 30s linear infinite;will-change:transform}
-.client-logo-viewport:hover .client-logo-track{animation-play-state:paused}
-.client-logo-item{width:190px;height:68px;display:grid;place-items:center;padding:10px 28px;flex:0 0 auto}
-.client-logo-item img{display:block;max-width:132px;max-height:36px;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:.82;user-select:none}
-@keyframes clientLogoMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.client-logo-item img{
+  max-width:132px;
+  max-height:36px;
+}
+
 @media(max-width:600px){
-  .client-logo-section{margin-bottom:18px;padding:30px 0 28px;border-radius:22px}
-  .client-logo-heading{margin:0 22px 22px}
-  .client-logo-heading span{font-size:clamp(24px,8vw,34px);line-height:.92}
-  .client-logo-item{width:145px;height:56px;padding:8px 20px}
-  .client-logo-item img{max-width:105px;max-height:29px}
-  .client-logo-track{animation-duration:24s}
-  .client-logo-viewport::before,.client-logo-viewport::after{width:16%}
+  .client-logo-section{
+    margin-bottom:18px;
+    padding:30px 0 28px;
+    border-radius:22px;
+  }
+  .client-logo-heading{
+    width:auto;
+    margin:0 22px 22px;
+  }
+  .client-logo-heading span{
+    font-size:clamp(22px,8vw,32px);
+    line-height:.92;
+  }
+  .client-logo-item{
+    width:145px;
+    height:56px;
+    padding:8px 20px;
+  }
+  .client-logo-item img{
+    max-width:105px;
+    max-height:29px;
+  }
 }
-@media(prefers-reduced-motion:reduce){.client-logo-track{animation:none;transform:none}.client-logo-viewport{overflow-x:auto}}
