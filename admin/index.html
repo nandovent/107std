@@ -13,7 +13,12 @@
   <select id="category-filter" aria-label="Filtrar vídeos por categoria">
     <option value="__todas__">Todas as categorias</option>
   </select>
-</div><div class="status" id="status"></div><div id="video-list" class="video-list"></div></section></main><template id="video-template"><article class="video-editor"><div class="editor-top"><div class="editor-heading"><span class="position-badge">01</span><strong class="editor-title">NOVO VÍDEO</strong></div><div><button type="button" class="move-up ghost" title="Mover para cima" aria-label="Mover para cima">↑</button><button type="button" class="move-down ghost" title="Mover para baixo" aria-label="Mover para baixo">↓</button><button class="remove danger">Excluir</button></div></div><div class="form-grid"><label>Categoria
+</div><div class="status" id="status"></div><div id="video-list" class="video-list"></div><div class="toolbar toolbar-bottom" aria-label="Ações do portfólio no fim da página">
+  <button id="new-video-bottom">+ Novo vídeo</button>
+  <button class="ghost" id="reload-bottom">Recarregar</button>
+  <a class="ghost link" href="../portfolio/" target="_blank">Abrir portfólio</a>
+  <button id="publish-bottom">Publicar alterações</button>
+</div></section></main><template id="video-template"><article class="video-editor"><div class="editor-top"><div class="editor-heading"><span class="position-badge">01</span><strong class="editor-title">NOVO VÍDEO</strong></div><div><button type="button" class="move-up ghost" title="Mover para cima" aria-label="Mover para cima">↑</button><button type="button" class="move-down ghost" title="Mover para baixo" aria-label="Mover para baixo">↓</button><button class="remove danger">Excluir</button></div></div><div class="form-grid"><label>Categoria
   <select data-field="categoria"></select>
   <small>Escolha uma categoria existente ou selecione “Cadastrar nova categoria”.</small>
 </label>

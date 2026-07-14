@@ -159,7 +159,7 @@ loginBtn.onclick=async()=>{
 
 categoryFilter.onchange=()=>{syncVisible();activeCategory=categoryFilter.value;render()};
 
-document.querySelector('#new-video').onclick=()=>{
+const addNewVideo=()=>{
   syncVisible();
   const category=activeCategory!==ALL_CATEGORIES?activeCategory:(getCategories()[0]||BASE_CATEGORIES[0]);
   const categoryCount=items.filter(item=>item.categoria===category).length;
@@ -167,15 +167,19 @@ document.querySelector('#new-video').onclick=()=>{
   activeCategory=category;render();window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
 };
 
-document.querySelector('#reload').onclick=load;
-
-document.querySelector('#publish').onclick=async event=>{
+const publishChanges=async()=>{
   syncVisible();normalizeAllOrders();
   if(items.find(item=>!item.categoria||!item.titulo||!item.link))return setStatus('Preencha categoria, título e link em todos os vídeos.','error');
-  event.target.disabled=true;setStatus('Publicando no GitHub...');
+  const publishButtons=[document.querySelector('#publish'),document.querySelector('#publish-bottom')].filter(Boolean);
+  publishButtons.forEach(button=>button.disabled=true);
+  setStatus('Publicando no GitHub...');
   try{await api('POST',{items,message:'Atualiza portfólio pelo painel 107'});setStatus('Publicado. A Vercel vai atualizar o site em instantes.','ok')}
   catch(error){setStatus(error.message,'error')}
-  finally{event.target.disabled=false}
+  finally{publishButtons.forEach(button=>button.disabled=false)}
 };
+
+['#new-video','#new-video-bottom'].forEach(selector=>{const button=document.querySelector(selector);if(button)button.onclick=addNewVideo});
+['#reload','#reload-bottom'].forEach(selector=>{const button=document.querySelector(selector);if(button)button.onclick=load});
+['#publish','#publish-bottom'].forEach(selector=>{const button=document.querySelector(selector);if(button)button.onclick=publishChanges});
 
 if(password){loginCard.hidden=true;app.hidden=false;load()}

@@ -101,23 +101,32 @@
       startX=event.clientX;
       deltaX=0;
       suppressPosterClick=false;
-      viewport.classList.add('is-dragging');
-      viewport.setPointerCapture?.(event.pointerId);
     };
 
     viewport.onpointermove=event=>{
       if(!dragging)return;
       deltaX=event.clientX-startX;
-      if(Math.abs(deltaX)>8)suppressPosterClick=true;
-      track.style.transition='none';
-      track.style.transform=`translateX(${(-index*step())+deltaX}px)`;
+
+      // Só assume o controle do gesto quando ficar claro que é um arraste.
+      // Assim, um toque normal no pôster continua chegando ao botão de play.
+      if(Math.abs(deltaX)>8){
+        suppressPosterClick=true;
+        viewport.classList.add('is-dragging');
+        if(!viewport.hasPointerCapture?.(event.pointerId)){
+          viewport.setPointerCapture?.(event.pointerId);
+        }
+        track.style.transition='none';
+        track.style.transform=`translateX(${(-index*step())+deltaX}px)`;
+      }
     };
 
     viewport.onpointerup=viewport.onpointercancel=event=>{
       if(!dragging)return;
       dragging=false;
       viewport.classList.remove('is-dragging');
-      viewport.releasePointerCapture?.(event.pointerId);
+      if(viewport.hasPointerCapture?.(event.pointerId)){
+        viewport.releasePointerCapture?.(event.pointerId);
+      }
       track.style.transition='';
 
       if(Math.abs(deltaX)>50){

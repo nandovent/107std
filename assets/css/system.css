@@ -873,6 +873,12 @@ body.modal-open{overflow:hidden}
 
 /* ===== PORTFÓLIO V04.1.3 — TIPOGRAFIA DA GRADE ===== */
 .portfolio-grid-copy strong{
+  font-family:Montserrat,Arial,sans-serif;
+  font-weight:900;
+}
+.portfolio-grid-description{
+  font-weight:700;
+}
   font-family:'Montserrat',sans-serif;
   font-weight:900;
   letter-spacing:-.025em;
