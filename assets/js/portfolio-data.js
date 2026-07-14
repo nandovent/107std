@@ -147,11 +147,16 @@
 
         const frame=poster.closest('[data-video-frame]');
         const iframe=document.createElement('iframe');
-        iframe.src=poster.dataset.embed||'';
+        const embedUrl=poster.dataset.embed||'';
+        const separator=embedUrl.includes('?')?'&':'?';
+
+        // O clique no pôster já é uma ação direta do usuário, então podemos
+        // abrir o player com autoplay e evitar a necessidade de um segundo play.
+        iframe.src=embedUrl?`${embedUrl}${separator}autoplay=1&playsinline=1`:'';
         iframe.title=poster.dataset.videoTitle||'Vídeo';
         iframe.allow='autoplay; fullscreen; picture-in-picture';
         iframe.allowFullscreen=true;
-        iframe.loading='lazy';
+        iframe.loading='eager';
         frame.replaceChildren(iframe);
       };
     });
