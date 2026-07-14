@@ -16,5 +16,14 @@
     "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
     "ordem": 2,
     "publicado": true
+  },
+  {
+    "id": "31c7c8b0-efca-492d-9899-d1d08bae7488",
+    "categoria": "Videoclipes",
+    "titulo": "RENNE ROOTS - NA RAÇA",
+    "descricao": "Videoclipe gravado em Itajaí - SC. Elenco, roteiro, captação e edição. Tudo feito pela equipe 107 Studios.",
+    "link": "https://www.youtube.com/watch?v=PBmBaXUPdgA",
+    "ordem": 1,
+    "publicado": false
   }
 ]
