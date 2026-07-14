@@ -52,5 +52,14 @@
     "link": "https://www.youtube.com/watch?v=Y14fUssv-6s",
     "ordem": 1,
     "publicado": true
+  },
+  {
+    "id": "9856e0f0-7d95-4247-b735-a9676e4392f4",
+    "categoria": "DOCUMENTÁRIOS",
+    "titulo": "MINI DOC - DREYSSON RODRIGUES",
+    "descricao": "Uma trip com um dos maiores DJs de Mega Funk do Brasil até Caxias do Sul - RS.",
+    "link": "https://www.youtube.com/watch?v=tTHLhFMzoPI",
+    "ordem": 2,
+    "publicado": true
   }
 ]
