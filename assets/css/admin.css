@@ -114,3 +114,6 @@
 .panel-nav a:visited{color:var(--cream)}
 .panel-nav a:hover,.panel-nav a:focus-visible{border-color:var(--orange);background:var(--orange);color:var(--cream);outline:none;transform:translateY(-1px)}
 @media(max-width:650px){.panel-nav a{flex:1 1 auto}}
+.admin-module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:24px}
+.admin-module-grid .admin-module-card{margin:0;min-height:190px}
+@media(max-width:800px){.admin-module-grid{grid-template-columns:1fr}.admin-module-grid .admin-module-card{min-height:0}}
