@@ -16,5 +16,23 @@
     "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
     "ordem": 2,
     "publicado": true
+  },
+  {
+    "id": "31c7c8b0-efca-492d-9899-d1d08bae7488",
+    "categoria": "Videoclipes",
+    "titulo": "RENNE ROOTS - NA RAÇA",
+    "descricao": "Videoclipe gravado em Itajaí - SC. Elenco, roteiro, captação e edição. Tudo feito pela equipe 107 Studios.",
+    "link": "https://www.youtube.com/watch?v=PBmBaXUPdgA",
+    "ordem": 1,
+    "publicado": true
+  },
+  {
+    "id": "a4192969-e766-422b-b5ba-6679273fcd77",
+    "categoria": "Videoclipes",
+    "titulo": "RENEE ROOTS - DO MUNDÃO",
+    "descricao": "Videoclipe gravado na Praia Brava em Itajaí - SC. Roteiro, elenco, captação e edição pela equipe 107. Bastidores também foram registrados e podem ser vistos na seção de Makinf Of.",
+    "link": "https://www.youtube.com/watch?v=WxmVh0Ust5c",
+    "ordem": 2,
+    "publicado": true
   }
 ]
