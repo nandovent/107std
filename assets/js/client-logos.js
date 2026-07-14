@@ -8,11 +8,26 @@
     {id:'teste-6',nome:'107 Studios',arquivo:'/assets/images/logo-light.png',publicado:true,ordem:6,escala:90}
   ];
 
+  const publicLogoUrl=item=>{
+    const path=String(item.arquivo||'').replace(/^\/+/, '');
+    if(path.startsWith('assets/clientes/')){
+      return `/api/clientes?asset=${encodeURIComponent(path)}&v=${encodeURIComponent(item.id||'logo')}`;
+    }
+    return item.arquivo||'';
+  };
+
   const logoMarkup=item=>{
     const escala=Math.min(145,Math.max(55,Number(item.escala)||100));
     const logo=document.createElement('div');
     logo.className='client-logo-item';
-    logo.innerHTML=`<img src="${item.arquivo}" alt="${item.nome||'Logo de cliente'}" loading="lazy" draggable="false" style="--logo-scale:${escala/100}">`;
+    const img=document.createElement('img');
+    img.src=publicLogoUrl(item);
+    img.alt=item.nome||'Logo de cliente';
+    img.loading='eager';
+    img.draggable=false;
+    img.style.setProperty('--logo-scale',escala/100);
+    img.addEventListener('error',()=>{logo.hidden=true},{once:true});
+    logo.appendChild(img);
     return logo;
   };
 

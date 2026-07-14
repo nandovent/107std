@@ -25,7 +25,7 @@ async function putContent(path,content,message,sha){
 const mimeFromPath=path=>({png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg',webp:'image/webp',svg:'image/svg+xml'})[String(path).split('.').pop().toLowerCase()]||'application/octet-stream';
 export const config={api:{bodyParser:{sizeLimit:'8mb'}}};
 export default async function handler(req,res){
-  res.setHeader('Cache-Control','no-store');
+  res.setHeader('Cache-Control','no-store, max-age=0');
   try{
     const asset=typeof req.query?.asset==='string'?req.query.asset:'';
     if(req.method==='GET'&&asset){
@@ -35,7 +35,7 @@ export default async function handler(req,res){
       const file=await getGithubFile(safe);
       if(!file)return res.status(404).end();
       res.setHeader('Content-Type',mimeFromPath(safe));
-      return res.status(200).send(file.buffer);
+      res.statusCode=200; return res.end(file.buffer);
     }
     if(!process.env.ADMIN_PASSWORD||req.headers['x-admin-password']!==process.env.ADMIN_PASSWORD)return res.status(401).json({error:'Senha inválida.'});
     if(!process.env.GITHUB_TOKEN)return res.status(500).json({error:'GITHUB_TOKEN não configurado.'});
