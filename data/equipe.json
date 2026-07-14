@@ -1,0 +1,72 @@
+[
+  {
+    "id": "fernando-venturini",
+    "nome": "Fernando Venturini",
+    "funcao": "Proprietário e diretor.",
+    "arquivo": "/assets/equipe/fernando-venturini.png",
+    "ordem": 1,
+    "publicado": true,
+    "destaque": true,
+    "escala": 110
+  },
+  {
+    "id": "yago-wolf",
+    "nome": "Yago Wolf",
+    "funcao": "Videomaker e editor",
+    "arquivo": "",
+    "ordem": 2,
+    "publicado": true,
+    "destaque": false,
+    "escala": 100
+  },
+  {
+    "id": "laura-vidal",
+    "nome": "Laura Vidal",
+    "funcao": "Storymaker e editora",
+    "arquivo": "",
+    "ordem": 3,
+    "publicado": false,
+    "destaque": false,
+    "escala": 100
+  },
+  {
+    "id": "will-moser",
+    "nome": "Will Moser",
+    "funcao": "Editor",
+    "arquivo": "",
+    "ordem": 4,
+    "publicado": false,
+    "destaque": false,
+    "escala": 100
+  },
+  {
+    "id": "guilherme-antunes",
+    "nome": "Guilherme Antunes",
+    "funcao": "Videomaker",
+    "arquivo": "",
+    "ordem": 5,
+    "publicado": false,
+    "destaque": false,
+    "escala": 100
+  },
+  {
+    "id": "matheus-yuri",
+    "nome": "Matheus Yuri",
+    "funcao": "Videomaker",
+    "arquivo": "",
+    "ordem": 6,
+    "publicado": false,
+    "destaque": false,
+    "escala": 100
+  },
+  {
+    "id": "beatriz-vieira",
+    "nome": "Beatriz Vieira",
+    "funcao": "Influencer e apresentadora",
+    "arquivo": "",
+    "ordem": 7,
+    "publicado": false,
+    "destaque": false,
+    "escala": 100
+  }
+]
