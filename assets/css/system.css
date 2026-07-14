@@ -870,3 +870,13 @@ body.modal-open{overflow:hidden}
   .portfolio-list-track{transition:transform .32s cubic-bezier(.22,.61,.36,1)}
   .portfolio-poster-play{width:68px;height:68px;font-size:21px}
 }
+
+/* ===== PORTFÓLIO V04.1.3 — TIPOGRAFIA DA GRADE ===== */
+.portfolio-grid-copy strong{
+  font-family:'Montserrat',sans-serif;
+  font-weight:900;
+  letter-spacing:-.025em;
+}
+.portfolio-grid-description{
+  font-weight:700;
+}
