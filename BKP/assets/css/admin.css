@@ -99,10 +99,3 @@
 .toolbar-bottom{margin:28px 0 0;padding-top:24px;border-top:1px solid var(--line)}
 .toolbar-bottom #publish-bottom{margin-left:auto}
 @media(max-width:650px){.toolbar-bottom #publish-bottom{margin-left:0}}
-
-
-/* ===== PAINEL V04.2.1 — MÓDULO DE LOGOS ===== */
-.admin-module-card{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 24px;padding:24px;border:1px solid var(--line);border-radius:24px;background:rgba(252,250,227,.055);color:var(--cream);text-decoration:none;transition:.2s ease}
-.admin-module-card:hover{transform:translateY(-3px);border-color:var(--orange);background:rgba(239,67,29,.1)}
-.admin-module-card>div{display:grid;gap:8px}.admin-module-kicker{color:var(--orange);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:900}.admin-module-card strong{font-size:clamp(26px,4vw,42px);line-height:.9;letter-spacing:-.05em}.admin-module-card p{max-width:680px;margin:0;color:#aaa89b;font-size:13px;line-height:1.45;font-weight:600}.admin-module-arrow{font-size:42px;font-weight:900;color:var(--orange)}
-@media(max-width:650px){.admin-module-card{align-items:flex-start;padding:20px}.admin-module-arrow{font-size:30px}}

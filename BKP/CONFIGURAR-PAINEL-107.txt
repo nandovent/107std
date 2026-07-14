@@ -1,0 +1,52 @@
+PAINEL PRÓPRIO DO PORTFÓLIO — CONFIGURAÇÃO ÚNICA
+
+1. Suba este pacote no GitHub.
+2. Na Vercel, abra o projeto 107std.
+3. Vá em Settings > Environment Variables.
+4. Crie estas variáveis para Production, Preview e Development:
+
+ADMIN_PASSWORD = escolha uma senha forte para entrar no painel
+GITHUB_TOKEN = token do GitHub com permissão Contents: Read and write somente no repositório 107std
+GITHUB_OWNER = nandovent
+GITHUB_REPO = 107std
+GITHUB_BRANCH = main
+
+5. Depois de salvar as variáveis, faça Redeploy do projeto.
+6. Abra: https://107std.com/admin/
+7. Entre com a senha definida em ADMIN_PASSWORD.
+8. Cadastre ou edite os vídeos e clique em Publicar alterações.
+
+COMO CRIAR O TOKEN NO GITHUB
+Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate new token.
+Repository access: Only select repositories > 107std.
+Permissions > Repository permissions > Contents: Read and write.
+Copie o token e cole apenas na variável GITHUB_TOKEN da Vercel. Nunca coloque o token em arquivo ou no GitHub.
+
+
+COMO DEFINIR A ORDEM DOS VÍDEOS
+
+1. Entre em 107std.com/admin/
+2. Use ↑ para subir um vídeo.
+3. Use ↓ para descer um vídeo.
+4. Ou digite a posição desejada no campo “Posição”.
+5. Confira os números laranja 01, 02, 03...
+6. Clique em “Publicar alterações”.
+7. Aguarde o novo deploy da Vercel.
+8. Abra o portfólio e atualize a página.
+
+As mudanças de ordem só chegam ao site depois de clicar em “Publicar alterações”.
+
+
+CATEGORIAS
+
+- O painel agora mostra uma lista com as categorias existentes.
+- Categorias iniciais:
+  1. Filmes Institucionais
+  2. Videoclipes
+- Para criar outra:
+  1. Clique em “+ Novo vídeo”.
+  2. Em Categoria, selecione “+ Cadastrar nova categoria”.
+  3. Digite o nome.
+  4. Preencha título, descrição e link.
+  5. Clique em “Publicar alterações”.
+- O novo bloco, carrossel e grade são criados automaticamente no site.

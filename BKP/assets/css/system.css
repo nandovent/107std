@@ -965,15 +965,3 @@ body.modal-open{overflow:hidden}
     max-height:29px;
   }
 }
-
-
-/* ===== CLIENTES V04.2.1 — LOOP, CONTRASTE E ACESSO ADMIN ===== */
-.client-logo-heading span{color:var(--cream)}
-.client-logo-track{display:flex;align-items:center;width:max-content;animation:clientLogoMarquee 32s linear infinite;will-change:transform}
-.client-logo-group{display:flex;align-items:center;flex:0 0 auto}
-.client-logo-item img{transform:scale(var(--logo-scale,1));transform-origin:center;transition:transform .2s ease}
-.client-logo-viewport:hover .client-logo-track{animation-play-state:running}
-.footer-admin-link{display:block;justify-self:end;border-radius:999px;padding:12px;transition:transform .2s ease,background .2s ease}
-.footer-admin-link:hover{transform:scale(1.08);background:rgba(16,16,16,.06)}
-.footer-admin-link:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
-@media(max-width:520px){.footer-admin-link{justify-self:start;margin-left:auto}}
