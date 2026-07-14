@@ -16,5 +16,50 @@
     "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
     "ordem": 2,
     "publicado": true
+  },
+  {
+    "id": "31c7c8b0-efca-492d-9899-d1d08bae7488",
+    "categoria": "Videoclipes",
+    "titulo": "RENNE ROOTS - NA RAÇA",
+    "descricao": "Videoclipe gravado em Itajaí - SC. Elenco, roteiro, captação e edição. Tudo feito pela equipe 107 Studios.",
+    "link": "https://www.youtube.com/watch?v=PBmBaXUPdgA",
+    "ordem": 2,
+    "publicado": true
+  },
+  {
+    "id": "a4192969-e766-422b-b5ba-6679273fcd77",
+    "categoria": "Videoclipes",
+    "titulo": "RENEE ROOTS - DO MUNDÃO",
+    "descricao": "Videoclipe gravado na Praia Brava em Itajaí - SC. Roteiro, elenco, captação e edição pela equipe 107. Bastidores também foram registrados e podem ser vistos na seção de Makinf Of.",
+    "link": "https://www.youtube.com/watch?v=WxmVh0Ust5c",
+    "ordem": 1,
+    "publicado": true
+  },
+  {
+    "id": "19d4e903-74f8-4475-a815-445e86edee93",
+    "categoria": "MAKING OF",
+    "titulo": "MAKING OF DREAMIS - VÍDEO MANIFESTO",
+    "descricao": "Gravamos esse material em Curitiba - PR. Contemplando o vídeo de manifesto afim de contar a história de como foi o processo de gravação dos materiais. Tudo contado em detalhes.",
+    "link": "https://www.youtube.com/watch?v=NqIPkLrjrAI",
+    "ordem": 1,
+    "publicado": true
+  },
+  {
+    "id": "234b267c-52e9-48c3-aa70-3267fee2f115",
+    "categoria": "DOCUMENTÁRIOS",
+    "titulo": "O CAMINHO DA ENERGIA COORDENADA - HAPKIDO",
+    "descricao": "Um trabalho feito em conjunto, indicado a 4 prêmios no Festival Tainha Dourada da Univali.",
+    "link": "https://www.youtube.com/watch?v=Y14fUssv-6s",
+    "ordem": 1,
+    "publicado": true
+  },
+  {
+    "id": "9856e0f0-7d95-4247-b735-a9676e4392f4",
+    "categoria": "DOCUMENTÁRIOS",
+    "titulo": "MINI DOC - DREYSSON RODRIGUES",
+    "descricao": "Uma trip com um dos maiores DJs de Mega Funk do Brasil até Caxias do Sul - RS.",
+    "link": "https://www.youtube.com/watch?v=tTHLhFMzoPI",
+    "ordem": 2,
+    "publicado": true
   }
 ]
