@@ -34,5 +34,14 @@
     "link": "https://www.youtube.com/watch?v=WxmVh0Ust5c",
     "ordem": 2,
     "publicado": true
+  },
+  {
+    "id": "19d4e903-74f8-4475-a815-445e86edee93",
+    "categoria": "MAKING OF",
+    "titulo": "MAKING OF DREAMIS - VÍDEO MANIFESTO",
+    "descricao": "Gravamos esse material em Curitiba - PR. Contemplando o vídeo de manifesto afim de contar a história de como foi o processo de gravação dos materiais. Tudo contado em detalhes.",
+    "link": "https://youtu.be/NqIPkLrjrAI",
+    "ordem": 1,
+    "publicado": true
   }
 ]
