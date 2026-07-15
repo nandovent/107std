@@ -1,18 +1,18 @@
 [
   {
     "id": "teste-1",
-    "nome": "107 Studios - Preto",
-    "arquivo": "/assets/clientes/teste-1.png",
+    "nome": "MOKI",
+    "arquivo": "/assets/clientes/teste-1.svg",
     "ordem": 1,
     "publicado": true,
-    "escala": 145
+    "escala": 115
   },
   {
     "id": "teste-2",
     "nome": "107 Studios - Laranja",
-    "arquivo": "/assets/images/logo-orange.png",
+    "arquivo": "/assets/clientes/teste-2.png",
     "ordem": 2,
     "publicado": true,
-    "escala": 80
+    "escala": 145
   }
 ]
