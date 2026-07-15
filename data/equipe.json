@@ -13,7 +13,7 @@
     "id": "yago-wolf",
     "nome": "Yago Wolf",
     "funcao": "Videomaker e editor",
-    "arquivo": "",
+    "arquivo": "/assets/equipe/yago-wolf.png",
     "ordem": 2,
     "publicado": true,
     "destaque": false,
@@ -23,19 +23,19 @@
     "id": "laura-vidal",
     "nome": "Laura Vidal",
     "funcao": "Storymaker e editora",
-    "arquivo": "",
+    "arquivo": "/assets/equipe/laura-vidal.png",
     "ordem": 3,
     "publicado": true,
     "destaque": false,
-    "escala": 100
+    "escala": 105
   },
   {
     "id": "will-moser",
     "nome": "Will Moser",
     "funcao": "Editor",
-    "arquivo": "",
+    "arquivo": "/assets/equipe/will-moser.png",
     "ordem": 4,
-    "publicado": false,
+    "publicado": true,
     "destaque": false,
     "escala": 100
   },
@@ -53,9 +53,9 @@
     "id": "matheus-yuri",
     "nome": "Matheus Yuri",
     "funcao": "Videomaker",
-    "arquivo": "",
+    "arquivo": "/assets/equipe/matheus-yuri.png",
     "ordem": 6,
-    "publicado": false,
+    "publicado": true,
     "destaque": false,
     "escala": 100
   },
@@ -63,9 +63,9 @@
     "id": "beatriz-vieira",
     "nome": "Beatriz Vieira",
     "funcao": "Influencer e apresentadora",
-    "arquivo": "",
+    "arquivo": "/assets/equipe/beatriz-vieira.png",
     "ordem": 7,
-    "publicado": false,
+    "publicado": true,
     "destaque": false,
     "escala": 100
   }
