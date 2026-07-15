@@ -2,16 +2,32 @@
   {
     "id": "teste-1",
     "nome": "MOKI",
-    "arquivo": "/assets/clientes/teste-1.svg",
+    "arquivo": "/assets/clientes/teste-1.png",
     "ordem": 1,
     "publicado": true,
     "escala": 115
   },
   {
-    "id": "teste-2",
-    "nome": "107 Studios - Laranja",
-    "arquivo": "/assets/clientes/teste-2.png",
-    "ordem": 2,
+    "id": "c6ac30dc-7b01-41a4-bdc0-19b3c9953749",
+    "nome": "FORT",
+    "arquivo": "/assets/clientes/c6ac30dc-7b01-41a4-bdc0-19b3c9953749.png",
+    "ordem": 3,
+    "publicado": true,
+    "escala": 120
+  },
+  {
+    "id": "b6e599d7-b21f-4cea-bc20-d0ed0fa6b479",
+    "nome": "BALY",
+    "arquivo": "/assets/clientes/b6e599d7-b21f-4cea-bc20-d0ed0fa6b479.png",
+    "ordem": 4,
+    "publicado": true,
+    "escala": 115
+  },
+  {
+    "id": "7ebc4d24-b7d2-46f9-9204-c9e6a2420cb5",
+    "nome": "SOL",
+    "arquivo": "/assets/clientes/7ebc4d24-b7d2-46f9-9204-c9e6a2420cb5.png",
+    "ordem": 5,
     "publicado": true,
     "escala": 145
   }
