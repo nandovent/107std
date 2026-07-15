@@ -37,7 +37,7 @@
     const section=document.createElement('section');
     section.className='client-logo-section';
     section.setAttribute('aria-label','Clientes da 107 Studios');
-    section.innerHTML='<div class="client-logo-heading"><span>Clientes que confiam na 107</span></div><div class="client-logo-viewport"><div class="client-logo-track"><div class="client-logo-group"></div><div class="client-logo-group" aria-hidden="true"></div></div></div>';
+    section.innerHTML='<div class="client-logo-heading"><span>Marcas que confiam na 107 Studios</span></div><div class="client-logo-viewport"><div class="client-logo-track"><div class="client-logo-group"></div><div class="client-logo-group" aria-hidden="true"></div></div></div>';
     const groups=[...section.querySelectorAll('.client-logo-group')];
     const itemWidth=window.matchMedia('(max-width:600px)').matches?145:190;
     const repeats=Math.max(1,Math.ceil((window.innerWidth*1.35)/(itemWidth*visible.length)));
