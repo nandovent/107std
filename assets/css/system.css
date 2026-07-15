@@ -1113,28 +1113,26 @@ body.modal-open{overflow:hidden}
 .home-team-instagram{pointer-events:none}
 
 
-/* V04.2.18 — player de música da Home */
-.sound-panel{padding:clamp(28px,4vw,54px);overflow:hidden}
-.sound-panel-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:26px}
-.sound-title{margin:14px 0 0;color:var(--cream);font-size:clamp(38px,5vw,78px);font-weight:900;line-height:.88;letter-spacing:-.055em;text-transform:uppercase}
-.sound-status{flex:0 0 auto;color:var(--orange);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
-.sound-player{display:grid;grid-template-columns:58px 48px minmax(0,1fr) 48px;align-items:center;gap:14px;padding:18px;border:1px solid var(--line);border-radius:26px;background:rgba(252,250,227,.045)}
-.sound-control{display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid rgba(252,250,227,.28);border-radius:50%;background:transparent;color:var(--cream);font:900 18px/1 Montserrat,Arial,sans-serif;cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease}
-.sound-control:hover{transform:translateY(-2px);border-color:var(--orange);background:rgba(239,67,29,.12)}
-.sound-play{width:58px;height:58px;border:0;background:var(--orange);font-size:20px}
+/* V04.2.19 — player de música compacto da Home */
+.sound-panel{padding:clamp(18px,2.4vw,30px);overflow:hidden}
+.sound-mini-title{margin:0 0 12px;color:var(--cream);font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.sound-player{display:grid;grid-template-columns:46px 38px minmax(0,1fr) 38px;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--line);border-radius:20px;background:rgba(252,250,227,.035)}
+.sound-control{display:grid;place-items:center;width:38px;height:38px;padding:0;border:1px solid rgba(252,250,227,.25);border-radius:50%;background:transparent;color:var(--cream);font:900 15px/1 Montserrat,Arial,sans-serif;cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.sound-control:hover{transform:translateY(-1px);border-color:var(--orange);background:rgba(239,67,29,.1)}
+.sound-play{width:46px;height:46px;border:0;background:var(--orange);font-size:17px}
 .sound-wave-wrap{min-width:0}
-.sound-wave{display:flex;align-items:center;width:100%;height:64px;padding:0;border:0;background:transparent;cursor:pointer;overflow:hidden;gap:2px}
-.sound-wave-bar{display:block;flex:1 1 0;min-width:1px;height:var(--wave-height);max-height:100%;border-radius:999px;background:rgba(252,250,227,.24);transition:background .12s ease,transform .12s ease}
+.sound-wave{display:flex;align-items:center;width:100%;height:38px;padding:0;border:0;background:transparent;cursor:pointer;overflow:hidden;gap:2px}
+.sound-wave-bar{display:block;flex:1 1 0;min-width:1px;height:var(--wave-height);max-height:100%;border-radius:999px;background:rgba(252,250,227,.22);transition:background .12s ease,transform .12s ease}
 .sound-wave-bar.is-played{background:var(--orange)}
 .sound-wave:hover .sound-wave-bar{transform:scaleY(.9)}
-.sound-time{display:flex;justify-content:space-between;margin-top:2px;color:var(--gray);font-size:10px;font-weight:900;letter-spacing:.08em}
+.sound-time{display:flex;justify-content:space-between;margin-top:1px;color:var(--gray);font-size:9px;font-weight:900;letter-spacing:.07em}
 @media(max-width:700px){
-  .sound-panel-head{align-items:flex-start;flex-direction:column;gap:12px;margin-bottom:20px}
-  .sound-player{grid-template-columns:52px 42px minmax(0,1fr) 42px;gap:8px;padding:12px;border-radius:20px}
-  .sound-control{width:42px;height:42px;font-size:16px}.sound-play{width:52px;height:52px}
-  .sound-wave{height:48px;gap:1px}.sound-wave-bar:nth-child(2n){display:none}
+  .sound-panel{padding:18px}
+  .sound-player{grid-template-columns:42px 36px minmax(0,1fr) 36px;gap:7px;padding:10px;border-radius:17px}
+  .sound-control{width:36px;height:36px;font-size:14px}.sound-play{width:42px;height:42px}
+  .sound-wave{height:34px;gap:1px}.sound-wave-bar:nth-child(2n){display:none}
 }
 @media(max-width:470px){
-  .sound-player{grid-template-columns:50px 40px 40px;grid-template-areas:'play restart mute' 'wave wave wave'}
+  .sound-player{grid-template-columns:42px 36px 36px;grid-template-areas:'play restart mute' 'wave wave wave'}
   .sound-play{grid-area:play}.sound-control[data-audio-restart]{grid-area:restart}.sound-control[data-audio-mute]{grid-area:mute}.sound-wave-wrap{grid-area:wave}
 }
