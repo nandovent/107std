@@ -99,3 +99,22 @@
 .toolbar-bottom{margin:28px 0 0;padding-top:24px;border-top:1px solid var(--line)}
 .toolbar-bottom #publish-bottom{margin-left:auto}
 @media(max-width:650px){.toolbar-bottom #publish-bottom{margin-left:0}}
+
+
+/* ===== PAINEL V04.2.1 — MÓDULO DE LOGOS ===== */
+.admin-module-card{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 24px;padding:24px;border:1px solid var(--line);border-radius:24px;background:rgba(252,250,227,.055);color:var(--cream);text-decoration:none;transition:.2s ease}
+.admin-module-card:hover{transform:translateY(-3px);border-color:var(--orange);background:rgba(239,67,29,.1)}
+.admin-module-card>div{display:grid;gap:8px}.admin-module-kicker{color:var(--orange);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:900}.admin-module-card strong{font-size:clamp(26px,4vw,42px);line-height:.9;letter-spacing:-.05em}.admin-module-card p{max-width:680px;margin:0;color:#aaa89b;font-size:13px;line-height:1.45;font-weight:600}.admin-module-arrow{font-size:42px;font-weight:900;color:var(--orange)}
+@media(max-width:650px){.admin-module-card{align-items:flex-start;padding:20px}.admin-module-arrow{font-size:30px}}
+
+
+/* ===== PAINEL V04.2.2 — NAVEGAÇÃO DO MÓDULO DE LOGOS ===== */
+.panel-nav{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.panel-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--cream);font:800 11px/1 Montserrat,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:.2s ease}
+.panel-nav a:visited{color:var(--cream)}
+.panel-nav a:hover,.panel-nav a:focus-visible{border-color:var(--orange);background:var(--orange);color:var(--cream);outline:none;transform:translateY(-1px)}
+@media(max-width:650px){.panel-nav a{flex:1 1 auto}}
+.admin-module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:24px}
+.admin-module-grid .admin-module-card{margin:0;min-height:190px}
+@media(max-width:800px){.admin-module-grid{grid-template-columns:1fr}.admin-module-grid .admin-module-card{min-height:0}}
+.logo-preview.preview-error::after{content:'PRÉVIA INDISPONÍVEL';display:grid;place-items:center;width:100%;height:100%;padding:12px;text-align:center;font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--cream,#f7f2df);opacity:.72}
