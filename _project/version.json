@@ -1,0 +1,8 @@
+{
+  "version": "v04.2.13",
+  "base": "v04.2.9 functional team admin",
+  "notes": [
+    "Cards da equipe inteiros clicáveis para Instagram cadastrado",
+    "Pacote completo sem TXT históricos"
+  ]
+}

@@ -1,8 +1,0 @@
-ATUALIZAÇÃO v04.2.0
-
-- Restaura o pacote completo do site a partir da versão v04.1.8.
-- O carrossel de clientes é carregado somente na Home.
-- As demais páginas continuam completas e podem receber atualizações de layout.
-- O arquivo api/portfolio.js foi deliberadamente excluído deste ZIP.
-- Nenhum arquivo data/portfolio.json está incluído.
-- Cadastros do portfólio devem continuar sendo administrados exclusivamente pelo painel/formulário.

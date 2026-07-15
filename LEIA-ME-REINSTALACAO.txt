@@ -1,6 +1,0 @@
-BASE FUNCIONAL v04.2.9 — REINSTALAÇÃO COMPLETA
-
-1. Esta base foi reconstruída a partir da v04.2.9, última versão em que o cadastro da equipe estava funcionando de forma confirmada.
-2. O pacote inclui Home, Portfólio, Cases, painéis, APIs e os arquivos JSON que estavam publicados no GitHub no momento da reconstrução.
-3. As fotos da equipe e a logo teste-1 não estavam presentes no repositório público nos caminhos indicados pelos JSONs. Por isso, as pastas assets/equipe e assets/clientes foram criadas, mas esses arquivos de imagem precisarão ser reenviados pelo painel.
-4. Antes de substituir tudo, mantenha uma cópia da pasta atual até confirmar o funcionamento na Vercel.

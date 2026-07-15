@@ -7,7 +7,8 @@
     "ordem": 1,
     "publicado": true,
     "destaque": true,
-    "escala": 110
+    "escala": 110,
+    "instagram": "@nandovent"
   },
   {
     "id": "yago-wolf",
@@ -17,7 +18,8 @@
     "ordem": 2,
     "publicado": true,
     "destaque": false,
-    "escala": 100
+    "escala": 100,
+    "instagram": "@yagowolf_"
   },
   {
     "id": "laura-vidal",
@@ -27,7 +29,8 @@
     "ordem": 3,
     "publicado": true,
     "destaque": false,
-    "escala": 105
+    "escala": 105,
+    "instagram": "@llauravidall"
   },
   {
     "id": "will-moser",
@@ -37,7 +40,8 @@
     "ordem": 4,
     "publicado": true,
     "destaque": false,
-    "escala": 100
+    "escala": 100,
+    "instagram": "@wiillmoser"
   },
   {
     "id": "guilherme-antunes",
@@ -47,7 +51,8 @@
     "ordem": 5,
     "publicado": false,
     "destaque": false,
-    "escala": 100
+    "escala": 100,
+    "instagram": ""
   },
   {
     "id": "matheus-yuri",
@@ -57,7 +62,8 @@
     "ordem": 6,
     "publicado": true,
     "destaque": false,
-    "escala": 100
+    "escala": 100,
+    "instagram": "@matheusyurirosa"
   },
   {
     "id": "beatriz-vieira",
@@ -67,6 +73,7 @@
     "ordem": 7,
     "publicado": true,
     "destaque": false,
-    "escala": 100
+    "escala": 100,
+    "instagram": "@bevieiraa"
   }
 ]

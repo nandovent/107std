@@ -1104,3 +1104,10 @@ body.modal-open{overflow:hidden}
 
 /* Instagram da equipe */
 .home-team-instagram{display:inline-flex;margin-top:8px;color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.02em;text-decoration:none;transition:opacity .18s ease,transform .18s ease}.home-team-instagram:hover{opacity:.72;transform:translateX(2px)}.home-team-member-featured .home-team-instagram{color:var(--off)}
+
+/* V04.2.13 — card inteiro da equipe abre o Instagram cadastrado */
+.home-team-member{color:inherit;text-decoration:none}
+.home-team-member.is-clickable{cursor:pointer}
+.home-team-member.is-clickable:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.home-team-member-featured.is-clickable:focus-visible{outline-color:var(--cream)}
+.home-team-instagram{pointer-events:none}
