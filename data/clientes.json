@@ -2,10 +2,10 @@
   {
     "id": "teste-1",
     "nome": "107 Studios - Preto",
-    "arquivo": "/assets/clientes/teste-1.png",
+    "arquivo": "/assets/clientes/teste-1.svg",
     "ordem": 1,
     "publicado": true,
-    "escala": 145
+    "escala": 115
   },
   {
     "id": "teste-2",
