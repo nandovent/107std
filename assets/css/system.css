@@ -1104,9 +1104,3 @@ body.modal-open{overflow:hidden}
 
 /* Instagram da equipe */
 .home-team-instagram{display:inline-flex;margin-top:8px;color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.02em;text-decoration:none;transition:opacity .18s ease,transform .18s ease}.home-team-instagram:hover{opacity:.72;transform:translateX(2px)}.home-team-member-featured .home-team-instagram{color:var(--off)}
-
-.home-team-member-link{color:inherit;text-decoration:none;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
-.home-team-member-link:hover{transform:translateY(-3px);border-color:rgba(255,66,36,.55);box-shadow:0 14px 30px rgba(0,0,0,.12)}
-.home-team-member-link:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
-.home-team-member-link .home-team-instagram{pointer-events:none}
-@media (hover:none){.home-team-member-link:hover{transform:none;box-shadow:none}}
