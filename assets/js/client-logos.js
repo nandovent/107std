@@ -17,7 +17,7 @@
   };
 
   const logoMarkup=item=>{
-    const escala=Math.min(145,Math.max(55,Number(item.escala)||100));
+    const escala=Math.min(250,Math.max(55,Number(item.escala)||100));
     const logo=document.createElement('div');
     logo.className='client-logo-item';
     const img=document.createElement('img');
