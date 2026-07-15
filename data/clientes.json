@@ -30,5 +30,13 @@
     "ordem": 5,
     "publicado": true,
     "escala": 145
+  },
+  {
+    "id": "d859a842-77d8-449a-8b1d-f6a8972aecca",
+    "nome": "JAMESON",
+    "arquivo": "/assets/clientes/d859a842-77d8-449a-8b1d-f6a8972aecca.png",
+    "ordem": 5,
+    "publicado": true,
+    "escala": 145
   }
 ]
