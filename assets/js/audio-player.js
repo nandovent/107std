@@ -31,12 +31,27 @@
     const active=Math.floor(progress*bars.length);
     bars.forEach((bar,index)=>bar.classList.toggle('is-played',index<=active));
     playIcon.textContent=audio.paused?'▶':'Ⅱ';
+    play.classList.toggle('is-playing',!audio.paused);
+    root.classList.toggle('is-playing',!audio.paused);
     muteIcon.textContent=audio.muted?'×':'◖';
   };
+  let autoplayBlocked=false;
   const start=async()=>{
-    audio.volume=.72;
+    audio.volume=.82;
     audio.muted=false;
-    try{await audio.play();}catch(error){}
+    try{
+      await audio.play();
+      autoplayBlocked=false;
+    }catch(error){
+      autoplayBlocked=true;
+    }
+    update();
+  };
+  const unlockAudio=async()=>{
+    if(!autoplayBlocked&& !audio.paused)return;
+    audio.muted=false;
+    audio.volume=.82;
+    try{await audio.play();autoplayBlocked=false;}catch(error){}
     update();
   };
   play.addEventListener('click',async()=>{audio.paused?await audio.play():audio.pause();update();});
@@ -54,5 +69,7 @@
   audio.addEventListener('pause',update);
   audio.addEventListener('ended',update);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden&&audio.paused&&audio.currentTime===0)start();},{once:true});
+  ['pointerdown','touchstart','keydown'].forEach(type=>document.addEventListener(type,unlockAudio,{once:true,passive:true}));
+  window.addEventListener('pageshow',start,{once:true});
   start();
 })();
