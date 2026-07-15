@@ -35,7 +35,7 @@
     "funcao": "Editor",
     "arquivo": "/assets/equipe/will-moser.png",
     "ordem": 4,
-    "publicado": false,
+    "publicado": true,
     "destaque": false,
     "escala": 100
   },
@@ -55,7 +55,7 @@
     "funcao": "Videomaker",
     "arquivo": "/assets/equipe/matheus-yuri.png",
     "ordem": 6,
-    "publicado": false,
+    "publicado": true,
     "destaque": false,
     "escala": 100
   },
@@ -65,7 +65,7 @@
     "funcao": "Influencer e apresentadora",
     "arquivo": "/assets/equipe/beatriz-vieira.png",
     "ordem": 7,
-    "publicado": false,
+    "publicado": true,
     "destaque": false,
     "escala": 100
   }
