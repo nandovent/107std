@@ -1,0 +1,24 @@
+PACOTE COMPLETO DE CÓDIGO — 107 STUDIOS v04.2.12
+
+Este pacote contém todas as páginas, estilos, scripts e APIs atuais disponíveis.
+
+IMPORTANTE: os dados e uploads gerados pelos painéis NÃO estão neste ZIP porque a cópia atual deles existe somente no seu repositório GitHub.
+Antes de apagar ou recriar a pasta local, preserve do repositório atual:
+
+- data/portfolio.json
+- data/equipe.json
+- data/clientes.json
+- assets/equipe/
+- assets/clientes/
+
+Fluxo seguro:
+1. Renomeie a pasta atual do repositório para 107std_BACKUP.
+2. Crie uma nova pasta 107std e extraia este ZIP nela.
+3. Copie da pasta 107std_BACKUP para a nova pasta somente os itens listados acima.
+4. Confira no GitHub Desktop antes do commit.
+5. Não apague a pasta BACKUP até testar Home, Portfólio, Clientes, Equipe e Admin na Vercel.
+
+As APIs incluídas são:
+- api/portfolio.js
+- api/equipe.js
+- api/clientes.js
