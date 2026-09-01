@@ -1,8 +1,5 @@
 {
-  "version": "v04.2.13",
-  "base": "v04.2.9 functional team admin",
-  "notes": [
-    "Cards da equipe inteiros clicáveis para Instagram cadastrado",
-    "Pacote completo sem TXT históricos"
-  ]
+  "version": "v04.2.24",
+  "base": "v04.2.23 + base completa v04.2.18 e patches preservados",
+  "change": "Módulo de propostas no admin: upload HTML, senha 107, listagem, abrir/copiar link, substituir e excluir"
 }

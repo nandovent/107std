@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel 107 — Propostas</title>
+<link rel="icon" href="../../assets/images/icon-orange.png">
+<link rel="stylesheet" href="../../assets/css/admin.css?v=04.2.24">
+<style>
+.proposal-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.proposal-list{display:grid;gap:14px}.proposal-editor{padding:22px;border:1px solid var(--line);border-radius:24px;background:#151515}.proposal-editor-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}.proposal-editor-head strong{font-size:clamp(22px,4vw,36px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase}.proposal-editor-head small{display:block;margin-top:7px;color:#aaa89b;font-size:11px}.proposal-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.proposal-form label{display:grid;gap:7px;color:#aaa89b;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.proposal-form .full{grid-column:1/-1}.proposal-form input{width:100%;padding:14px;border:1px solid var(--line);border-radius:14px;background:#1d1d1d;color:var(--cream);font:700 14px Montserrat,sans-serif}.proposal-form input[type=file]{padding:12px}.proposal-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:18px}.proposal-actions button,.proposal-actions a{border:0;border-radius:999px;padding:13px 16px;background:var(--orange);color:var(--cream);font:800 10px Montserrat,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none}.proposal-actions .ghost{background:transparent;border:1px solid var(--line)}.proposal-actions .danger{background:#8f2515}.proposal-link{margin-top:14px;padding:12px 14px;border-radius:14px;background:rgba(252,250,227,.05);color:#aaa89b;font:600 12px/1.4 Montserrat,sans-serif;word-break:break-all}.proposal-empty{padding:28px;border:1px dashed var(--line);border-radius:22px;color:#aaa89b}.proposal-empty strong{display:block;margin-bottom:6px;color:var(--cream);font-size:22px;text-transform:uppercase}.new-card{margin-bottom:18px;padding:22px;border:1px solid rgba(239,67,29,.45);border-radius:24px;background:rgba(239,67,29,.07)}.helper{display:block;margin-top:5px;color:rgba(252,250,227,.48);font-size:10px;line-height:1.4;font-weight:600;text-transform:none;letter-spacing:0}.proposal-link-preview{display:block;margin-top:7px;color:#EF431D;font-size:10px;line-height:1.4;font-weight:800;text-transform:none;letter-spacing:0}.password-note{margin:0 0 20px;padding:16px 18px;border-radius:18px;background:rgba(239,67,29,.1);border:1px solid rgba(239,67,29,.35);color:#d7d4c5;font-size:12px;line-height:1.5}.password-note b{color:var(--cream)}
+@media(max-width:700px){.proposal-form{grid-template-columns:1fr}.proposal-form .full{grid-column:auto}.proposal-editor-head{flex-direction:column}.proposal-actions>*{flex:1 1 auto;text-align:center}}
+</style>
+</head>
+<body>
+<main class="admin-shell">
+<header class="admin-header"><img src="../../assets/images/logo-vertical-offwhite.png" alt="107 Studios"><div><span>PAINEL PRIVADO</span><h1>PROPOSTAS.</h1></div></header>
+<section class="login-card" id="login-card"><h2>ENTRAR.</h2><p>Use a mesma senha do painel principal.</p><input id="password" type="password" placeholder="Senha do painel"><button id="login">Entrar</button><div class="status" id="login-status"></div></section>
+<section class="admin-app" id="admin-app" hidden>
+<div class="panel-nav"><a href="../">Painel</a><a href="../clientes/">Clientes</a><a href="../equipe/">Equipe</a><a href="../../" target="_blank">Abrir site</a></div>
+<div class="password-note"><b>Senha das propostas: 107.</b> Ela é adicionada automaticamente a cada HTML publicado. É uma barreira simples de acesso/branding, não uma proteção criptográfica.</div>
+<div class="new-card">
+  <div class="proposal-form">
+    <label class="full">Nome da proposta / arquivo<input id="proposal-name" type="text" placeholder="Ex.: 047 iStore — Inauguração"><span class="helper">O nome é convertido automaticamente para o arquivo do site. Ex.: “047 iStore — Inauguração” → /propostas/047-istore-inauguracao.html</span><span class="proposal-link-preview" id="proposal-link-preview"></span></label>
+    <label class="full">Arquivo HTML<input id="proposal-file" type="file" accept="text/html,.html"><span class="helper">Suba o HTML final gerado para o cliente.</span></label>
+  </div>
+  <div class="proposal-actions"><button id="publish-proposal">+ Publicar proposta</button><button class="ghost" id="clear-form" type="button">Limpar</button></div>
+</div>
+<div class="proposal-toolbar"><button class="ghost" id="reload">Recarregar lista</button></div>
+<div class="status" id="status"></div>
+<div id="proposal-list" class="proposal-list"></div>
+</section>
+</main>
+<script src="../../assets/js/propostas-admin.js?v=04.2.24"></script>
+</body></html>
