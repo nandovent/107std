@@ -39,7 +39,16 @@ const render=()=>{
   }).join('');
   listEl.querySelectorAll('.proposal-editor').forEach(card=>{
     const slug=card.dataset.slug;const item=items.find(x=>x.slug===slug);const url=proposalUrl(slug);
-    card.querySelector('.copy-link').onclick=e=>copyText(url,e.currentTarget);
+    card.querySelector('.copy-link').onclick=e=>{
+      const mensagem=`Finalizamos a sua proposta! É só clicar no link abaixo, e conferir.
+
+A senha de acesso é: 107
+
+Se restarem dúvidas, é só chamar por aqui mesmo, tudo bem?
+
+${url}`;
+      copyText(mensagem,e.currentTarget);
+    };
     const replaceFile=card.querySelector('.replace-file');
     card.querySelector('.replace-proposal').onclick=()=>replaceFile.click();
     replaceFile.onchange=async()=>{const file=replaceFile.files?.[0];if(!file)return;try{setStatus('Lendo e publicando nova versão...');const html=await readFile(file);await api('POST',{action:'upsert',nome:item.nome,slug:item.slug,html});setStatus('HTML substituído. A Vercel vai atualizar em instantes.','ok');await load()}catch(error){setStatus(error.message,'error')}finally{replaceFile.value=''}};
