@@ -259,7 +259,7 @@
       "templateId": "drone",
       "templateName": "Drone",
       "createdAt": "2026-09-08T17:13:05.452Z",
-      "updatedAt": "2026-09-08T17:13:19.220Z",
+      "updatedAt": "2026-09-08T17:13:21.136Z",
       "items": [
         {
           "id": "w6256pvmtsxhay4",
@@ -336,8 +336,8 @@
         {
           "id": "0knc92rmtsxhay4",
           "text": "Confirmar coordenadas / local",
-          "done": true,
-          "order": 13
+          "done": false,
+          "order": 14
         }
       ]
     }
