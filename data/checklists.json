@@ -171,13 +171,13 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:21:23.293Z",
+      "updatedAt": "2026-09-08T13:21:49.250Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
           "text": "Câmera",
-          "done": false,
-          "order": 0
+          "done": true,
+          "order": 1
         },
         {
           "id": "nt1nxi8mtsp75kx",
