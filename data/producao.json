@@ -197,28 +197,6 @@
       ]
     }
   ],
-  "lists": [
-    {
-      "id": "7zq9b5qmtt2tsyv",
-      "name": "teste",
-      "templateName": "Seleção do inventário",
-      "createdAt": "2026-09-08T19:42:46.759Z",
-      "updatedAt": "2026-09-08T19:45:35.802Z",
-      "items": [
-        {
-          "id": "9xp1kd6mtt2tsyv",
-          "inventoryId": "xlfp0qfmtt2mhpj",
-          "done": true,
-          "order": 7
-        },
-        {
-          "id": "21ujwjqmtt2tsyv",
-          "inventoryId": "vfkguslmtt2l37m",
-          "done": true,
-          "order": 4
-        }
-      ]
-    }
-  ],
+  "lists": [],
   "inventoryDraft": []
 }
