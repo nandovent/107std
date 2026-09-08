@@ -7,7 +7,7 @@ const ghHeaders = () => ({
   Accept: 'application/vnd.github+json',
   Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
   'X-GitHub-Api-Version': '2022-11-28',
-  'User-Agent': '107std-checklists'
+  'User-Agent': '107std-production-system'
 });
 
 function authorized(req) {
@@ -29,7 +29,7 @@ async function getGithubFile() {
 async function putGithubFile(content, sha) {
   const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${DATA_PATH}`;
   const payload = {
-    message: 'Atualiza checklists de produção',
+    message: 'Atualiza sistema de produção 107',
     content: Buffer.from(JSON.stringify(content, null, 2)).toString('base64'),
     branch: BRANCH
   };
@@ -50,12 +50,15 @@ module.exports = async function handler(req, res) {
   try {
     if (req.method === 'GET') {
       const file = await getGithubFile();
-      return res.status(200).json(file ? file.content : { version: 1, templates: [], lists: [] });
+      return res.status(200).json(file ? file.content : { version: 3, inventory: [], templates: [], lists: [], inventoryDraft: [] });
     }
     if (req.method === 'PUT') {
       const incoming = req.body;
-      if (!incoming || !Array.isArray(incoming.templates) || !Array.isArray(incoming.lists)) {
+      if (!incoming || !Array.isArray(incoming.templates) || !Array.isArray(incoming.lists) || !Array.isArray(incoming.inventory)) {
         return res.status(400).json({ error: 'Dados inválidos.' });
+      }
+      if (JSON.stringify(incoming).length > 8_000_000) {
+        return res.status(413).json({ error: 'Cadastro muito grande. Reduza o tamanho das fotos do inventário.' });
       }
       const current = await getGithubFile();
       await putGithubFile(incoming, current && current.sha);
@@ -65,6 +68,6 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ error: 'Método não permitido.' });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ error: 'Não foi possível salvar a checklist.' });
+    return res.status(500).json({ error: 'Não foi possível salvar o sistema de produção.' });
   }
 };
