@@ -259,7 +259,7 @@
       "templateId": "drone",
       "templateName": "Drone",
       "createdAt": "2026-09-08T17:13:05.452Z",
-      "updatedAt": "2026-09-08T17:13:16.653Z",
+      "updatedAt": "2026-09-08T17:13:19.220Z",
       "items": [
         {
           "id": "w6256pvmtsxhay4",
@@ -306,14 +306,14 @@
         {
           "id": "rwhqvavmtsxhay4",
           "text": "Powerbank",
-          "done": true,
-          "order": 9
+          "done": false,
+          "order": 10
         },
         {
           "id": "fp8bcl3mtsxhay4",
           "text": "Cabo do controle",
-          "done": true,
-          "order": 10
+          "done": false,
+          "order": 11
         },
         {
           "id": "suvex3omtsxhay4",
@@ -324,14 +324,14 @@
         {
           "id": "j7vs4z6mtsxhay4",
           "text": "Verificar espaço aéreo / autorização",
-          "done": true,
-          "order": 11
+          "done": false,
+          "order": 12
         },
         {
           "id": "kqro0clmtsxhay4",
           "text": "Verificar clima e vento",
-          "done": true,
-          "order": 12
+          "done": false,
+          "order": 13
         },
         {
           "id": "0knc92rmtsxhay4",
