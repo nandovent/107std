@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:21:58.943Z",
+      "updatedAt": "2026-09-08T13:22:18.021Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -242,8 +242,8 @@
         {
           "id": "wi63pcemtsp75kx",
           "text": "Confirmar acesso ao imóvel",
-          "done": false,
-          "order": 17
+          "done": true,
+          "order": 18
         },
         {
           "id": "7zvn9tcmtsp75kx",
