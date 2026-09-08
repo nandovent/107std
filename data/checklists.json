@@ -171,7 +171,7 @@
       "templateId": "fotografia",
       "templateName": "Fotografia",
       "createdAt": "2026-09-08T17:12:32.976Z",
-      "updatedAt": "2026-09-08T17:12:41.428Z",
+      "updatedAt": "2026-09-08T17:12:45.146Z",
       "items": [
         {
           "id": "ia5pe64mtsxglw1",
@@ -219,37 +219,37 @@
           "id": "tqo6o03mtsxglw1",
           "text": "Tripé",
           "done": false,
-          "order": 7
+          "order": 0
         },
         {
           "id": "o9ydj18mtsxglw1",
           "text": "Pano de lente",
           "done": false,
-          "order": 8
+          "order": 2
         },
         {
           "id": "1goukavmtsxglw1",
           "text": "Drone se necessário",
           "done": false,
-          "order": 11
+          "order": 1
         },
         {
           "id": "k9pjab2mtsxglw1",
           "text": "Confirmar briefing",
           "done": false,
-          "order": 9
+          "order": 3
         },
         {
           "id": "647q53tmtsxglw1",
           "text": "Confirmar endereço",
           "done": false,
-          "order": 10
+          "order": 4
         },
         {
           "id": "v2wati8mtsxglw1",
           "text": "Confirmar horário",
           "done": false,
-          "order": 12
+          "order": 5
         }
       ]
     }
