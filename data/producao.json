@@ -203,7 +203,7 @@
       "name": "teste",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-08T19:42:46.759Z",
-      "updatedAt": "2026-09-08T19:42:50.614Z",
+      "updatedAt": "2026-09-08T19:45:33.568Z",
       "items": [
         {
           "id": "9xp1kd6mtt2tsyv",
@@ -215,7 +215,7 @@
           "id": "21ujwjqmtt2tsyv",
           "inventoryId": "vfkguslmtt2l37m",
           "done": true,
-          "order": 2
+          "order": 4
         }
       ]
     }
