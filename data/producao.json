@@ -218,9 +218,28 @@
           "order": 4
         }
       ]
+    },
+    {
+      "id": "rutekhlmtt2zfr8",
+      "name": "YAGO",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-08T19:47:09.572Z",
+      "updatedAt": "2026-09-08T19:47:09.572Z",
+      "items": [
+        {
+          "id": "04unlvwmtt2zfr8",
+          "inventoryId": "vfkguslmtt2l37m",
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "55n7h3ymtt2zfr8",
+          "inventoryId": "xlfp0qfmtt2mhpj",
+          "done": false,
+          "order": 1
+        }
+      ]
     }
   ],
-  "inventoryDraft": [
-    "vfkguslmtt2l37m"
-  ]
+  "inventoryDraft": []
 }
