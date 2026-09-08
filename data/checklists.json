@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:24:13.190Z",
+      "updatedAt": "2026-09-08T13:24:14.838Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -182,14 +182,14 @@
         {
           "id": "nt1nxi8mtsp75kx",
           "text": "Lente grande angular",
-          "done": false,
-          "order": 1
+          "done": true,
+          "order": 2
         },
         {
           "id": "rnlt7yvmtsp75kx",
           "text": "Lente detalhe",
-          "done": false,
-          "order": 2
+          "done": true,
+          "order": 3
         },
         {
           "id": "t22c0yhmtsp75kx",
@@ -200,8 +200,8 @@
         {
           "id": "fiaztdpmtsp75kx",
           "text": "Gimbal",
-          "done": false,
-          "order": 4
+          "done": true,
+          "order": 5
         },
         {
           "id": "y14j8tymtsp75kx",
