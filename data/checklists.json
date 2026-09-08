@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:24:17.625Z",
+      "updatedAt": "2026-09-08T13:24:24.922Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -195,7 +195,7 @@
           "id": "t22c0yhmtsp75kx",
           "text": "Tripé",
           "done": false,
-          "order": 3
+          "order": 0
         },
         {
           "id": "fiaztdpmtsp75kx",
@@ -207,61 +207,61 @@
           "id": "y14j8tymtsp75kx",
           "text": "Baterias",
           "done": false,
-          "order": 5
+          "order": 1
         },
         {
           "id": "mz5bafbmtsp75kx",
           "text": "Cartões",
-          "done": true,
-          "order": 7
+          "done": false,
+          "order": 10
         },
         {
           "id": "yym3hnumtsp75kx",
           "text": "Drone",
           "done": false,
-          "order": 7
+          "order": 2
         },
         {
           "id": "7h6ekbnmtsp75kx",
           "text": "Baterias drone",
           "done": false,
-          "order": 15
+          "order": 9
         },
         {
           "id": "yo0b0z5mtsp75kx",
           "text": "Filtros ND",
           "done": false,
-          "order": 9
+          "order": 3
         },
         {
           "id": "957441vmtsp75kx",
           "text": "Pano de lente",
           "done": false,
-          "order": 10
+          "order": 4
         },
         {
           "id": "wi63pcemtsp75kx",
           "text": "Confirmar acesso ao imóvel",
           "done": false,
-          "order": 11
+          "order": 5
         },
         {
           "id": "7zvn9tcmtsp75kx",
           "text": "Confirmar posição do sol",
           "done": false,
-          "order": 12
+          "order": 6
         },
         {
           "id": "lel5q7rmtsp75kx",
           "text": "Confirmar ambientes prioritários",
           "done": false,
-          "order": 13
+          "order": 7
         },
         {
           "id": "p6ds56dmtsp8mls",
           "text": "TESTE",
           "done": false,
-          "order": 14
+          "order": 8
         }
       ]
     }
