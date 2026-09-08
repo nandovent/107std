@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:21:21.995Z",
+      "updatedAt": "2026-09-08T13:21:23.293Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -242,14 +242,14 @@
         {
           "id": "wi63pcemtsp75kx",
           "text": "Confirmar acesso ao imóvel",
-          "done": true,
-          "order": 15
+          "done": false,
+          "order": 17
         },
         {
           "id": "7zvn9tcmtsp75kx",
           "text": "Confirmar posição do sol",
-          "done": true,
-          "order": 13
+          "done": false,
+          "order": 16
         },
         {
           "id": "lel5q7rmtsp75kx",
