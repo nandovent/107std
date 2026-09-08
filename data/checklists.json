@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:21:56.068Z",
+      "updatedAt": "2026-09-08T13:21:58.943Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -200,8 +200,8 @@
         {
           "id": "fiaztdpmtsp75kx",
           "text": "Gimbal",
-          "done": false,
-          "order": 4
+          "done": true,
+          "order": 5
         },
         {
           "id": "y14j8tymtsp75kx",
@@ -212,8 +212,8 @@
         {
           "id": "mz5bafbmtsp75kx",
           "text": "Cartões",
-          "done": false,
-          "order": 6
+          "done": true,
+          "order": 7
         },
         {
           "id": "yym3hnumtsp75kx",
