@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:22:50.263Z",
+      "updatedAt": "2026-09-08T13:23:01.146Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -183,7 +183,7 @@
           "id": "nt1nxi8mtsp75kx",
           "text": "Lente grande angular",
           "done": false,
-          "order": 1
+          "order": 17
         },
         {
           "id": "rnlt7yvmtsp75kx",
