@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:22:29.951Z",
+      "updatedAt": "2026-09-08T13:22:31.283Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -219,13 +219,13 @@
           "id": "yym3hnumtsp75kx",
           "text": "Drone",
           "done": false,
-          "order": 2
+          "order": 3
         },
         {
           "id": "7h6ekbnmtsp75kx",
           "text": "Baterias drone",
           "done": false,
-          "order": 3
+          "order": 2
         },
         {
           "id": "yo0b0z5mtsp75kx",
