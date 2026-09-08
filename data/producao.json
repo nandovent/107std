@@ -12,6 +12,18 @@
       "serial": "",
       "status": "Em uso",
       "photo": "/assets/inventario/vfkguslmtt2l37m.jpg?v=1788896161521"
+    },
+    {
+      "id": "xlfp0qfmtt2mhpj",
+      "active": true,
+      "brand": "AMARAN",
+      "model": "60X S",
+      "nickname": "PANELINHA",
+      "category": "Iluminação",
+      "notes": "ASDASDASDASDASDASDASD",
+      "serial": "DASKLDHJLKASJD",
+      "status": "Disponível",
+      "photo": "/assets/inventario/xlfp0qfmtt2mhpj.jpg?v=1788896227041"
     }
   ],
   "templates": [
