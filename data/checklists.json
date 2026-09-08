@@ -171,49 +171,49 @@
       "templateId": "fotografia",
       "templateName": "Fotografia",
       "createdAt": "2026-09-08T17:12:32.976Z",
-      "updatedAt": "2026-09-08T17:12:32.977Z",
+      "updatedAt": "2026-09-08T17:12:38.608Z",
       "items": [
         {
           "id": "ia5pe64mtsxglw1",
           "text": "Câmera",
-          "done": false,
-          "order": 0
+          "done": true,
+          "order": 1
         },
         {
           "id": "vjbwi68mtsxglw1",
           "text": "Corpo backup",
-          "done": false,
-          "order": 1
+          "done": true,
+          "order": 2
         },
         {
           "id": "ysnmzbqmtsxglw1",
           "text": "Lentes",
-          "done": false,
-          "order": 2
+          "done": true,
+          "order": 3
         },
         {
           "id": "clt73oemtsxglw1",
           "text": "Baterias",
-          "done": false,
-          "order": 3
+          "done": true,
+          "order": 4
         },
         {
           "id": "kjy4dpcmtsxglw1",
           "text": "Cartões",
-          "done": false,
-          "order": 4
+          "done": true,
+          "order": 5
         },
         {
           "id": "2uh5hbamtsxglw1",
           "text": "Flash",
-          "done": false,
-          "order": 5
+          "done": true,
+          "order": 6
         },
         {
           "id": "gpl0m4kmtsxglw1",
           "text": "Baterias do flash",
-          "done": false,
-          "order": 6
+          "done": true,
+          "order": 7
         },
         {
           "id": "tqo6o03mtsxglw1",
