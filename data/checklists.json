@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:24:14.838Z",
+      "updatedAt": "2026-09-08T13:24:17.625Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -212,8 +212,8 @@
         {
           "id": "mz5bafbmtsp75kx",
           "text": "Cartões",
-          "done": false,
-          "order": 6
+          "done": true,
+          "order": 7
         },
         {
           "id": "yym3hnumtsp75kx",
@@ -225,7 +225,7 @@
           "id": "7h6ekbnmtsp75kx",
           "text": "Baterias drone",
           "done": false,
-          "order": 8
+          "order": 15
         },
         {
           "id": "yo0b0z5mtsp75kx",
