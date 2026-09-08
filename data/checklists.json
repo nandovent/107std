@@ -259,7 +259,7 @@
       "templateId": "drone",
       "templateName": "Drone",
       "createdAt": "2026-09-08T17:13:05.452Z",
-      "updatedAt": "2026-09-08T17:13:15.136Z",
+      "updatedAt": "2026-09-08T17:13:16.653Z",
       "items": [
         {
           "id": "w6256pvmtsxhay4",
@@ -318,8 +318,8 @@
         {
           "id": "suvex3omtsxhay4",
           "text": "Verificar firmware",
-          "done": true,
-          "order": 8
+          "done": false,
+          "order": 9
         },
         {
           "id": "j7vs4z6mtsxhay4",
@@ -336,8 +336,8 @@
         {
           "id": "0knc92rmtsxhay4",
           "text": "Confirmar coordenadas / local",
-          "done": false,
-          "order": 12
+          "done": true,
+          "order": 13
         }
       ]
     }
