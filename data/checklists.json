@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:21:54.066Z",
+      "updatedAt": "2026-09-08T13:21:56.068Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -188,14 +188,14 @@
         {
           "id": "rnlt7yvmtsp75kx",
           "text": "Lente detalhe",
-          "done": false,
-          "order": 2
+          "done": true,
+          "order": 3
         },
         {
           "id": "t22c0yhmtsp75kx",
           "text": "Tripé",
-          "done": false,
-          "order": 3
+          "done": true,
+          "order": 4
         },
         {
           "id": "fiaztdpmtsp75kx",
