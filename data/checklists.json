@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:22:35.067Z",
+      "updatedAt": "2026-09-08T13:22:36.312Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -218,8 +218,8 @@
         {
           "id": "yym3hnumtsp75kx",
           "text": "Drone",
-          "done": false,
-          "order": 3
+          "done": true,
+          "order": 23
         },
         {
           "id": "7h6ekbnmtsp75kx",
@@ -230,14 +230,14 @@
         {
           "id": "yo0b0z5mtsp75kx",
           "text": "Filtros ND",
-          "done": false,
-          "order": 4
+          "done": true,
+          "order": 22
         },
         {
           "id": "957441vmtsp75kx",
           "text": "Pano de lente",
-          "done": false,
-          "order": 5
+          "done": true,
+          "order": 21
         },
         {
           "id": "wi63pcemtsp75kx",
