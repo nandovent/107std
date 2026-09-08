@@ -252,6 +252,94 @@
           "order": 5
         }
       ]
+    },
+    {
+      "id": "rd5a5zkmtsxhay4",
+      "name": "Teate",
+      "templateId": "drone",
+      "templateName": "Drone",
+      "createdAt": "2026-09-08T17:13:05.452Z",
+      "updatedAt": "2026-09-08T17:13:05.452Z",
+      "items": [
+        {
+          "id": "w6256pvmtsxhay4",
+          "text": "Drone",
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "dw53qi7mtsxhay4",
+          "text": "Controle",
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "duybvx6mtsxhay4",
+          "text": "Baterias carregadas",
+          "done": false,
+          "order": 2
+        },
+        {
+          "id": "6waoh5zmtsxhay4",
+          "text": "Hélices reserva",
+          "done": false,
+          "order": 3
+        },
+        {
+          "id": "k6bkwc1mtsxhay4",
+          "text": "Cartão microSD",
+          "done": false,
+          "order": 4
+        },
+        {
+          "id": "2kzl6k1mtsxhay4",
+          "text": "Filtros ND",
+          "done": false,
+          "order": 5
+        },
+        {
+          "id": "o825g6kmtsxhay4",
+          "text": "Carregador",
+          "done": false,
+          "order": 6
+        },
+        {
+          "id": "rwhqvavmtsxhay4",
+          "text": "Powerbank",
+          "done": false,
+          "order": 7
+        },
+        {
+          "id": "fp8bcl3mtsxhay4",
+          "text": "Cabo do controle",
+          "done": false,
+          "order": 8
+        },
+        {
+          "id": "suvex3omtsxhay4",
+          "text": "Verificar firmware",
+          "done": false,
+          "order": 9
+        },
+        {
+          "id": "j7vs4z6mtsxhay4",
+          "text": "Verificar espaço aéreo / autorização",
+          "done": false,
+          "order": 10
+        },
+        {
+          "id": "kqro0clmtsxhay4",
+          "text": "Verificar clima e vento",
+          "done": false,
+          "order": 11
+        },
+        {
+          "id": "0knc92rmtsxhay4",
+          "text": "Confirmar coordenadas / local",
+          "done": false,
+          "order": 12
+        }
+      ]
     }
   ]
 }
