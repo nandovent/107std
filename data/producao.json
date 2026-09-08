@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "inventory": [
     {
       "id": "vfkguslmtt2l37m",
@@ -198,5 +198,59 @@
     }
   ],
   "lists": [],
-  "inventoryDraft": []
+  "inventoryDraft": [],
+  "categories": [
+    {
+      "name": "Câmeras",
+      "icon": "📷"
+    },
+    {
+      "name": "Lentes / filtros",
+      "icon": "🔭"
+    },
+    {
+      "name": "Áudio",
+      "icon": "🎙️"
+    },
+    {
+      "name": "Iluminação",
+      "icon": "💡"
+    },
+    {
+      "name": "Estabilização",
+      "icon": "🎛️"
+    },
+    {
+      "name": "Drone",
+      "icon": "🚁"
+    },
+    {
+      "name": "Acessórios",
+      "icon": "🧰"
+    },
+    {
+      "name": "Energia",
+      "icon": "🔋"
+    },
+    {
+      "name": "Armazenamento",
+      "icon": "💾"
+    },
+    {
+      "name": "Computadores",
+      "icon": "💻"
+    },
+    {
+      "name": "Cabos",
+      "icon": "🔌"
+    },
+    {
+      "name": "Tripés / suportes",
+      "icon": "📐"
+    },
+    {
+      "name": "Outros",
+      "icon": "📦"
+    }
+  ]
 }
