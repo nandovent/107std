@@ -259,7 +259,7 @@
       "templateId": "drone",
       "templateName": "Drone",
       "createdAt": "2026-09-08T17:13:05.452Z",
-      "updatedAt": "2026-09-08T17:13:05.452Z",
+      "updatedAt": "2026-09-08T17:13:08.169Z",
       "items": [
         {
           "id": "w6256pvmtsxhay4",
@@ -313,13 +313,13 @@
           "id": "fp8bcl3mtsxhay4",
           "text": "Cabo do controle",
           "done": false,
-          "order": 8
+          "order": 9
         },
         {
           "id": "suvex3omtsxhay4",
           "text": "Verificar firmware",
           "done": false,
-          "order": 9
+          "order": 8
         },
         {
           "id": "j7vs4z6mtsxhay4",
