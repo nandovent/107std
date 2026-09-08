@@ -171,7 +171,7 @@
       "templateId": "fotografia",
       "templateName": "Fotografia",
       "createdAt": "2026-09-08T17:12:32.976Z",
-      "updatedAt": "2026-09-08T17:12:38.608Z",
+      "updatedAt": "2026-09-08T17:12:39.928Z",
       "items": [
         {
           "id": "ia5pe64mtsxglw1",
@@ -231,13 +231,13 @@
           "id": "1goukavmtsxglw1",
           "text": "Drone se necessário",
           "done": false,
-          "order": 9
+          "order": 10
         },
         {
           "id": "k9pjab2mtsxglw1",
           "text": "Confirmar briefing",
           "done": false,
-          "order": 10
+          "order": 9
         },
         {
           "id": "647q53tmtsxglw1",
