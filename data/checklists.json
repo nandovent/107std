@@ -171,103 +171,203 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:24:57.646Z",
+      "updatedAt": "2026-09-08T13:23:10.627Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
           "text": "Câmera",
-          "done": true,
-          "order": 1
+          "done": false,
+          "order": 0
         },
         {
           "id": "nt1nxi8mtsp75kx",
           "text": "Lente grande angular",
-          "done": true,
-          "order": 2
+          "done": false,
+          "order": 1
         },
         {
           "id": "rnlt7yvmtsp75kx",
           "text": "Lente detalhe",
-          "done": true,
-          "order": 3
+          "done": false,
+          "order": 2
         },
         {
           "id": "t22c0yhmtsp75kx",
           "text": "Tripé",
           "done": false,
-          "order": 0
+          "order": 3
         },
         {
           "id": "fiaztdpmtsp75kx",
           "text": "Gimbal",
-          "done": true,
-          "order": 5
+          "done": false,
+          "order": 4
         },
         {
           "id": "y14j8tymtsp75kx",
           "text": "Baterias",
           "done": false,
-          "order": 1
+          "order": 5
         },
         {
           "id": "mz5bafbmtsp75kx",
           "text": "Cartões",
           "done": false,
-          "order": 10
+          "order": 6
         },
         {
           "id": "yym3hnumtsp75kx",
           "text": "Drone",
           "done": false,
-          "order": 2
+          "order": 7
         },
         {
           "id": "7h6ekbnmtsp75kx",
           "text": "Baterias drone",
           "done": false,
-          "order": 9
+          "order": 8
         },
         {
           "id": "yo0b0z5mtsp75kx",
           "text": "Filtros ND",
           "done": false,
-          "order": 3
+          "order": 9
         },
         {
           "id": "957441vmtsp75kx",
           "text": "Pano de lente",
           "done": false,
-          "order": 4
+          "order": 10
         },
         {
           "id": "wi63pcemtsp75kx",
           "text": "Confirmar acesso ao imóvel",
           "done": false,
-          "order": 5
+          "order": 11
         },
         {
           "id": "7zvn9tcmtsp75kx",
           "text": "Confirmar posição do sol",
           "done": false,
-          "order": 6
+          "order": 12
         },
         {
           "id": "lel5q7rmtsp75kx",
           "text": "Confirmar ambientes prioritários",
           "done": false,
-          "order": 7
+          "order": 13
         },
         {
           "id": "p6ds56dmtsp8mls",
           "text": "TESTE",
           "done": false,
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "wvkn4djmtspczfx",
+      "name": "DEPOIMENTOS GARD",
+      "templateId": "entrevista",
+      "templateName": "Entrevista / depoimento",
+      "createdAt": "2026-09-08T13:25:46.989Z",
+      "updatedAt": "2026-09-08T13:25:46.989Z",
+      "items": [
+        {
+          "id": "xqi5gwzmtspczfx",
+          "text": "Câmera principal",
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "q97xgnsmtspczfx",
+          "text": "Câmera B",
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "w1kq463mtspczfx",
+          "text": "Lentes",
+          "done": false,
+          "order": 2
+        },
+        {
+          "id": "4ec1q90mtspczfx",
+          "text": "Tripés",
+          "done": false,
+          "order": 3
+        },
+        {
+          "id": "q9boilnmtspczfx",
+          "text": "Baterias",
+          "done": false,
+          "order": 4
+        },
+        {
+          "id": "6i2v0ssmtspczfx",
+          "text": "Cartões",
+          "done": false,
+          "order": 5
+        },
+        {
+          "id": "zubpm46mtspczfx",
+          "text": "Lapelas",
+          "done": false,
+          "order": 6
+        },
+        {
+          "id": "i0dtn5pmtspczfx",
+          "text": "Gravador backup",
+          "done": false,
+          "order": 7
+        },
+        {
+          "id": "yidwxlxmtspczfx",
+          "text": "Fones",
+          "done": false,
           "order": 8
         },
         {
-          "id": "uk4k511mtspbup2",
-          "text": "Gagagagaha",
+          "id": "49nxxhwmtspczfx",
+          "text": "Luz principal",
+          "done": false,
+          "order": 9
+        },
+        {
+          "id": "mz9q6kxmtspczfx",
+          "text": "Luz de recorte",
+          "done": false,
+          "order": 10
+        },
+        {
+          "id": "5e3wmcwmtspczfx",
+          "text": "Extensões",
+          "done": false,
+          "order": 11
+        },
+        {
+          "id": "8o9gymcmtspczfx",
+          "text": "Teleprompter",
+          "done": false,
+          "order": 12
+        },
+        {
+          "id": "nlfbc88mtspczfx",
+          "text": "Perguntas / roteiro",
           "done": false,
           "order": 13
+        },
+        {
+          "id": "kmsxwgomtspczfx",
+          "text": "Água para entrevistado",
+          "done": false,
+          "order": 14
+        },
+        {
+          "id": "gqwkxskmtspczfx",
+          "text": "Confirmar ambiente silencioso",
+          "done": false,
+          "order": 15
         }
       ]
     }
