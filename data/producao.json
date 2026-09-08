@@ -1,14 +1,201 @@
 {
   "version": 5,
-  "inventory": [],
+  "inventory": [
+    {
+      "id": "vfkguslmtt2l37m",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "DMC GH7",
+      "nickname": "GH7",
+      "category": "Câmeras",
+      "notes": "CAMERA TAL TAL TAL TAL TAL",
+      "serial": "",
+      "status": "Em uso",
+      "photo": "/assets/inventario/vfkguslmtt2l37m.jpg?v=1788896161521"
+    },
+    {
+      "id": "xlfp0qfmtt2mhpj",
+      "active": true,
+      "brand": "AMARAN",
+      "model": "60X S",
+      "nickname": "PANELINHA",
+      "category": "Iluminação",
+      "notes": "ASDASDASDASDASDASDASD",
+      "serial": "DASKLDHJLKASJD",
+      "status": "Disponível",
+      "photo": "/assets/inventario/xlfp0qfmtt2mhpj.jpg?v=1788896227041"
+    }
+  ],
   "templates": [
-    {"id":"evento","name":"Evento / cobertura","icon":"🎥","items":[{"id":"evt1","text":"Confirmar endereço","order":0},{"id":"evt2","text":"Confirmar horário","order":1},{"id":"evt3","text":"Confirmar contato do cliente","order":2},{"id":"evt4","text":"Credenciais / acessos","order":3}]},
-    {"id":"conteudo","name":"Conteúdo / Reels","icon":"📱","items":[{"id":"con1","text":"Roteiros / falas","order":0},{"id":"con2","text":"Referências salvas","order":1},{"id":"con3","text":"Confirmar endereço","order":2},{"id":"con4","text":"Confirmar horário","order":3}]},
-    {"id":"institucional","name":"Institucional","icon":"🎬","items":[{"id":"ins1","text":"Roteiro","order":0},{"id":"ins2","text":"Shot list","order":1},{"id":"ins3","text":"Confirmar locações","order":2},{"id":"ins4","text":"Confirmar equipe","order":3}]},
-    {"id":"arquitetura","name":"Arquitetura / imobiliário","icon":"🏢","items":[{"id":"arq1","text":"Confirmar acesso ao imóvel","order":0},{"id":"arq2","text":"Confirmar posição do sol","order":1},{"id":"arq3","text":"Confirmar ambientes prioritários","order":2}]},
-    {"id":"drone","name":"Drone","icon":"🚁","items":[{"id":"dro1","text":"Verificar espaço aéreo / autorização","order":0},{"id":"dro2","text":"Verificar clima e vento","order":1},{"id":"dro3","text":"Confirmar coordenadas / local","order":2}]},
-    {"id":"entrevista","name":"Entrevista / depoimento","icon":"🎙️","items":[{"id":"ent1","text":"Perguntas / roteiro","order":0},{"id":"ent2","text":"Confirmar ambiente silencioso","order":1},{"id":"ent3","text":"Água para entrevistado","order":2}]},
-    {"id":"fotografia","name":"Fotografia","icon":"📷","items":[{"id":"fot1","text":"Confirmar briefing","order":0},{"id":"fot2","text":"Confirmar endereço","order":1},{"id":"fot3","text":"Confirmar horário","order":2}]}
+    {
+      "id": "evento",
+      "name": "Evento / cobertura",
+      "icon": "🎥",
+      "items": [
+        {
+          "id": "evt1",
+          "text": "Confirmar endereço",
+          "order": 0
+        },
+        {
+          "id": "evt2",
+          "text": "Confirmar horário",
+          "order": 1
+        },
+        {
+          "id": "evt3",
+          "text": "Confirmar contato do cliente",
+          "order": 2
+        },
+        {
+          "id": "evt4",
+          "text": "Credenciais / acessos",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "conteudo",
+      "name": "Conteúdo / Reels",
+      "icon": "📱",
+      "items": [
+        {
+          "id": "con1",
+          "text": "Roteiros / falas",
+          "order": 0
+        },
+        {
+          "id": "con2",
+          "text": "Referências salvas",
+          "order": 1
+        },
+        {
+          "id": "con3",
+          "text": "Confirmar endereço",
+          "order": 2
+        },
+        {
+          "id": "con4",
+          "text": "Confirmar horário",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "institucional",
+      "name": "Institucional",
+      "icon": "🎬",
+      "items": [
+        {
+          "id": "ins1",
+          "text": "Roteiro",
+          "order": 0
+        },
+        {
+          "id": "ins2",
+          "text": "Shot list",
+          "order": 1
+        },
+        {
+          "id": "ins3",
+          "text": "Confirmar locações",
+          "order": 2
+        },
+        {
+          "id": "ins4",
+          "text": "Confirmar equipe",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "arquitetura",
+      "name": "Arquitetura / imobiliário",
+      "icon": "🏢",
+      "items": [
+        {
+          "id": "arq1",
+          "text": "Confirmar acesso ao imóvel",
+          "order": 0
+        },
+        {
+          "id": "arq2",
+          "text": "Confirmar posição do sol",
+          "order": 1
+        },
+        {
+          "id": "arq3",
+          "text": "Confirmar ambientes prioritários",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "drone",
+      "name": "Drone",
+      "icon": "🚁",
+      "items": [
+        {
+          "id": "dro1",
+          "text": "Verificar espaço aéreo / autorização",
+          "order": 0
+        },
+        {
+          "id": "dro2",
+          "text": "Verificar clima e vento",
+          "order": 1
+        },
+        {
+          "id": "dro3",
+          "text": "Confirmar coordenadas / local",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "entrevista",
+      "name": "Entrevista / depoimento",
+      "icon": "🎙️",
+      "items": [
+        {
+          "id": "ent1",
+          "text": "Perguntas / roteiro",
+          "order": 0
+        },
+        {
+          "id": "ent2",
+          "text": "Confirmar ambiente silencioso",
+          "order": 1
+        },
+        {
+          "id": "ent3",
+          "text": "Água para entrevistado",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "fotografia",
+      "name": "Fotografia",
+      "icon": "📷",
+      "items": [
+        {
+          "id": "fot1",
+          "text": "Confirmar briefing",
+          "order": 0
+        },
+        {
+          "id": "fot2",
+          "text": "Confirmar endereço",
+          "order": 1
+        },
+        {
+          "id": "fot3",
+          "text": "Confirmar horário",
+          "order": 2
+        }
+      ]
+    }
   ],
   "lists": [],
   "inventoryDraft": []
