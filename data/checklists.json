@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:24:33.490Z",
+      "updatedAt": "2026-09-08T13:24:54.182Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -262,6 +262,12 @@
           "text": "TESTE",
           "done": false,
           "order": 8
+        },
+        {
+          "id": "uk4k511mtspbup2",
+          "text": "Gagagagaha",
+          "done": false,
+          "order": 11
         }
       ]
     }
