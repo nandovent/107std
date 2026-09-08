@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "inventory": [
     {
       "id": "vfkguslmtt2l37m",
@@ -24,6 +24,18 @@
       "serial": "DASKLDHJLKASJD",
       "status": "Disponível",
       "photo": "/assets/inventario/xlfp0qfmtt2mhpj.jpg?v=1788896227041"
+    },
+    {
+      "id": "vsiaxe6mtt3crqe",
+      "active": true,
+      "brand": "testre",
+      "model": "teettet",
+      "nickname": "tetetet",
+      "category": "Áudio",
+      "notes": "",
+      "serial": "tetetet",
+      "status": "Disponível",
+      "photo": ""
     }
   ],
   "templates": [
@@ -198,5 +210,59 @@
     }
   ],
   "lists": [],
-  "inventoryDraft": []
+  "inventoryDraft": [],
+  "categories": [
+    {
+      "name": "Câmeras",
+      "icon": "📷"
+    },
+    {
+      "name": "Lentes / filtros",
+      "icon": "🔭"
+    },
+    {
+      "name": "Áudio",
+      "icon": "🎙️"
+    },
+    {
+      "name": "Iluminação",
+      "icon": "💡"
+    },
+    {
+      "name": "Estabilização",
+      "icon": "🎛️"
+    },
+    {
+      "name": "Drone",
+      "icon": "🚁"
+    },
+    {
+      "name": "Acessórios",
+      "icon": "🧰"
+    },
+    {
+      "name": "Energia",
+      "icon": "🔋"
+    },
+    {
+      "name": "Armazenamento",
+      "icon": "💾"
+    },
+    {
+      "name": "Computadores",
+      "icon": "💻"
+    },
+    {
+      "name": "Cabos",
+      "icon": "🔌"
+    },
+    {
+      "name": "Tripés / suportes",
+      "icon": "📐"
+    },
+    {
+      "name": "Outros",
+      "icon": "📦"
+    }
+  ]
 }
