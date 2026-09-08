@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:22:47.901Z",
+      "updatedAt": "2026-09-08T13:22:50.263Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -194,74 +194,74 @@
         {
           "id": "t22c0yhmtsp75kx",
           "text": "Tripé",
-          "done": false,
-          "order": 3
+          "done": true,
+          "order": 4
         },
         {
           "id": "fiaztdpmtsp75kx",
           "text": "Gimbal",
-          "done": false,
-          "order": 4
+          "done": true,
+          "order": 5
         },
         {
           "id": "y14j8tymtsp75kx",
           "text": "Baterias",
-          "done": false,
-          "order": 5
+          "done": true,
+          "order": 6
         },
         {
           "id": "mz5bafbmtsp75kx",
           "text": "Cartões",
-          "done": false,
-          "order": 6
+          "done": true,
+          "order": 7
         },
         {
           "id": "yym3hnumtsp75kx",
           "text": "Drone",
-          "done": false,
-          "order": 7
+          "done": true,
+          "order": 8
         },
         {
           "id": "7h6ekbnmtsp75kx",
           "text": "Baterias drone",
-          "done": false,
-          "order": 8
+          "done": true,
+          "order": 9
         },
         {
           "id": "yo0b0z5mtsp75kx",
           "text": "Filtros ND",
-          "done": false,
-          "order": 9
+          "done": true,
+          "order": 10
         },
         {
           "id": "957441vmtsp75kx",
           "text": "Pano de lente",
-          "done": false,
-          "order": 10
+          "done": true,
+          "order": 11
         },
         {
           "id": "wi63pcemtsp75kx",
           "text": "Confirmar acesso ao imóvel",
-          "done": false,
-          "order": 11
+          "done": true,
+          "order": 12
         },
         {
           "id": "7zvn9tcmtsp75kx",
           "text": "Confirmar posição do sol",
-          "done": false,
-          "order": 12
+          "done": true,
+          "order": 13
         },
         {
           "id": "lel5q7rmtsp75kx",
           "text": "Confirmar ambientes prioritários",
-          "done": false,
-          "order": 13
+          "done": true,
+          "order": 14
         },
         {
           "id": "p6ds56dmtsp8mls",
           "text": "TESTE",
-          "done": false,
-          "order": 14
+          "done": true,
+          "order": 15
         }
       ]
     }
