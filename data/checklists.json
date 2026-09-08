@@ -171,7 +171,7 @@
       "templateId": "arquitetura",
       "templateName": "Arquitetura / imobiliário",
       "createdAt": "2026-09-08T13:21:15.008Z",
-      "updatedAt": "2026-09-08T13:22:25.212Z",
+      "updatedAt": "2026-09-08T13:22:29.951Z",
       "items": [
         {
           "id": "ljyf5rzmtsp75kx",
@@ -207,7 +207,7 @@
           "id": "y14j8tymtsp75kx",
           "text": "Baterias",
           "done": false,
-          "order": 5
+          "order": 0
         },
         {
           "id": "mz5bafbmtsp75kx",
@@ -219,25 +219,25 @@
           "id": "yym3hnumtsp75kx",
           "text": "Drone",
           "done": false,
-          "order": 7
+          "order": 2
         },
         {
           "id": "7h6ekbnmtsp75kx",
           "text": "Baterias drone",
           "done": false,
-          "order": 8
+          "order": 3
         },
         {
           "id": "yo0b0z5mtsp75kx",
           "text": "Filtros ND",
           "done": false,
-          "order": 9
+          "order": 4
         },
         {
           "id": "957441vmtsp75kx",
           "text": "Pano de lente",
           "done": false,
-          "order": 10
+          "order": 5
         },
         {
           "id": "wi63pcemtsp75kx",
@@ -249,13 +249,13 @@
           "id": "7zvn9tcmtsp75kx",
           "text": "Confirmar posição do sol",
           "done": false,
-          "order": 16
+          "order": 6
         },
         {
           "id": "lel5q7rmtsp75kx",
           "text": "Confirmar ambientes prioritários",
           "done": false,
-          "order": 15
+          "order": 1
         },
         {
           "id": "p6ds56dmtsp8mls",
