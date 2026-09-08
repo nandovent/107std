@@ -203,19 +203,19 @@
       "name": "teste",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-08T19:42:46.759Z",
-      "updatedAt": "2026-09-08T19:42:48.574Z",
+      "updatedAt": "2026-09-08T19:42:50.614Z",
       "items": [
         {
           "id": "9xp1kd6mtt2tsyv",
           "inventoryId": "xlfp0qfmtt2mhpj",
-          "done": true,
-          "order": 1
+          "done": false,
+          "order": 2
         },
         {
           "id": "21ujwjqmtt2tsyv",
           "inventoryId": "vfkguslmtt2l37m",
-          "done": false,
-          "order": 1
+          "done": true,
+          "order": 2
         }
       ]
     }
