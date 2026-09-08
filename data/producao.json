@@ -197,9 +197,28 @@
       ]
     }
   ],
-  "lists": [],
-  "inventoryDraft": [
-    "xlfp0qfmtt2mhpj",
-    "vfkguslmtt2l37m"
-  ]
+  "lists": [
+    {
+      "id": "7zq9b5qmtt2tsyv",
+      "name": "teste",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-08T19:42:46.759Z",
+      "updatedAt": "2026-09-08T19:42:46.759Z",
+      "items": [
+        {
+          "id": "9xp1kd6mtt2tsyv",
+          "inventoryId": "xlfp0qfmtt2mhpj",
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "21ujwjqmtt2tsyv",
+          "inventoryId": "vfkguslmtt2l37m",
+          "done": false,
+          "order": 1
+        }
+      ]
+    }
+  ],
+  "inventoryDraft": []
 }
