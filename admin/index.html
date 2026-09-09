@@ -25,4 +25,45 @@
 <label class="new-category-field" hidden>Nova categoria
   <input data-field="nova-categoria" placeholder="Exemplo: Bastidores">
   <small>Ao publicar o primeiro vídeo, o novo bloco será criado automaticamente no portfólio.</small>
-</label><label>Título<input data-field="titulo" placeholder="Nome do filme"></label><label class="full">Descrição<textarea data-field="descricao" rows="3" placeholder="Descrição curta"></textarea></label><label class="full">Link do YouTube ou Vimeo<input data-field="link" placeholder="https://www.youtube.com/watch?v=..."></label><label>Posição<input data-field="ordem" type="number" min="1"><small>Digite a posição ou use as setas acima.</small></label><label class="check"><input data-field="publicado" type="checkbox" checked> Publicado</label></div></article></template><script src="../assets/js/admin.js"></script><script>(function(){const save=()=>{const p=document.getElementById('password');if(p&&p.value)sessionStorage.setItem('107-admin-password',p.value)};document.addEventListener('click',e=>{if(e.target&&e.target.id==='login')save()});document.addEventListener('keydown',e=>{if(e.key==='Enter'&&document.activeElement&&document.activeElement.id==='password')save()});const next=sessionStorage.getItem('107-admin-next');if(next){const app=document.getElementById('admin-app');const go=()=>{if(app&&!app.hidden){sessionStorage.removeItem('107-admin-next');location.href=next}};new MutationObserver(go).observe(app,{attributes:true,attributeFilter:['hidden']});setTimeout(go,0)}})();</script></body></html>
+</label><label>Título<input data-field="titulo" placeholder="Nome do filme"></label><label class="full">Descrição<textarea data-field="descricao" rows="3" placeholder="Descrição curta"></textarea></label><label class="full">Link do YouTube ou Vimeo<input data-field="link" placeholder="https://www.youtube.com/watch?v=..."></label><label>Posição<input data-field="ordem" type="number" min="1"><small>Digite a posição ou use as setas acima.</small></label><label class="check"><input data-field="publicado" type="checkbox" checked> Publicado</label></div></article></template><script src="../assets/js/admin.js"></script>
+<script>
+(function(){
+  const PASSWORD_KEY='107-admin-password';
+  const NEXT_KEY='107-admin-next';
+  let attemptedPassword='';
+
+  const login=document.getElementById('login');
+  const password=document.getElementById('password');
+  const app=document.getElementById('admin-app');
+
+  function capture(){
+    attemptedPassword=(password && password.value ? password.value : '').trim();
+  }
+
+  function authenticated(){
+    if(!app || app.hidden) return;
+
+    const pwd=(attemptedPassword || (password && password.value ? password.value : '')).trim();
+    if(pwd) sessionStorage.setItem(PASSWORD_KEY,pwd);
+
+    const next=sessionStorage.getItem(NEXT_KEY);
+    if(next && next.startsWith('/admin/') && next!=='/admin/' && next!=='/admin'){
+      sessionStorage.removeItem(NEXT_KEY);
+      location.replace(next);
+    }
+  }
+
+  if(login) login.addEventListener('click',capture,true);
+  if(password) password.addEventListener('keydown',function(e){
+    if(e.key==='Enter') capture();
+  },true);
+
+  if(app){
+    new MutationObserver(authenticated).observe(app,{attributes:true,attributeFilter:['hidden']});
+    authenticated();
+  }
+})();
+</script>
+
+
+</body></html>
