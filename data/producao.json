@@ -1,6 +1,19 @@
 {
   "version": 6,
-  "inventory": [],
+  "inventory": [
+    {
+      "id": "270cba0mttf07bm",
+      "active": true,
+      "brand": "LOGITECH",
+      "model": "MOUSE M190",
+      "nickname": "MOUSE NOTE AVELL",
+      "category": "Acessórios",
+      "notes": "Mouse do Avell Nando",
+      "serial": "2427ZA8AYZV8",
+      "acquiredAt": "2025-05",
+      "photo": "/assets/inventario/270cba0mttf07bm.jpg?v=1788917022007"
+    }
+  ],
   "templates": [
     {
       "id": "evento",
