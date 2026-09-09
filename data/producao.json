@@ -212,10 +212,24 @@
       ]
     }
   ],
-  "lists": [],
-  "inventoryDraft": [
-    "p35dlqzmtu5w5bp"
+  "lists": [
+    {
+      "id": "csh4f1vmtu5zva7",
+      "name": "Teste",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-09T13:59:14.719Z",
+      "updatedAt": "2026-09-09T13:59:14.719Z",
+      "items": [
+        {
+          "id": "9o05pxhmtu5zva7",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "done": false,
+          "order": 0
+        }
+      ]
+    }
   ],
+  "inventoryDraft": [],
   "categories": [
     {
       "name": "Câmeras",
