@@ -224,7 +224,24 @@
           "id": "9o05pxhmtu5zva7",
           "inventoryId": "p35dlqzmtu5w5bp",
           "done": true,
-          "order": 1
+          "order": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "yd4mqwpmtu6ah9y",
+      "name": "Teste",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-09T14:07:29.782Z",
+      "updatedAt": "2026-09-09T14:08:25.751Z",
+      "items": [
+        {
+          "id": "lnwau9dmtu6ah9y",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "done": true,
+          "order": 1,
+          "quantity": 1
         }
       ]
     }
