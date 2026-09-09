@@ -24,6 +24,18 @@
       "serial": "AVNB22520061",
       "acquiredAt": "2021-09",
       "photo": "/assets/inventario/s85k55vmttf3cin.jpg?v=1788917168979"
+    },
+    {
+      "id": "2mq64bqmtu1r535",
+      "active": true,
+      "brand": "Tal",
+      "model": "Xícara",
+      "nickname": "Rosa",
+      "category": "Acessórios",
+      "notes": "",
+      "serial": "Ajshahajah",
+      "acquiredAt": "2026-09",
+      "photo": "/assets/inventario/2mq64bqmtu1r535.jpg?v=1788955230686"
     }
   ],
   "templates": [
