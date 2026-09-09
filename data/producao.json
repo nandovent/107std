@@ -2,18 +2,6 @@
   "version": 6,
   "inventory": [
     {
-      "id": "vfkguslmtt2l37m",
-      "active": true,
-      "brand": "PANASONIC",
-      "model": "DMC GH7",
-      "nickname": "GH7",
-      "category": "Câmeras",
-      "notes": "CAMERA TAL TAL TAL TAL TAL",
-      "serial": "",
-      "status": "Em uso",
-      "photo": "/assets/inventario/vfkguslmtt2l37m.jpg?v=1788896161521"
-    },
-    {
       "id": "xlfp0qfmtt2mhpj",
       "active": true,
       "brand": "AMARAN",
