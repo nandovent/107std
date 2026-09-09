@@ -215,7 +215,7 @@
       "name": "Beatriz",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-09T12:01:11.717Z",
-      "updatedAt": "2026-09-09T12:01:38.588Z",
+      "updatedAt": "2026-09-09T12:01:43.488Z",
       "items": [
         {
           "id": "v69169cmtu1s205",
@@ -232,8 +232,8 @@
         {
           "id": "cn3zyzkmtu1s205",
           "inventoryId": "2mq64bqmtu1r535",
-          "done": false,
-          "order": 2
+          "done": true,
+          "order": 3
         }
       ]
     }
