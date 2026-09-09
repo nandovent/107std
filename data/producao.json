@@ -210,7 +210,9 @@
     }
   ],
   "lists": [],
-  "inventoryDraft": [],
+  "inventoryDraft": [
+    "270cba0mttf07bm"
+  ],
   "categories": [
     {
       "name": "Câmeras",
