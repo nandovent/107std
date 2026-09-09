@@ -1,6 +1,31 @@
 {
   "version": 6,
-  "inventory": [],
+  "inventory": [
+    {
+      "id": "270cba0mttf07bm",
+      "active": true,
+      "brand": "LOGITECH",
+      "model": "MOUSE M190",
+      "nickname": "MOUSE NOTE AVELL",
+      "category": "Acessórios",
+      "notes": "Mouse do Avell Nando",
+      "serial": "2427ZA8AYZV8",
+      "acquiredAt": "2025-05",
+      "photo": "/assets/inventario/270cba0mttf07bm.jpg?v=1788917022007"
+    },
+    {
+      "id": "s85k55vmttf3cin",
+      "active": true,
+      "brand": "AVELL",
+      "model": "STORM TWO",
+      "nickname": "AVELL NANDO",
+      "category": "Computadores",
+      "notes": "",
+      "serial": "AVNB22520061",
+      "acquiredAt": "2021-09",
+      "photo": "/assets/inventario/s85k55vmttf3cin.jpg?v=1788917168979"
+    }
+  ],
   "templates": [
     {
       "id": "evento",
