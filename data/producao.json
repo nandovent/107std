@@ -209,35 +209,7 @@
       ]
     }
   ],
-  "lists": [
-    {
-      "id": "31adm1omtu1s205",
-      "name": "Beatriz",
-      "templateName": "Seleção do inventário",
-      "createdAt": "2026-09-09T12:01:11.717Z",
-      "updatedAt": "2026-09-09T12:01:49.556Z",
-      "items": [
-        {
-          "id": "v69169cmtu1s205",
-          "inventoryId": "270cba0mttf07bm",
-          "done": false,
-          "order": 2
-        },
-        {
-          "id": "wwfour6mtu1s205",
-          "inventoryId": "s85k55vmttf3cin",
-          "done": false,
-          "order": 1
-        },
-        {
-          "id": "cn3zyzkmtu1s205",
-          "inventoryId": "2mq64bqmtu1r535",
-          "done": true,
-          "order": 3
-        }
-      ]
-    }
-  ],
+  "lists": [],
   "inventoryDraft": [],
   "categories": [
     {
