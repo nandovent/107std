@@ -227,11 +227,24 @@
           "order": 1
         }
       ]
+    },
+    {
+      "id": "yd4mqwpmtu6ah9y",
+      "name": "Teste",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-09T14:07:29.782Z",
+      "updatedAt": "2026-09-09T14:07:29.782Z",
+      "items": [
+        {
+          "id": "lnwau9dmtu6ah9y",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "done": false,
+          "order": 0
+        }
+      ]
     }
   ],
-  "inventoryDraft": [
-    "p35dlqzmtu5w5bp"
-  ],
+  "inventoryDraft": [],
   "categories": [
     {
       "name": "Câmeras",
