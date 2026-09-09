@@ -1,19 +1,6 @@
 {
   "version": 6,
-  "inventory": [
-    {
-      "id": "xlfp0qfmtt2mhpj",
-      "active": true,
-      "brand": "AMARAN",
-      "model": "60X S",
-      "nickname": "PANELINHA",
-      "category": "Iluminação",
-      "notes": "ASDASDASDASDASDASDASD",
-      "serial": "DASKLDHJLKASJD",
-      "status": "Disponível",
-      "photo": "/assets/inventario/xlfp0qfmtt2mhpj.jpg?v=1788911853685"
-    }
-  ],
+  "inventory": [],
   "templates": [
     {
       "id": "evento",
