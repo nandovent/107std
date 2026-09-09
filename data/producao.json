@@ -5,13 +5,14 @@
       "id": "270cba0mttf07bm",
       "active": true,
       "brand": "LOGITECH",
-      "model": "MOUSE M190",
+      "model": "M190",
       "nickname": "MOUSE NOTE AVELL",
       "category": "Acessórios",
       "notes": "Mouse do Avell Nando",
       "serial": "2427ZA8AYZV8",
       "acquiredAt": "2025-05",
-      "photo": "/assets/inventario/270cba0mttf07bm.jpg?v=1788917022007"
+      "photo": "/assets/inventario/270cba0mttf07bm.jpg?v=1788917022007",
+      "quantity": 1
     },
     {
       "id": "s85k55vmttf3cin",
@@ -23,7 +24,21 @@
       "notes": "",
       "serial": "AVNB22520061",
       "acquiredAt": "2021-09",
-      "photo": "/assets/inventario/s85k55vmttf3cin.jpg?v=1788917168979"
+      "photo": "/assets/inventario/s85k55vmttf3cin.jpg?v=1788917168979",
+      "quantity": 1
+    },
+    {
+      "id": "p35dlqzmtu5w5bp",
+      "active": true,
+      "brand": "UGREEN",
+      "model": "PB502",
+      "nickname": "POWERBAK 10 MAH",
+      "category": "Outros",
+      "notes": "",
+      "serial": "",
+      "quantity": 4,
+      "acquiredAt": "2025-03",
+      "photo": "/assets/inventario/p35dlqzmtu5w5bp.jpg?v=1788962183009"
     }
   ],
   "templates": [
@@ -197,7 +212,23 @@
       ]
     }
   ],
-  "lists": [],
+  "lists": [
+    {
+      "id": "csh4f1vmtu5zva7",
+      "name": "Teste",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-09T13:59:14.719Z",
+      "updatedAt": "2026-09-09T13:59:21.215Z",
+      "items": [
+        {
+          "id": "9o05pxhmtu5zva7",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "done": true,
+          "order": 1
+        }
+      ]
+    }
+  ],
   "inventoryDraft": [],
   "categories": [
     {
