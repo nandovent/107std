@@ -39,6 +39,19 @@
       "quantity": 4,
       "acquiredAt": "2025-03",
       "photo": "/assets/inventario/p35dlqzmtu5w5bp.jpg?v=1788962183009"
+    },
+    {
+      "id": "5vgwxdjmtwd0go4",
+      "active": true,
+      "brand": "SOKANI",
+      "model": "X100",
+      "nickname": "SOKANINHO",
+      "category": "ILUMINAÇÃO",
+      "notes": "",
+      "serial": "",
+      "quantity": 2,
+      "acquiredAt": "2026-09",
+      "photo": "/assets/inventario/5vgwxdjmtwd0go4.jpg?v=1789095073628"
     }
   ],
   "templates": [
