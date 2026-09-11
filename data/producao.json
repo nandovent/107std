@@ -263,7 +263,7 @@
       "name": "Goiânia",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-11T02:51:58.361Z",
-      "updatedAt": "2026-09-11T02:52:42.464Z",
+      "updatedAt": "2026-09-11T02:52:44.245Z",
       "items": [
         {
           "id": "xp461jkmtwd1gd5",
@@ -276,21 +276,21 @@
           "id": "ko54ye6mtwd1gd5",
           "inventoryId": "270cba0mttf07bm",
           "quantity": 1,
-          "done": true,
-          "order": 2
+          "done": false,
+          "order": 3
         },
         {
           "id": "iw2ol9amtwd1gd5",
           "inventoryId": "s85k55vmttf3cin",
           "quantity": 1,
-          "done": true,
-          "order": 5
+          "done": false,
+          "order": 6
         },
         {
           "id": "znejreqmtwd1uv6",
           "text": "Teste",
-          "done": true,
-          "order": 4
+          "done": false,
+          "order": 5
         }
       ]
     }
