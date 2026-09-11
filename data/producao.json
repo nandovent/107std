@@ -263,14 +263,14 @@
       "name": "Goiânia",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-11T02:51:58.361Z",
-      "updatedAt": "2026-09-11T02:52:36.646Z",
+      "updatedAt": "2026-09-11T02:52:42.464Z",
       "items": [
         {
           "id": "xp461jkmtwd1gd5",
           "inventoryId": "5vgwxdjmtwd0go4",
           "quantity": 2,
-          "done": true,
-          "order": 1
+          "done": false,
+          "order": 2
         },
         {
           "id": "ko54ye6mtwd1gd5",
