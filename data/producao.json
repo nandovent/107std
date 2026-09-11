@@ -257,14 +257,39 @@
           "quantity": 1
         }
       ]
-    }
-  ],
-  "inventoryDraft": [
+    },
     {
-      "id": "5vgwxdjmtwd0go4",
-      "quantity": 2
+      "id": "1o8bks0mtwd1gd5",
+      "name": "Goiânia",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-11T02:51:58.361Z",
+      "updatedAt": "2026-09-11T02:51:58.361Z",
+      "items": [
+        {
+          "id": "xp461jkmtwd1gd5",
+          "inventoryId": "5vgwxdjmtwd0go4",
+          "quantity": 2,
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "ko54ye6mtwd1gd5",
+          "inventoryId": "270cba0mttf07bm",
+          "quantity": 1,
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "iw2ol9amtwd1gd5",
+          "inventoryId": "s85k55vmttf3cin",
+          "quantity": 1,
+          "done": false,
+          "order": 2
+        }
+      ]
     }
   ],
+  "inventoryDraft": [],
   "categories": [
     {
       "name": "Câmeras",
