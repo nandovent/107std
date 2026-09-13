@@ -39,19 +39,6 @@
       "quantity": 4,
       "acquiredAt": "2025-03",
       "photo": "/assets/inventario/p35dlqzmtu5w5bp.jpg?v=1788962183009"
-    },
-    {
-      "id": "5vgwxdjmtwd0go4",
-      "active": true,
-      "brand": "SOKANI",
-      "model": "X100",
-      "nickname": "SOKANINHO",
-      "category": "ILUMINAÇÃO",
-      "notes": "",
-      "serial": "",
-      "quantity": 2,
-      "acquiredAt": "2026-09",
-      "photo": "/assets/inventario/5vgwxdjmtwd0go4.jpg?v=1789095073628"
     }
   ],
   "templates": [
@@ -266,13 +253,6 @@
       "updatedAt": "2026-09-11T02:52:44.245Z",
       "items": [
         {
-          "id": "xp461jkmtwd1gd5",
-          "inventoryId": "5vgwxdjmtwd0go4",
-          "quantity": 2,
-          "done": false,
-          "order": 2
-        },
-        {
           "id": "ko54ye6mtwd1gd5",
           "inventoryId": "270cba0mttf07bm",
           "quantity": 1,
@@ -347,6 +327,10 @@
     },
     {
       "name": "Outros",
+      "icon": "📦"
+    },
+    {
+      "name": "ILUMINAÇÃO",
       "icon": "📦"
     }
   ]
