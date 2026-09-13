@@ -288,7 +288,12 @@
       ]
     }
   ],
-  "inventoryDraft": [],
+  "inventoryDraft": [
+    {
+      "id": "270cba0mttf07bm",
+      "quantity": 1
+    }
+  ],
   "categories": [
     {
       "name": "Câmeras",
