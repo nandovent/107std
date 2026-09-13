@@ -292,7 +292,7 @@
       "name": "CARNAVAL",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-13T04:53:11.993Z",
-      "updatedAt": "2026-09-13T04:53:36.502Z",
+      "updatedAt": "2026-09-13T04:53:38.235Z",
       "items": [
         {
           "id": "rhpylwumtzc922h",
@@ -305,15 +305,15 @@
           "id": "r133r9xmtzc922h",
           "inventoryId": "p35dlqzmtu5w5bp",
           "quantity": 4,
-          "done": true,
-          "order": 4
+          "done": false,
+          "order": 5
         },
         {
           "id": "gknj6y0mtzc922h",
           "inventoryId": "ixlc79bmtzc7i83",
           "quantity": 1,
-          "done": true,
-          "order": 3
+          "done": false,
+          "order": 4
         }
       ]
     }
