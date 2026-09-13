@@ -286,22 +286,39 @@
           "order": 5
         }
       ]
-    }
-  ],
-  "inventoryDraft": [
-    {
-      "id": "270cba0mttf07bm",
-      "quantity": 1
     },
     {
-      "id": "p35dlqzmtu5w5bp",
-      "quantity": 4
-    },
-    {
-      "id": "ixlc79bmtzc7i83",
-      "quantity": 1
+      "id": "zhd9p26mtzc922h",
+      "name": "CARNAVAL",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-13T04:53:11.993Z",
+      "updatedAt": "2026-09-13T04:53:11.993Z",
+      "items": [
+        {
+          "id": "rhpylwumtzc922h",
+          "inventoryId": "270cba0mttf07bm",
+          "quantity": 1,
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "r133r9xmtzc922h",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "quantity": 4,
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "gknj6y0mtzc922h",
+          "inventoryId": "ixlc79bmtzc7i83",
+          "quantity": 1,
+          "done": false,
+          "order": 2
+        }
+      ]
     }
   ],
+  "inventoryDraft": [],
   "categories": [
     {
       "name": "Câmeras",
