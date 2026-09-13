@@ -292,14 +292,14 @@
       "name": "CARNAVAL",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-09-13T04:53:11.993Z",
-      "updatedAt": "2026-09-13T04:53:11.993Z",
+      "updatedAt": "2026-09-13T04:53:24.638Z",
       "items": [
         {
           "id": "rhpylwumtzc922h",
           "inventoryId": "270cba0mttf07bm",
           "quantity": 1,
-          "done": false,
-          "order": 0
+          "done": true,
+          "order": 1
         },
         {
           "id": "r133r9xmtzc922h",
