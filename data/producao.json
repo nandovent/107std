@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:07:33.048Z",
+      "updatedAt": "2026-09-15T20:08:18.549Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -525,6 +525,12 @@
           "text": "CABO USBC",
           "done": false,
           "order": 20
+        },
+        {
+          "id": "sluumi0mu33tlkl",
+          "text": "SSD",
+          "done": false,
+          "order": 21
         }
       ]
     }
