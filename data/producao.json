@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:35.115Z",
+      "updatedAt": "2026-09-15T20:50:38.979Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -523,8 +523,8 @@
         {
           "id": "uocrk2rmu33smgo",
           "text": "CABO USBC",
-          "done": true,
-          "order": 32
+          "done": false,
+          "order": 37
         },
         {
           "id": "sluumi0mu33tlkl",
@@ -535,8 +535,8 @@
         {
           "id": "e7hd1frmu33tupr",
           "text": "GARRA ARTICULADA",
-          "done": true,
-          "order": 31
+          "done": false,
+          "order": 36
         },
         {
           "id": "507wwfkmu33uafl",
