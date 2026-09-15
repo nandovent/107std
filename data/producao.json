@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:26.911Z",
+      "updatedAt": "2026-09-15T20:50:29.398Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -451,8 +451,8 @@
         {
           "id": "mc5faoxmu3352mm",
           "text": "TRIPÉ DE CÂMERA",
-          "done": true,
-          "order": 26
+          "done": false,
+          "order": 31
         },
         {
           "id": "nnp6d5mmu3358yg",
@@ -475,8 +475,8 @@
         {
           "id": "6zy1bz1mu335lbf",
           "text": "BATERIAS NP",
-          "done": true,
-          "order": 25
+          "done": false,
+          "order": 30
         },
         {
           "id": "83gz63umu335nd5",
