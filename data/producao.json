@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:09:04.132Z",
+      "updatedAt": "2026-09-15T20:09:05.867Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -457,8 +457,8 @@
         {
           "id": "nnp6d5mmu3358yg",
           "text": "CASE ILUMINAÇÃO",
-          "done": false,
-          "order": 10
+          "done": true,
+          "order": 37
         },
         {
           "id": "qnw7w2umu335hog",
