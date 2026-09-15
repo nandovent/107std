@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:10:09.850Z",
+      "updatedAt": "2026-09-15T20:11:58.553Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -543,6 +543,12 @@
           "text": "Pochete",
           "done": true,
           "order": 35
+        },
+        {
+          "id": "pnlrjn8mu33ybbt",
+          "text": "LED VILTROX",
+          "done": false,
+          "order": 19
         }
       ]
     }
