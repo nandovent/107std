@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:03:07.708Z",
+      "updatedAt": "2026-09-15T20:03:09.575Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -421,8 +421,8 @@
         {
           "id": "gpzwpxumu334dln",
           "text": "LENTE 12-40",
-          "done": false,
-          "order": 4
+          "done": true,
+          "order": 5
         },
         {
           "id": "59jibljmu334giq",
