@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:33.395Z",
+      "updatedAt": "2026-09-15T20:50:35.115Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -529,8 +529,8 @@
         {
           "id": "sluumi0mu33tlkl",
           "text": "SSD",
-          "done": true,
-          "order": 30
+          "done": false,
+          "order": 35
         },
         {
           "id": "e7hd1frmu33tupr",
