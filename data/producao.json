@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:48:33.841Z",
+      "updatedAt": "2026-09-15T19:48:41.819Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -417,6 +417,12 @@
           "text": "GH6",
           "done": false,
           "order": 6
+        },
+        {
+          "id": "gpzwpxumu334dln",
+          "text": "LENTE 12-40",
+          "done": false,
+          "order": 7
         }
       ]
     }
