@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:03:22.042Z",
+      "updatedAt": "2026-09-15T20:04:20.872Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -433,8 +433,8 @@
         {
           "id": "v8lgsammu334l9r",
           "text": "LENTE LAOWA 7.5",
-          "done": false,
-          "order": 6
+          "done": true,
+          "order": 21
         },
         {
           "id": "wlkr1g4mu334mve",
