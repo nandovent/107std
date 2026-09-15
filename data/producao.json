@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:49:33.760Z",
+      "updatedAt": "2026-09-15T19:49:35.921Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -465,6 +465,12 @@
           "text": "NANLITE",
           "done": false,
           "order": 14
+        },
+        {
+          "id": "0nf4pv7mu335jch",
+          "text": "PANELINHA",
+          "done": false,
+          "order": 15
         }
       ]
     }
