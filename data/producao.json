@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:16.091Z",
+      "updatedAt": "2026-09-15T20:50:19.993Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -379,14 +379,14 @@
         {
           "id": "ubrissrmu32ym32",
           "text": "Referências salvas",
-          "done": true,
-          "order": 2
+          "done": false,
+          "order": 20
         },
         {
           "id": "k5ntz3rmu32ym32",
           "text": "Confirmar endereço",
-          "done": true,
-          "order": 3
+          "done": false,
+          "order": 21
         },
         {
           "id": "5y2ht0gmu32ym32",
@@ -415,20 +415,20 @@
         {
           "id": "lyd3gb7mu3347g1",
           "text": "GH6",
-          "done": true,
-          "order": 4
+          "done": false,
+          "order": 22
         },
         {
           "id": "gpzwpxumu334dln",
           "text": "LENTE 12-40",
-          "done": true,
-          "order": 5
+          "done": false,
+          "order": 23
         },
         {
           "id": "59jibljmu334giq",
           "text": "LENTE 18-35",
-          "done": true,
-          "order": 6
+          "done": false,
+          "order": 24
         },
         {
           "id": "v8lgsammu334l9r",
