@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:50.050Z",
+      "updatedAt": "2026-09-15T20:50:52.031Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -403,8 +403,8 @@
         {
           "id": "9msepiamu33405a",
           "text": "FUMACINHA",
-          "done": true,
-          "order": 36
+          "done": false,
+          "order": 41
         },
         {
           "id": "vz8zz0jmu3345gi",
