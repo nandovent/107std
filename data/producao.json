@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:52.031Z",
+      "updatedAt": "2026-09-15T20:50:59.354Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -457,14 +457,14 @@
         {
           "id": "nnp6d5mmu3358yg",
           "text": "CASE ILUMINAÇÃO",
-          "done": true,
-          "order": 37
+          "done": false,
+          "order": 42
         },
         {
           "id": "qnw7w2umu335hog",
           "text": "NANLITE",
-          "done": true,
-          "order": 38
+          "done": false,
+          "order": 43
         },
         {
           "id": "0nf4pv7mu335jch",
