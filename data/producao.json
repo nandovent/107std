@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:49:38.475Z",
+      "updatedAt": "2026-09-15T19:49:41.130Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -477,6 +477,12 @@
           "text": "BATERIAS NP",
           "done": false,
           "order": 16
+        },
+        {
+          "id": "83gz63umu335nd5",
+          "text": "BASTÃO DE LED",
+          "done": false,
+          "order": 17
         }
       ]
     }
