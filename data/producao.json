@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:38.979Z",
+      "updatedAt": "2026-09-15T20:50:47.180Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -397,8 +397,8 @@
         {
           "id": "9fgaesemu333ved",
           "text": "EXTENSÕES",
-          "done": true,
-          "order": 34
+          "done": false,
+          "order": 39
         },
         {
           "id": "9msepiamu33405a",
@@ -517,8 +517,8 @@
         {
           "id": "ua8csvfmu33sddp",
           "text": "POWERBANK",
-          "done": true,
-          "order": 33
+          "done": false,
+          "order": 38
         },
         {
           "id": "uocrk2rmu33smgo",
