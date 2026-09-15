@@ -368,13 +368,13 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:12:36.840Z",
+      "updatedAt": "2026-09-15T20:50:16.091Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
           "text": "Roteiros / falas",
-          "done": true,
-          "order": 1
+          "done": false,
+          "order": 19
         },
         {
           "id": "ubrissrmu32ym32",
@@ -553,8 +553,8 @@
         {
           "id": "nqk3o4vmu33z4vc",
           "text": "MOCHILA DE SUPRIMENTOS",
-          "done": false,
-          "order": 19
+          "done": true,
+          "order": 41
         }
       ]
     }
