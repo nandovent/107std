@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:48:41.819Z",
+      "updatedAt": "2026-09-15T19:48:45.602Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -423,6 +423,12 @@
           "text": "LENTE 12-40",
           "done": false,
           "order": 7
+        },
+        {
+          "id": "59jibljmu334giq",
+          "text": "LENTE 18-35",
+          "done": false,
+          "order": 8
         }
       ]
     }
