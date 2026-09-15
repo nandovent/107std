@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:08:30.399Z",
+      "updatedAt": "2026-09-15T20:08:32.094Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -535,8 +535,8 @@
         {
           "id": "e7hd1frmu33tupr",
           "text": "GARRA ARTICULADA",
-          "done": false,
-          "order": 21
+          "done": true,
+          "order": 31
         }
       ]
     }
