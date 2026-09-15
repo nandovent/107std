@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:48:51.759Z",
+      "updatedAt": "2026-09-15T19:48:53.834Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -435,6 +435,12 @@
           "text": "LENTE LAOWA 7.5",
           "done": false,
           "order": 9
+        },
+        {
+          "id": "wlkr1g4mu334mve",
+          "text": "BATERIAS",
+          "done": false,
+          "order": 10
         }
       ]
     }
