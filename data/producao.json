@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:49:14.254Z",
+      "updatedAt": "2026-09-15T19:49:22.456Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -453,6 +453,12 @@
           "text": "TRIPÉ DE CÂMERA",
           "done": false,
           "order": 12
+        },
+        {
+          "id": "nnp6d5mmu3358yg",
+          "text": "CASE ILUMINAÇÃO",
+          "done": false,
+          "order": 13
         }
       ]
     }
