@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:07:21.278Z",
+      "updatedAt": "2026-09-15T20:07:33.048Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -519,6 +519,12 @@
           "text": "POWERBANK",
           "done": false,
           "order": 19
+        },
+        {
+          "id": "uocrk2rmu33smgo",
+          "text": "CABO USBC",
+          "done": false,
+          "order": 20
         }
       ]
     }
