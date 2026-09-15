@@ -78,6 +78,19 @@
       "quantity": 1,
       "acquiredAt": "2026-03",
       "photo": "/assets/inventario/ost7mdlmu32hxc0.jpg?v=1789500676089"
+    },
+    {
+      "id": "nn4cwcimu32j0vy",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "LUMIX GH5S",
+      "nickname": "GH5S",
+      "category": "CÂMERAS",
+      "notes": "",
+      "serial": "",
+      "quantity": 1,
+      "acquiredAt": "",
+      "photo": "/assets/inventario/nn4cwcimu32j0vy.jpg?v=1789500727292"
     }
   ],
   "templates": [
