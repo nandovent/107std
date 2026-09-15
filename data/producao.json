@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:51:12.550Z",
+      "updatedAt": "2026-09-15T19:51:15.431Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -379,14 +379,14 @@
         {
           "id": "ubrissrmu32ym32",
           "text": "Referências salvas",
-          "done": false,
-          "order": 1
+          "done": true,
+          "order": 2
         },
         {
           "id": "k5ntz3rmu32ym32",
           "text": "Confirmar endereço",
-          "done": false,
-          "order": 2
+          "done": true,
+          "order": 3
         },
         {
           "id": "5y2ht0gmu32ym32",
