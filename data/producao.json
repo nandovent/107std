@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:03:19.970Z",
+      "updatedAt": "2026-09-15T20:03:22.042Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -505,8 +505,8 @@
         {
           "id": "ix36pj2mu33n76q",
           "text": "Lente 24-105",
-          "done": false,
-          "order": 19
+          "done": true,
+          "order": 20
         }
       ]
     }
