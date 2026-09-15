@@ -65,6 +65,19 @@
       "quantity": 1,
       "acquiredAt": "2025-01",
       "photo": "/assets/inventario/b0i418zmu32eeqm.jpg?v=1789500512832"
+    },
+    {
+      "id": "ost7mdlmu32hxc0",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "LUMIX GH6",
+      "nickname": "GH6",
+      "category": "CÂMERAS",
+      "notes": "",
+      "serial": "",
+      "quantity": 1,
+      "acquiredAt": "2026-03",
+      "photo": "/assets/inventario/ost7mdlmu32hxc0.jpg?v=1789500676089"
     }
   ],
   "templates": [
