@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:59.354Z",
+      "updatedAt": "2026-09-15T20:51:01.476Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -391,8 +391,8 @@
         {
           "id": "5y2ht0gmu32ym32",
           "text": "Confirmar horário",
-          "done": true,
-          "order": 39
+          "done": false,
+          "order": 44
         },
         {
           "id": "9fgaesemu333ved",
@@ -547,8 +547,8 @@
         {
           "id": "pnlrjn8mu33ybbt",
           "text": "LED VILTROX",
-          "done": true,
-          "order": 40
+          "done": false,
+          "order": 45
         },
         {
           "id": "nqk3o4vmu33z4vc",
