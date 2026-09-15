@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:04:45.575Z",
+      "updatedAt": "2026-09-15T20:04:50.679Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -475,8 +475,8 @@
         {
           "id": "6zy1bz1mu335lbf",
           "text": "BATERIAS NP",
-          "done": false,
-          "order": 13
+          "done": true,
+          "order": 25
         },
         {
           "id": "83gz63umu335nd5",
