@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:29.398Z",
+      "updatedAt": "2026-09-15T20:50:31.097Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -511,8 +511,8 @@
         {
           "id": "n5akekbmu33qm4n",
           "text": "ACTION",
-          "done": true,
-          "order": 27
+          "done": false,
+          "order": 32
         },
         {
           "id": "ua8csvfmu33sddp",
