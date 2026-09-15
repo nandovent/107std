@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:48:56.984Z",
+      "updatedAt": "2026-09-15T19:49:14.254Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -447,6 +447,12 @@
           "text": "CASE CARTÕES",
           "done": false,
           "order": 11
+        },
+        {
+          "id": "mc5faoxmu3352mm",
+          "text": "TRIPÉ DE CÂMERA",
+          "done": false,
+          "order": 12
         }
       ]
     }
