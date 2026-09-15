@@ -52,6 +52,19 @@
       "quantity": 1,
       "acquiredAt": "2026-09",
       "photo": "/assets/inventario/ixlc79bmtzc7i83.jpg?v=1789275121130"
+    },
+    {
+      "id": "b0i418zmu32eeqm",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "LUMIX GH7",
+      "nickname": "GH7",
+      "category": "CÂMERAS",
+      "notes": "",
+      "serial": "",
+      "quantity": 1,
+      "acquiredAt": "2025-01",
+      "photo": "/assets/inventario/b0i418zmu32eeqm.jpg?v=1789500512832"
     }
   ],
   "templates": [
