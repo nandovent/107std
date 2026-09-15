@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:12:01.013Z",
+      "updatedAt": "2026-09-15T20:12:36.840Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -549,6 +549,12 @@
           "text": "LED VILTROX",
           "done": true,
           "order": 40
+        },
+        {
+          "id": "nqk3o4vmu33z4vc",
+          "text": "MOCHILA DE SUPRIMENTOS",
+          "done": false,
+          "order": 19
         }
       ]
     }
