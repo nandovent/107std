@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:50:08.432Z",
+      "updatedAt": "2026-09-15T19:50:22.624Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -495,6 +495,12 @@
           "text": "MICROFONE SEM FIO",
           "done": false,
           "order": 19
+        },
+        {
+          "id": "a9vuolgmu336jds",
+          "text": "MONITOR DE REFERÊNCIA",
+          "done": false,
+          "order": 20
         }
       ]
     }
