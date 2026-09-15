@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:49:43.980Z",
+      "updatedAt": "2026-09-15T19:50:08.432Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -489,6 +489,12 @@
           "text": "CARRINHO",
           "done": false,
           "order": 18
+        },
+        {
+          "id": "xs0bkctmu3368fj",
+          "text": "MICROFONE SEM FIO",
+          "done": false,
+          "order": 19
         }
       ]
     }
