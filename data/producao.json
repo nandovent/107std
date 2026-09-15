@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:09:52.291Z",
+      "updatedAt": "2026-09-15T20:10:09.850Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -391,8 +391,8 @@
         {
           "id": "5y2ht0gmu32ym32",
           "text": "Confirmar horário",
-          "done": false,
-          "order": 0
+          "done": true,
+          "order": 39
         },
         {
           "id": "9fgaesemu333ved",
