@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:03:09.575Z",
+      "updatedAt": "2026-09-15T20:03:19.970Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -427,8 +427,8 @@
         {
           "id": "59jibljmu334giq",
           "text": "LENTE 18-35",
-          "done": false,
-          "order": 5
+          "done": true,
+          "order": 6
         },
         {
           "id": "v8lgsammu334l9r",
@@ -501,6 +501,12 @@
           "text": "MONITOR DE REFERÊNCIA",
           "done": false,
           "order": 17
+        },
+        {
+          "id": "ix36pj2mu33n76q",
+          "text": "Lente 24-105",
+          "done": false,
+          "order": 19
         }
       ]
     }
