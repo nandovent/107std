@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:51:15.431Z",
+      "updatedAt": "2026-09-15T20:02:37.260Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -392,115 +392,115 @@
           "id": "5y2ht0gmu32ym32",
           "text": "Confirmar horário",
           "done": false,
-          "order": 3
+          "order": 0
         },
         {
           "id": "9fgaesemu333ved",
           "text": "EXTENSÕES",
           "done": false,
-          "order": 4
+          "order": 1
         },
         {
           "id": "9msepiamu33405a",
           "text": "FUMACINHA",
           "done": false,
-          "order": 5
+          "order": 2
         },
         {
           "id": "vz8zz0jmu3345gi",
           "text": "GH7",
           "done": false,
-          "order": 6
+          "order": 3
         },
         {
           "id": "lyd3gb7mu3347g1",
           "text": "GH6",
           "done": false,
-          "order": 7
+          "order": 4
         },
         {
           "id": "gpzwpxumu334dln",
           "text": "LENTE 12-40",
           "done": false,
-          "order": 8
+          "order": 5
         },
         {
           "id": "59jibljmu334giq",
           "text": "LENTE 18-35",
           "done": false,
-          "order": 9
+          "order": 6
         },
         {
           "id": "v8lgsammu334l9r",
           "text": "LENTE LAOWA 7.5",
           "done": false,
-          "order": 10
+          "order": 7
         },
         {
           "id": "wlkr1g4mu334mve",
           "text": "BATERIAS",
           "done": false,
-          "order": 11
+          "order": 8
         },
         {
           "id": "g1xrafymu334paw",
           "text": "CASE CARTÕES",
           "done": false,
-          "order": 12
+          "order": 9
         },
         {
           "id": "mc5faoxmu3352mm",
           "text": "TRIPÉ DE CÂMERA",
           "done": false,
-          "order": 13
+          "order": 10
         },
         {
           "id": "nnp6d5mmu3358yg",
           "text": "CASE ILUMINAÇÃO",
           "done": false,
-          "order": 14
+          "order": 11
         },
         {
           "id": "qnw7w2umu335hog",
           "text": "NANLITE",
           "done": false,
-          "order": 15
+          "order": 12
         },
         {
           "id": "0nf4pv7mu335jch",
           "text": "PANELINHA",
           "done": false,
-          "order": 16
+          "order": 13
         },
         {
           "id": "6zy1bz1mu335lbf",
           "text": "BATERIAS NP",
           "done": false,
-          "order": 17
+          "order": 14
         },
         {
           "id": "83gz63umu335nd5",
           "text": "BASTÃO DE LED",
           "done": false,
-          "order": 18
+          "order": 15
         },
         {
           "id": "905uxy7mu335pkc",
           "text": "CARRINHO",
           "done": false,
-          "order": 19
+          "order": 16
         },
         {
           "id": "xs0bkctmu3368fj",
           "text": "MICROFONE SEM FIO",
           "done": false,
-          "order": 20
+          "order": 17
         },
         {
           "id": "a9vuolgmu336jds",
           "text": "MONITOR DE REFERÊNCIA",
           "done": false,
-          "order": 21
+          "order": 18
         }
       ]
     }
