@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:19.993Z",
+      "updatedAt": "2026-09-15T20:50:22.378Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -433,8 +433,8 @@
         {
           "id": "v8lgsammu334l9r",
           "text": "LENTE LAOWA 7.5",
-          "done": true,
-          "order": 21
+          "done": false,
+          "order": 26
         },
         {
           "id": "wlkr1g4mu334mve",
@@ -505,8 +505,8 @@
         {
           "id": "ix36pj2mu33n76q",
           "text": "Lente 24-105",
-          "done": true,
-          "order": 20
+          "done": false,
+          "order": 25
         },
         {
           "id": "n5akekbmu33qm4n",
