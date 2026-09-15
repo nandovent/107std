@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:22.378Z",
+      "updatedAt": "2026-09-15T20:50:23.696Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -439,8 +439,8 @@
         {
           "id": "wlkr1g4mu334mve",
           "text": "BATERIAS",
-          "done": true,
-          "order": 22
+          "done": false,
+          "order": 27
         },
         {
           "id": "g1xrafymu334paw",
