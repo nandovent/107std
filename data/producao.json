@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:08:20.571Z",
+      "updatedAt": "2026-09-15T20:08:30.399Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -531,6 +531,12 @@
           "text": "SSD",
           "done": true,
           "order": 30
+        },
+        {
+          "id": "e7hd1frmu33tupr",
+          "text": "GARRA ARTICULADA",
+          "done": false,
+          "order": 21
         }
       ]
     }
