@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:08:50.770Z",
+      "updatedAt": "2026-09-15T20:09:04.132Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -403,8 +403,8 @@
         {
           "id": "9msepiamu33405a",
           "text": "FUMACINHA",
-          "done": false,
-          "order": 2
+          "done": true,
+          "order": 36
         },
         {
           "id": "vz8zz0jmu3345gi",
@@ -541,8 +541,8 @@
         {
           "id": "507wwfkmu33uafl",
           "text": "Pochete",
-          "done": false,
-          "order": 19
+          "done": true,
+          "order": 35
         }
       ]
     }
