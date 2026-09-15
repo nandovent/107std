@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:08:36.527Z",
+      "updatedAt": "2026-09-15T20:08:50.770Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -537,6 +537,12 @@
           "text": "GARRA ARTICULADA",
           "done": true,
           "order": 31
+        },
+        {
+          "id": "507wwfkmu33uafl",
+          "text": "Pochete",
+          "done": false,
+          "order": 19
         }
       ]
     }
