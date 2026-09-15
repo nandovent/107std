@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:06:06.552Z",
+      "updatedAt": "2026-09-15T20:07:21.278Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -481,8 +481,8 @@
         {
           "id": "83gz63umu335nd5",
           "text": "BASTÃO DE LED",
-          "done": false,
-          "order": 14
+          "done": true,
+          "order": 29
         },
         {
           "id": "905uxy7mu335pkc",
@@ -513,6 +513,12 @@
           "text": "ACTION",
           "done": true,
           "order": 27
+        },
+        {
+          "id": "ua8csvfmu33sddp",
+          "text": "POWERBANK",
+          "done": false,
+          "order": 19
         }
       ]
     }
