@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:06:01.822Z",
+      "updatedAt": "2026-09-15T20:06:06.552Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -469,8 +469,8 @@
         {
           "id": "0nf4pv7mu335jch",
           "text": "PANELINHA",
-          "done": false,
-          "order": 12
+          "done": true,
+          "order": 28
         },
         {
           "id": "6zy1bz1mu335lbf",
