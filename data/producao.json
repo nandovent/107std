@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:48:31.266Z",
+      "updatedAt": "2026-09-15T19:48:33.841Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -411,6 +411,12 @@
           "text": "GH7",
           "done": false,
           "order": 5
+        },
+        {
+          "id": "lyd3gb7mu3347g1",
+          "text": "GH6",
+          "done": false,
+          "order": 6
         }
       ]
     }
