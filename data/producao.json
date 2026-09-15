@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T19:44:29.713Z",
+      "updatedAt": "2026-09-15T19:48:18.230Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -393,6 +393,12 @@
           "text": "Confirmar horário",
           "done": true,
           "order": 4
+        },
+        {
+          "id": "9fgaesemu333ved",
+          "text": "EXTENSÕES",
+          "done": false,
+          "order": 3
         }
       ]
     }
