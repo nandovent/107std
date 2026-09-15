@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:47.180Z",
+      "updatedAt": "2026-09-15T20:50:50.050Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -541,8 +541,8 @@
         {
           "id": "507wwfkmu33uafl",
           "text": "Pochete",
-          "done": true,
-          "order": 35
+          "done": false,
+          "order": 40
         },
         {
           "id": "pnlrjn8mu33ybbt",
