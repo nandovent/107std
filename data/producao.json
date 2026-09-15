@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:50:23.696Z",
+      "updatedAt": "2026-09-15T20:50:26.911Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -445,8 +445,8 @@
         {
           "id": "g1xrafymu334paw",
           "text": "CASE CARTÕES",
-          "done": true,
-          "order": 23
+          "done": false,
+          "order": 28
         },
         {
           "id": "mc5faoxmu3352mm",
@@ -493,8 +493,8 @@
         {
           "id": "xs0bkctmu3368fj",
           "text": "MICROFONE SEM FIO",
-          "done": true,
-          "order": 24
+          "done": false,
+          "order": 29
         },
         {
           "id": "a9vuolgmu336jds",
