@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:08:33.459Z",
+      "updatedAt": "2026-09-15T20:08:36.527Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -397,8 +397,8 @@
         {
           "id": "9fgaesemu333ved",
           "text": "EXTENSÕES",
-          "done": false,
-          "order": 1
+          "done": true,
+          "order": 34
         },
         {
           "id": "9msepiamu33405a",
