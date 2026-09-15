@@ -361,6 +361,40 @@
           "order": 6
         }
       ]
+    },
+    {
+      "id": "wcnyga7mu32ym32",
+      "name": "MANU",
+      "templateId": "conteudo",
+      "templateName": "Conteúdo / Reels",
+      "createdAt": "2026-09-15T19:44:12.878Z",
+      "updatedAt": "2026-09-15T19:44:12.879Z",
+      "items": [
+        {
+          "id": "avnf3flmu32ym32",
+          "text": "Roteiros / falas",
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "ubrissrmu32ym32",
+          "text": "Referências salvas",
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "k5ntz3rmu32ym32",
+          "text": "Confirmar endereço",
+          "done": false,
+          "order": 2
+        },
+        {
+          "id": "5y2ht0gmu32ym32",
+          "text": "Confirmar horário",
+          "done": false,
+          "order": 3
+        }
+      ]
     }
   ],
   "inventoryDraft": [],
@@ -419,6 +453,14 @@
     },
     {
       "name": "ILUMINAÇÃO",
+      "icon": "📦"
+    },
+    {
+      "name": "ACESSÓRIOS",
+      "icon": "📦"
+    },
+    {
+      "name": "CÂMERAS",
       "icon": "📦"
     }
   ]
