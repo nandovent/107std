@@ -368,7 +368,7 @@
       "templateId": "conteudo",
       "templateName": "Conteúdo / Reels",
       "createdAt": "2026-09-15T19:44:12.878Z",
-      "updatedAt": "2026-09-15T20:02:43.929Z",
+      "updatedAt": "2026-09-15T20:02:45.376Z",
       "items": [
         {
           "id": "avnf3flmu32ym32",
@@ -410,7 +410,7 @@
           "id": "vz8zz0jmu3345gi",
           "text": "GH7",
           "done": false,
-          "order": 19
+          "order": 18
         },
         {
           "id": "lyd3gb7mu3347g1",
@@ -500,7 +500,7 @@
           "id": "a9vuolgmu336jds",
           "text": "MONITOR DE REFERÊNCIA",
           "done": false,
-          "order": 18
+          "order": 19
         }
       ]
     }
