@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:06:04.542Z",
+      "updatedAt": "2026-10-06T18:06:38.833Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -318,6 +318,12 @@
           "text": "CABO DE ENERGIA 15 M",
           "done": false,
           "order": 6
+        },
+        {
+          "id": "10m2z7vmuwzq12o",
+          "text": "LED 60W - AMARAN 60XS",
+          "done": false,
+          "order": 7
         }
       ]
     },
