@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:08:46.640Z",
+      "updatedAt": "2026-10-06T18:09:17.607Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -372,6 +372,12 @@
           "text": "MOUSE LOGITECH MX MASTER 3S",
           "done": false,
           "order": 15
+        },
+        {
+          "id": "jg1rbhhmuwztfl3",
+          "text": "IPHONE 17 PRO 512GB",
+          "done": false,
+          "order": 16
         }
       ]
     },
