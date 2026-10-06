@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:05:16.603Z",
+      "updatedAt": "2026-10-06T18:05:20.087Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -305,6 +305,13 @@
           "quantity": 1,
           "done": false,
           "order": 4
+        },
+        {
+          "id": "x5pjp1jmuwzocbb",
+          "inventoryId": "nn4cwcimu32j0vy",
+          "quantity": 1,
+          "done": false,
+          "order": 5
         }
       ]
     },
