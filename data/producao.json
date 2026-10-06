@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:09:17.607Z",
+      "updatedAt": "2026-10-06T18:09:56.926Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -378,6 +378,12 @@
           "text": "IPHONE 17 PRO 512GB",
           "done": false,
           "order": 16
+        },
+        {
+          "id": "t77dadymuwzu9x9",
+          "text": "MICROFONE HOLLYLAND M2S",
+          "done": false,
+          "order": 17
         }
       ]
     },
