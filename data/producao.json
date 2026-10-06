@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:07:17.874Z",
+      "updatedAt": "2026-10-06T18:07:26.812Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -336,6 +336,12 @@
           "text": "3 SD CARD 128GB",
           "done": false,
           "order": 9
+        },
+        {
+          "id": "k4gj80ymuwzr23g",
+          "text": "LENTE 12-40",
+          "done": false,
+          "order": 10
         }
       ]
     },
