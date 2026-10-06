@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:06:38.833Z",
+      "updatedAt": "2026-10-06T18:07:02.499Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -324,6 +324,12 @@
           "text": "LED 60W - AMARAN 60XS",
           "done": false,
           "order": 7
+        },
+        {
+          "id": "ocd9drmmuwzqjc3",
+          "text": "SSD 500GB",
+          "done": false,
+          "order": 8
         }
       ]
     },
