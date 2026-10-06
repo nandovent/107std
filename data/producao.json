@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:05:47.472Z",
+      "updatedAt": "2026-10-06T18:06:04.542Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -312,6 +312,12 @@
           "quantity": 1,
           "done": false,
           "order": 4
+        },
+        {
+          "id": "3dlht19muwzpam6",
+          "text": "CABO DE ENERGIA 15 M",
+          "done": false,
+          "order": 6
         }
       ]
     },
