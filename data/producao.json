@@ -270,7 +270,7 @@
       "name": "ECF 2026",
       "templateName": "Seleção do inventário",
       "createdAt": "2026-10-06T18:04:49.977Z",
-      "updatedAt": "2026-10-06T18:10:06.925Z",
+      "updatedAt": "2026-10-06T18:10:26.659Z",
       "items": [
         {
           "id": "rdnklghmuwznp2x",
@@ -390,6 +390,12 @@
           "text": "4 BATERIAS GH7",
           "done": false,
           "order": 18
+        },
+        {
+          "id": "ygw6il3muwzuwv6",
+          "text": "CABOS USB C DE VÁRIOS TAMANHOS",
+          "done": false,
+          "order": 19
         }
       ]
     },
