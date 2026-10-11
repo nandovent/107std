@@ -7,8 +7,8 @@
       "brand": "LOGITECH",
       "model": "M190",
       "nickname": "MOUSE NOTE AVELL",
-      "category": "Acessórios",
-      "notes": "Mouse do Avell Nando",
+      "category": "ACESSÓRIOS",
+      "notes": "MOUSE DO AVELL NANDO",
       "serial": "2427ZA8AYZV8",
       "acquiredAt": "2025-05",
       "photo": "/assets/inventario/270cba0mttf07bm.jpg?v=1788917022007",
@@ -41,17 +41,56 @@
       "photo": "/assets/inventario/p35dlqzmtu5w5bp.jpg?v=1788962183009"
     },
     {
-      "id": "5vgwxdjmtwd0go4",
+      "id": "ixlc79bmtzc7i83",
       "active": true,
       "brand": "SOKANI",
       "model": "X100",
       "nickname": "SOKANINHO",
       "category": "ILUMINAÇÃO",
+      "notes": "DSDASDASDASD",
+      "serial": "",
+      "quantity": 1,
+      "acquiredAt": "2026-09",
+      "photo": "/assets/inventario/ixlc79bmtzc7i83.jpg?v=1789275121130"
+    },
+    {
+      "id": "b0i418zmu32eeqm",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "LUMIX GH7",
+      "nickname": "GH7",
+      "category": "CÂMERAS",
       "notes": "",
       "serial": "",
-      "quantity": 2,
-      "acquiredAt": "2026-09",
-      "photo": "/assets/inventario/5vgwxdjmtwd0go4.jpg?v=1789095073628"
+      "quantity": 1,
+      "acquiredAt": "2025-01",
+      "photo": "/assets/inventario/b0i418zmu32eeqm.jpg?v=1789500512832"
+    },
+    {
+      "id": "ost7mdlmu32hxc0",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "LUMIX GH6",
+      "nickname": "GH6",
+      "category": "CÂMERAS",
+      "notes": "",
+      "serial": "",
+      "quantity": 1,
+      "acquiredAt": "2026-03",
+      "photo": "/assets/inventario/ost7mdlmu32hxc0.jpg?v=1789500676089"
+    },
+    {
+      "id": "nn4cwcimu32j0vy",
+      "active": true,
+      "brand": "PANASONIC",
+      "model": "LUMIX GH5S",
+      "nickname": "GH5S",
+      "category": "CÂMERAS",
+      "notes": "",
+      "serial": "",
+      "quantity": 1,
+      "acquiredAt": "",
+      "photo": "/assets/inventario/nn4cwcimu32j0vy.jpg?v=1789500727292"
     }
   ],
   "templates": [
@@ -227,6 +266,176 @@
   ],
   "lists": [
     {
+      "id": "0ebliz2muwznp2x",
+      "name": "ECF 2026",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-10-06T18:04:49.977Z",
+      "updatedAt": "2026-10-06T18:10:26.659Z",
+      "items": [
+        {
+          "id": "rdnklghmuwznp2x",
+          "inventoryId": "270cba0mttf07bm",
+          "quantity": 1,
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "s2f9hfgmuwznp2x",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "quantity": 4,
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "7lyu3armuwznp2x",
+          "inventoryId": "ixlc79bmtzc7i83",
+          "quantity": 1,
+          "done": false,
+          "order": 5
+        },
+        {
+          "id": "rya43zdmuwznp2x",
+          "text": "SUPORTE",
+          "done": false,
+          "order": 2
+        },
+        {
+          "id": "oso6tfdmuwzo9mi",
+          "inventoryId": "b0i418zmu32eeqm",
+          "quantity": 1,
+          "done": false,
+          "order": 3
+        },
+        {
+          "id": "x5pjp1jmuwzocbb",
+          "inventoryId": "nn4cwcimu32j0vy",
+          "quantity": 1,
+          "done": false,
+          "order": 4
+        },
+        {
+          "id": "3dlht19muwzpam6",
+          "text": "CABO DE ENERGIA 15 M",
+          "done": false,
+          "order": 6
+        },
+        {
+          "id": "10m2z7vmuwzq12o",
+          "text": "LED 60W - AMARAN 60XS",
+          "done": false,
+          "order": 7
+        },
+        {
+          "id": "ocd9drmmuwzqjc3",
+          "text": "SSD 500GB",
+          "done": false,
+          "order": 8
+        },
+        {
+          "id": "2m42fwwmuwzqv75",
+          "text": "3 SD CARD 128GB",
+          "done": false,
+          "order": 9
+        },
+        {
+          "id": "k4gj80ymuwzr23g",
+          "text": "LENTE 12-40",
+          "done": false,
+          "order": 10
+        },
+        {
+          "id": "3uyxwaemuwzr90l",
+          "text": "LENTE 15mm",
+          "done": false,
+          "order": 11
+        },
+        {
+          "id": "zhyzm5wmuwzrpsd",
+          "text": "MALETA VONDER CASE RÍGIDA",
+          "done": false,
+          "order": 12
+        },
+        {
+          "id": "2l7f8pwmuwzs4d4",
+          "text": "2 TRIPÉS 1,6m",
+          "done": false,
+          "order": 13
+        },
+        {
+          "id": "40laofbmuwzsha4",
+          "text": "MACBOOK M5 PRO 16”",
+          "done": false,
+          "order": 14
+        },
+        {
+          "id": "13fq0obmuwzsrow",
+          "text": "MOUSE LOGITECH MX MASTER 3S",
+          "done": false,
+          "order": 15
+        },
+        {
+          "id": "jg1rbhhmuwztfl3",
+          "text": "IPHONE 17 PRO 512GB",
+          "done": false,
+          "order": 16
+        },
+        {
+          "id": "t77dadymuwzu9x9",
+          "text": "MICROFONE HOLLYLAND M2S",
+          "done": false,
+          "order": 17
+        },
+        {
+          "id": "gl2qw8emuwzuhn1",
+          "text": "4 BATERIAS GH7",
+          "done": false,
+          "order": 18
+        },
+        {
+          "id": "ygw6il3muwzuwv6",
+          "text": "CABOS USB C DE VÁRIOS TAMANHOS",
+          "done": false,
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "5xnculkmuwzndk4",
+      "name": "CARNAVAL — cópia",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-10-06T18:04:35.044Z",
+      "updatedAt": "2026-10-06T18:04:35.044Z",
+      "items": [
+        {
+          "id": "qqyb44qmuwzndk5",
+          "inventoryId": "270cba0mttf07bm",
+          "quantity": 1,
+          "done": false,
+          "order": 0
+        },
+        {
+          "id": "b6cg3rpmuwzndk5",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "quantity": 4,
+          "done": false,
+          "order": 1
+        },
+        {
+          "id": "8nryhfbmuwzndk5",
+          "inventoryId": "ixlc79bmtzc7i83",
+          "quantity": 1,
+          "done": false,
+          "order": 2
+        },
+        {
+          "id": "04rntnumuwzndk5",
+          "text": "SUPORTE",
+          "done": false,
+          "order": 3
+        }
+      ]
+    },
+    {
       "id": "csh4f1vmtu5zva7",
       "name": "Teste",
       "templateName": "Seleção do inventário",
@@ -266,13 +475,6 @@
       "updatedAt": "2026-09-11T02:52:44.245Z",
       "items": [
         {
-          "id": "xp461jkmtwd1gd5",
-          "inventoryId": "5vgwxdjmtwd0go4",
-          "quantity": 2,
-          "done": false,
-          "order": 2
-        },
-        {
           "id": "ko54ye6mtwd1gd5",
           "inventoryId": "270cba0mttf07bm",
           "quantity": 1,
@@ -291,6 +493,238 @@
           "text": "Teste",
           "done": false,
           "order": 5
+        }
+      ]
+    },
+    {
+      "id": "zhd9p26mtzc922h",
+      "name": "CARNAVAL",
+      "templateName": "Seleção do inventário",
+      "createdAt": "2026-09-13T04:53:11.993Z",
+      "updatedAt": "2026-09-13T04:53:47.760Z",
+      "items": [
+        {
+          "id": "rhpylwumtzc922h",
+          "inventoryId": "270cba0mttf07bm",
+          "quantity": 1,
+          "done": false,
+          "order": 2
+        },
+        {
+          "id": "r133r9xmtzc922h",
+          "inventoryId": "p35dlqzmtu5w5bp",
+          "quantity": 4,
+          "done": false,
+          "order": 5
+        },
+        {
+          "id": "gknj6y0mtzc922h",
+          "inventoryId": "ixlc79bmtzc7i83",
+          "quantity": 1,
+          "done": false,
+          "order": 4
+        },
+        {
+          "id": "dx96ke2mtzc9to0",
+          "text": "SUPORTE",
+          "done": false,
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "wcnyga7mu32ym32",
+      "name": "MANU",
+      "templateId": "conteudo",
+      "templateName": "Conteúdo / Reels",
+      "createdAt": "2026-09-15T19:44:12.878Z",
+      "updatedAt": "2026-09-15T20:51:01.476Z",
+      "items": [
+        {
+          "id": "avnf3flmu32ym32",
+          "text": "Roteiros / falas",
+          "done": false,
+          "order": 19
+        },
+        {
+          "id": "ubrissrmu32ym32",
+          "text": "Referências salvas",
+          "done": false,
+          "order": 20
+        },
+        {
+          "id": "k5ntz3rmu32ym32",
+          "text": "Confirmar endereço",
+          "done": false,
+          "order": 21
+        },
+        {
+          "id": "5y2ht0gmu32ym32",
+          "text": "Confirmar horário",
+          "done": false,
+          "order": 44
+        },
+        {
+          "id": "9fgaesemu333ved",
+          "text": "EXTENSÕES",
+          "done": false,
+          "order": 39
+        },
+        {
+          "id": "9msepiamu33405a",
+          "text": "FUMACINHA",
+          "done": false,
+          "order": 41
+        },
+        {
+          "id": "vz8zz0jmu3345gi",
+          "text": "GH7",
+          "done": false,
+          "order": 18
+        },
+        {
+          "id": "lyd3gb7mu3347g1",
+          "text": "GH6",
+          "done": false,
+          "order": 22
+        },
+        {
+          "id": "gpzwpxumu334dln",
+          "text": "LENTE 12-40",
+          "done": false,
+          "order": 23
+        },
+        {
+          "id": "59jibljmu334giq",
+          "text": "LENTE 18-35",
+          "done": false,
+          "order": 24
+        },
+        {
+          "id": "v8lgsammu334l9r",
+          "text": "LENTE LAOWA 7.5",
+          "done": false,
+          "order": 26
+        },
+        {
+          "id": "wlkr1g4mu334mve",
+          "text": "BATERIAS",
+          "done": false,
+          "order": 27
+        },
+        {
+          "id": "g1xrafymu334paw",
+          "text": "CASE CARTÕES",
+          "done": false,
+          "order": 28
+        },
+        {
+          "id": "mc5faoxmu3352mm",
+          "text": "TRIPÉ DE CÂMERA",
+          "done": false,
+          "order": 31
+        },
+        {
+          "id": "nnp6d5mmu3358yg",
+          "text": "CASE ILUMINAÇÃO",
+          "done": false,
+          "order": 42
+        },
+        {
+          "id": "qnw7w2umu335hog",
+          "text": "NANLITE",
+          "done": false,
+          "order": 43
+        },
+        {
+          "id": "0nf4pv7mu335jch",
+          "text": "PANELINHA",
+          "done": false,
+          "order": 33
+        },
+        {
+          "id": "6zy1bz1mu335lbf",
+          "text": "BATERIAS NP",
+          "done": false,
+          "order": 30
+        },
+        {
+          "id": "83gz63umu335nd5",
+          "text": "BASTÃO DE LED",
+          "done": false,
+          "order": 34
+        },
+        {
+          "id": "905uxy7mu335pkc",
+          "text": "CARRINHO",
+          "done": false,
+          "order": 15
+        },
+        {
+          "id": "xs0bkctmu3368fj",
+          "text": "MICROFONE SEM FIO",
+          "done": false,
+          "order": 29
+        },
+        {
+          "id": "a9vuolgmu336jds",
+          "text": "MONITOR DE REFERÊNCIA",
+          "done": false,
+          "order": 17
+        },
+        {
+          "id": "ix36pj2mu33n76q",
+          "text": "Lente 24-105",
+          "done": false,
+          "order": 25
+        },
+        {
+          "id": "n5akekbmu33qm4n",
+          "text": "ACTION",
+          "done": false,
+          "order": 32
+        },
+        {
+          "id": "ua8csvfmu33sddp",
+          "text": "POWERBANK",
+          "done": false,
+          "order": 38
+        },
+        {
+          "id": "uocrk2rmu33smgo",
+          "text": "CABO USBC",
+          "done": false,
+          "order": 37
+        },
+        {
+          "id": "sluumi0mu33tlkl",
+          "text": "SSD",
+          "done": false,
+          "order": 35
+        },
+        {
+          "id": "e7hd1frmu33tupr",
+          "text": "GARRA ARTICULADA",
+          "done": false,
+          "order": 36
+        },
+        {
+          "id": "507wwfkmu33uafl",
+          "text": "Pochete",
+          "done": false,
+          "order": 40
+        },
+        {
+          "id": "pnlrjn8mu33ybbt",
+          "text": "LED VILTROX",
+          "done": false,
+          "order": 45
+        },
+        {
+          "id": "nqk3o4vmu33z4vc",
+          "text": "MOCHILA DE SUPRIMENTOS",
+          "done": true,
+          "order": 41
         }
       ]
     }
@@ -347,6 +781,18 @@
     },
     {
       "name": "Outros",
+      "icon": "📦"
+    },
+    {
+      "name": "ILUMINAÇÃO",
+      "icon": "📦"
+    },
+    {
+      "name": "ACESSÓRIOS",
+      "icon": "📦"
+    },
+    {
+      "name": "CÂMERAS",
       "icon": "📦"
     }
   ]
