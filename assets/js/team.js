@@ -4,7 +4,7 @@
     {id:'yago-wolf',nome:'Yago Wolf',funcao:'Videomaker e editor',instagram:'@yagowolf_',arquivo:'',ordem:2,publicado:true,escala:100},
     {id:'laura-vidal',nome:'Laura Vidal',funcao:'Storymaker e editora',instagram:'@llauravidall',arquivo:'',ordem:3,publicado:true,escala:100},
     {id:'will-moser',nome:'Will Moser',funcao:'Editor',instagram:'@wiillmoser',arquivo:'',ordem:4,publicado:true,escala:100},
-    {id:'guilherme-antunes',nome:'Guilherme Antunes',funcao:'Videomaker',instagram:'',arquivo:'',ordem:5,publicado:true,escala:100},
+    {id:'guilherme-antunes',nome:'Guilherme Antunes',funcao:'Videomaker',instagram:'@antunesguii_',arquivo:'',ordem:5,publicado:true,escala:100},
     {id:'matheus-yuri',nome:'Matheus Yuri',funcao:'Videomaker',instagram:'@matheusyurirosa',arquivo:'',ordem:6,publicado:true,escala:100},
     {id:'beatriz-vieira',nome:'Beatriz Vieira',funcao:'Influencer e apresentadora',instagram:'@bevieiraa',arquivo:'',ordem:7,publicado:true,escala:100}
   ];
