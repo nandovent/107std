@@ -670,6 +670,18 @@ a[class*="button"]{
   #equipe .member small{margin-top:4px;font-size:9px}
 }
 
+
+/* ===== VIDEO DE FUNDO — HERO FESTA DA TAINHA ===== */
+.section.case-hero{isolation:isolate;background:#090909}
+.case-hero .hero-background-video{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#090909}
+.case-hero .hero-background-video video{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;filter:grayscale(1) contrast(1.14) brightness(.62);transform:scale(1.015)}
+/* Camada de contraste e textura diagonal, sutil para manter o vídeo presente. */
+.section.case-hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(7,7,7,.85) 0%,rgba(7,7,7,.72) 42%,rgba(7,7,7,.47) 74%,rgba(7,7,7,.45) 100%),repeating-linear-gradient(135deg,rgba(252,250,227,.045) 0 1px,transparent 1px 21px);}
+.case-hero > .inner{position:relative;z-index:2}
+.case-hero .case-hero-copy{filter:drop-shadow(0 3px 12px rgba(0,0,0,.25))}
+@media(max-width:900px){.section.case-hero::before{background:linear-gradient(180deg,rgba(7,7,7,.72),rgba(7,7,7,.79)),repeating-linear-gradient(135deg,rgba(252,250,227,.045) 0 1px,transparent 1px 21px)}.case-hero .hero-background-video video{object-position:center center}}
+@media(prefers-reduced-motion:reduce){.case-hero .hero-background-video video{filter:grayscale(1) brightness(.5)}}
+
 </style></head>
 <body><main class="wrap">
 <div class="case-sitebar">
@@ -679,7 +691,14 @@ a[class*="button"]{
 
 
 
-<section class="section hero case-hero" id="home"><div class="inner">
+<section class="section hero case-hero" id="home">
+  <div class="hero-background-video" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture>
+      <source src="video/teaser.mp4" type="video/mp4">
+      <source src="vídeo/teaser.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="inner">
   <div class="header">
     <img class="logo case-logo" src="../../assets/images/logo-vertical-offwhite.png" alt="107 Studios">
     <div class="meta">Central de Mídia<br>Relatório executivo</div>
