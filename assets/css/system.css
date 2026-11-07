@@ -1142,3 +1142,14 @@ body.modal-open{overflow:hidden}
   .sound-time{font-size:7px}
 }
 @media(prefers-reduced-motion:reduce){.sound-play.is-playing{animation:none}}
+
+
+/* 107 Studios | assinatura responsiva nas páginas públicas */
+@media (max-width: 700px) {
+  .nav .nav-logo { width: 80px; max-width: 80px; height: auto; object-fit: contain; }
+  .footer-brand { width: 112px; max-width: 34vw; height: auto; object-fit: contain; }
+}
+@media (max-width: 390px) {
+  .nav .nav-logo { width: 72px; max-width: 72px; }
+  .footer-brand { width: 96px; }
+}

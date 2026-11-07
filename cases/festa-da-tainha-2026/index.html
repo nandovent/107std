@@ -682,6 +682,26 @@ a[class*="button"]{
 @media(max-width:900px){.section.case-hero::before{background:linear-gradient(180deg,rgba(7,7,7,.72),rgba(7,7,7,.79)),repeating-linear-gradient(135deg,rgba(252,250,227,.045) 0 1px,transparent 1px 21px)}.case-hero .hero-background-video video{object-position:center center}}
 @media(prefers-reduced-motion:reduce){.case-hero .hero-background-video video{filter:grayscale(1) brightness(.5)}}
 
+
+/* 107 Studios | logos proporcionais nos cabeçalhos do case (mobile) */
+@media (max-width: 700px) {
+  .section .header > img.logo,
+  .section .header > img.case-logo {
+    display: block;
+    width: 100px !important;
+    max-width: min(100px, 29vw) !important;
+    height: auto !important;
+    max-height: 67px !important;
+    object-fit: contain !important;
+    object-position: left center;
+    flex: 0 0 auto;
+  }
+  .section .header {gap: 12px;}
+}
+@media (max-width: 390px) {
+  .section .header > img.logo,
+  .section .header > img.case-logo {width: 86px !important;max-width: 86px !important;max-height: 58px !important;}
+}
 </style></head>
 <body><main class="wrap">
 <div class="case-sitebar">
