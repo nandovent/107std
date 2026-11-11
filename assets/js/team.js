@@ -1,13 +1,74 @@
 (()=>{
+  // Reserva local: as fotos continuam visiveis mesmo se /data/equipe.json nao responder.
   const fallback=[
-    {id:'fernando-venturini',nome:'Fernando Venturini',funcao:'Proprietário e diretor.',instagram:'@nandovent',arquivo:'',ordem:1,publicado:true,escala:100,destaque:true},
-    {id:'yago-wolf',nome:'Yago Wolf',funcao:'Videomaker e editor',instagram:'@yagowolf_',arquivo:'',ordem:2,publicado:true,escala:100},
-    {id:'laura-vidal',nome:'Laura Vidal',funcao:'Storymaker e editora',instagram:'@llauravidall',arquivo:'',ordem:3,publicado:true,escala:100},
-    {id:'will-moser',nome:'Will Moser',funcao:'Editor',instagram:'@wiillmoser',arquivo:'',ordem:4,publicado:true,escala:100},
-    {id:'guilherme-antunes',nome:'Guilherme Antunes',funcao:'Videomaker',instagram:'',arquivo:'',ordem:5,publicado:true,escala:100},
-    {id:'matheus-yuri',nome:'Matheus Yuri',funcao:'Videomaker',instagram:'@matheusyurirosa',arquivo:'',ordem:6,publicado:true,escala:100},
-    {id:'beatriz-vieira',nome:'Beatriz Vieira',funcao:'Influencer e apresentadora',instagram:'@bevieiraa',arquivo:'',ordem:7,publicado:true,escala:100}
+    {
+      "id": "fernando-venturini",
+      "nome": "Fernando Venturini",
+      "funcao": "Proprietário e diretor.",
+      "instagram": "@nandovent",
+      "arquivo": "/assets/equipe/fernando-venturini.png",
+      "ordem": 1,
+      "publicado": true,
+      "destaque": true,
+      "escala": 110
+    },
+    {
+      "id": "yago-wolf",
+      "nome": "Yago Wolf",
+      "funcao": "Videomaker e editor",
+      "instagram": "@yagowolf_",
+      "arquivo": "/assets/equipe/yago-wolf.png",
+      "ordem": 2,
+      "publicado": true,
+      "destaque": false,
+      "escala": 100
+    },
+    {
+      "id": "laura-vidal",
+      "nome": "Laura Vidal",
+      "funcao": "Storymaker e editora",
+      "instagram": "@llauravidall",
+      "arquivo": "/assets/equipe/laura-vidal.png",
+      "ordem": 3,
+      "publicado": true,
+      "destaque": false,
+      "escala": 105
+    },
+    {
+      "id": "will-moser",
+      "nome": "Will Moser",
+      "funcao": "Editor",
+      "instagram": "@wiillmoser",
+      "arquivo": "/assets/equipe/will-moser.png",
+      "ordem": 4,
+      "publicado": true,
+      "destaque": false,
+      "escala": 100
+    },
+    {
+      "id": "matheus-yuri",
+      "nome": "Matheus Yuri",
+      "funcao": "Videomaker",
+      "instagram": "@matheusyurirosa",
+      "arquivo": "/assets/equipe/matheus-yuri.png",
+      "ordem": 6,
+      "publicado": true,
+      "destaque": false,
+      "escala": 100
+    },
+    {
+      "id": "beatriz-vieira",
+      "nome": "Beatriz Vieira",
+      "funcao": "Influencer e apresentadora",
+      "instagram": "@bevieiraa",
+      "arquivo": "/assets/equipe/beatriz-vieira.png",
+      "ordem": 7,
+      "publicado": true,
+      "destaque": false,
+      "escala": 100
+    }
   ];
+
   const esc=value=>String(value||'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const insta=value=>{
     const raw=String(value||'').trim();
