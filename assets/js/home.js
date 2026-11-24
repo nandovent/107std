@@ -58,16 +58,12 @@
   const observeReveals = root => $$('[data-reveal]', root).forEach(el => io.observe(el));
   observeReveals(document);
 
-  /* ---------- vídeo: carrega só quando chega perto ---------- */
-  const video = $('[data-film] video');
+  /* ---------- vídeo do topo: versão certa para cada tela ---------- */
+  const video = $('[data-hero-media] video');
   if (video) {
-    const vio = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) {
-        if (!video.src) { video.src = isMobile ? video.dataset.srcMobile : video.dataset.srcDesktop; }
-        video.play().catch(() => {});
-      } else if (video.src) video.pause();
-    }, { rootMargin: '200px 0px' });
-    vio.observe(video);
+    video.src = isMobile ? video.dataset.srcMobile : video.dataset.srcDesktop;
+    video.play().catch(() => {});
+    new IntersectionObserver(([e]) => { e.isIntersecting ? video.play().catch(() => {}) : video.pause(); }).observe(video);
   }
 
   /* ---------- frase que acende palavra por palavra ---------- */
@@ -81,16 +77,15 @@
   }
 
   /* ---------- loop de scroll ---------- */
-  const film = $('[data-film]'), frame = $('[data-film-frame]');
+  const heroMedia = $('[data-hero-media]');
   let ticking = false;
   const onScroll = () => {
     ticking = false;
     onNav();
     const vh = innerHeight;
-    if (film && frame && !reduce) {
-      const r = film.getBoundingClientRect();
-      const p = clamp((vh - r.top) / (vh + (r.height - vh) * .6));
-      frame.style.setProperty('--p', p.toFixed(4));
+    if (heroMedia && !reduce) {
+      const q = clamp(scrollY / vh);
+      heroMedia.style.setProperty('--q', q.toFixed(4));
     }
     if (wordEls.length) {
       const r = words.getBoundingClientRect();
@@ -140,9 +135,21 @@
       const per = isMobile ? 140 : 170;
       const reps = Math.max(1, Math.ceil(innerWidth * 1.2 / (per * list.length)));
       const seq = Array.from({ length: reps }, () => list).flat();
-      const group = seq.map(i => `<div class="logo"><img src="${esc(logoUrl(i))}" alt="${esc(i.nome || 'Cliente')}" loading="lazy" style="--s:${clamp((Number(i.escala) || 100) / 100, .55, 2.5)}" onerror="this.parentElement.remove()"></div>`).join('');
+      const group = seq.map(i => `<div class="logo"><img src="${esc(logoUrl(i))}" alt="${esc(i.nome || 'Cliente')}" loading="eager" style="--s:${clamp((Number(i.escala) || 100) / 100, .55, 2.5)}" onerror="this.parentElement.remove()"></div>`).join('');
       track.innerHTML = `<div class="marquee-group">${group}</div><div class="marquee-group" aria-hidden="true">${group}</div>`;
       track.style.setProperty('--dur', `${Math.max(18, seq.length * 3)}s`);
       section.hidden = false;
+      $$('img', track).forEach(img => {
+        const check = () => {
+          try {
+            const c = document.createElement('canvas'); c.width = 48; c.height = 24;
+            const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(img, 0, 0, 48, 24);
+            const d = x.getImageData(0, 0, 48, 24).data; let sum = 0, n = 0;
+            for (let i = 0; i < d.length; i += 4) if (d[i + 3] > 128) { sum += .3 * d[i] + .59 * d[i + 1] + .11 * d[i + 2]; n++; }
+            if (n && sum / n < 150) img.classList.add('is-dark');
+          } catch (_) {}
+        };
+        img.complete && img.naturalWidth ? check() : img.addEventListener('load', check, { once: true });
+      });
     }).catch(() => {});
 })();

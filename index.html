@@ -17,9 +17,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/home.css?v=1">
+<link rel="stylesheet" href="assets/css/home.css?v=2">
 <script>document.documentElement.classList.add('js')</script>
-<script src="assets/js/home.js?v=1" defer></script>
+<script src="assets/js/home.js?v=2" defer></script>
 </head>
 <body>
 
@@ -50,38 +50,37 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <span class="eyebrow hero-eyebrow" data-reveal>We build media operations</span>
-    <h1 class="hero-title" aria-label="Comunicação. Design. Audiovisual. Como um só.">
-      <span class="line"><span style="--i:0">Comunicação.</span></span>
-      <span class="line"><span style="--i:1">Design.</span></span>
-      <span class="line"><span style="--i:2">Audiovisual.</span></span>
-      <span class="line accent"><span style="--i:3">Como um só.</span></span>
-    </h1>
-    <div class="hero-foot" data-reveal style="--d:.7s">
-      <p class="lead">Fazendo o simples virar cinema.</p>
-      <div class="btn-row">
-        <a class="btn" href="cases/">Ver cases</a>
-        <a class="btn ghost" href="#contato">Falar com a 107</a>
+  <!-- HERO COM VÍDEO -->
+  <section class="hero" data-hero>
+    <div class="hero-media" data-hero-media>
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/media/teaser-poster.jpg" aria-hidden="true"
+        data-src-desktop="assets/media/teaser-1080.mp4" data-src-mobile="assets/media/teaser-720.mp4"></video>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+    </div>
+    <div class="hero-content">
+      <span class="eyebrow hero-eyebrow" data-reveal>We build media operations</span>
+      <h1 class="hero-title" aria-label="Comunicação. Design. Audiovisual. Como um só.">
+        <span class="line"><span style="--i:0">Comunicação.</span></span>
+        <span class="line"><span style="--i:1">Design.</span></span>
+        <span class="line"><span style="--i:2">Audiovisual.</span></span>
+        <span class="line accent"><span style="--i:3">Como um só.</span></span>
+      </h1>
+      <div class="hero-foot" data-reveal style="--d:.7s">
+        <p class="lead">Fazendo o simples virar cinema.</p>
+        <div class="btn-row">
+          <a class="btn" href="cases/">Ver cases</a>
+          <a class="btn ghost" href="#contato">Falar com a 107</a>
+        </div>
       </div>
+      <a class="hero-credit" href="cases/festa-da-tainha-2026/" data-reveal style="--d:1s"><span>No vídeo</span>Festa da Tainha 2026 ↗</a>
     </div>
   </section>
 
-  <!-- FILME QUE CRESCE NO SCROLL -->
-  <section class="film" data-film aria-label="Teaser Festa da Tainha 2026">
-    <div class="film-sticky">
-      <div class="film-frame" data-film-frame>
-        <video muted loop playsinline preload="none" poster="assets/media/teaser-poster.jpg" aria-hidden="true"
-          data-src-desktop="assets/media/teaser-720.mp4" data-src-mobile="assets/media/teaser-540.mp4"></video>
-        <div class="film-shade"></div>
-        <div class="film-copy">
-          <span class="eyebrow">Festa da Tainha 2026</span>
-          <p>Do roteiro<br>à entrega.</p>
-          <a class="btn light" href="cases/festa-da-tainha-2026/">Ver o case</a>
-        </div>
-      </div>
-    </div>
+  <!-- CLIENTES -->
+  <section class="clients" data-clients hidden aria-label="Clientes da 107 Studios">
+    <p class="clients-title">Marcas que confiam na 107</p>
+    <div class="marquee"><div class="marquee-track" data-clients-track></div></div>
   </section>
 
   <!-- FRASE QUE ACENDE -->
@@ -143,12 +142,6 @@
     <div class="reel-frame" data-reveal="scale">
       <iframe src="https://player.vimeo.com/video/1209079889?title=0&byline=0&portrait=0&badge=0&autopause=0" title="Prévia de filme institucional da 107 Studios" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen loading="lazy"></iframe>
     </div>
-  </section>
-
-  <!-- CLIENTES -->
-  <section class="clients" data-clients hidden aria-label="Clientes da 107 Studios">
-    <p class="clients-title">Marcas que confiam na 107</p>
-    <div class="marquee"><div class="marquee-track" data-clients-track></div></div>
   </section>
 
   <!-- EQUIPE -->
