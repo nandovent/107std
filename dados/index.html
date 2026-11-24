@@ -62,17 +62,25 @@
   </section>
 
   <section class="wrap" style="padding-bottom:clamp(80px,13vh,150px)">
-    <div class="split">
-      <div class="card" data-reveal><h3>01 · Dados cadastrais</h3><div class="fields" id="cadastro"></div></div>
-      <div>
-        <div class="card" data-reveal style="--d:.1s"><h3>02 · Dados bancários</h3><div class="fields" id="banco"></div></div>
-        <div class="card orange" data-reveal style="--d:.2s;margin-top:14px">
-          <h3 style="color:var(--black)">03 · Chave Pix · CNPJ</h3>
-          <p class="pix">70.246.009/0001-62</p>
-          <p class="body" style="margin-top:10px">Titular: 107 STUDIOS LTDA</p>
-          <div class="btn-row" style="margin-top:20px"><button class="btn dark" id="copy-pix" type="button">Copiar chave Pix</button></div>
+    <!-- Pix em primeiro plano: acesso imediato no celular e desktop -->
+    <div class="card orange" data-reveal style="--d:.1s;margin-bottom:14px;padding:clamp(28px,5vw,52px)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+        <div style="min-width:0;flex:1 1 340px">
+          <span class="eyebrow" style="color:var(--black);opacity:.8">Pagamento rápido · Pix</span>
+          <h2 style="color:var(--black);font-size:clamp(30px,5vw,58px);line-height:1;letter-spacing:-.055em;margin:14px 0 18px;font-weight:900">Chave Pix · CNPJ</h2>
+          <p class="pix" style="font-size:clamp(22px,4vw,42px);overflow-wrap:anywhere;margin:0">70.246.009/0001-62</p>
+          <p class="body" style="margin-top:12px;color:var(--black)">Titular: <strong>107 STUDIOS LTDA</strong></p>
         </div>
-        <div class="card" data-reveal style="--d:.3s;margin-top:14px"><h3>04 · Contato</h3><div class="fields" id="contato"></div></div>
+        <div style="flex:0 1 auto">
+          <button class="btn dark" id="copy-pix" type="button" style="min-height:52px">Copiar chave Pix ↗</button>
+        </div>
+      </div>
+    </div>
+    <div class="split">
+      <div class="card" data-reveal style="--d:.15s"><h3>01 · Dados cadastrais</h3><div class="fields" id="cadastro"></div></div>
+      <div>
+        <div class="card" data-reveal style="--d:.2s"><h3>02 · Dados bancários</h3><div class="fields" id="banco"></div></div>
+        <div class="card" data-reveal style="--d:.25s;margin-top:14px"><h3>03 · Contato</h3><div class="fields" id="contato"></div></div>
       </div>
     </div>
   </section>
