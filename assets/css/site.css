@@ -223,6 +223,7 @@ a.member:hover .member-photo img{transform:scale(calc(var(--s,1) * 1.04))}
   .team-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
   .team-grid.has-featured .member.featured{grid-column:span 2;grid-row:span 2}
   .team-grid.has-featured .member.featured .member-photo{aspect-ratio:auto;flex:1;min-height:360px}
+  .team-grid.has-featured .member.featured .member-info{flex:none}
   .member.featured .member-info h3{font-size:clamp(28px,3vw,40px)}
   .team-grid:not(.has-featured) .member.featured{grid-column:auto}
   .team-grid:not(.has-featured) .member.featured .member-photo{aspect-ratio:4/5}
