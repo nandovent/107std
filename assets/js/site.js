@@ -130,9 +130,19 @@
       wordEls.forEach((w, i) => w.classList.toggle('on', i < n));
     }
     if (subTargets.length) {
+      const bar = $('[data-subnav]');
+      bar.classList.toggle('is-stuck', bar.getBoundingClientRect().top <= parseFloat(getComputedStyle(bar).top) + 1);
       let current = 0;
       subTargets.forEach((t, i) => { if (t.getBoundingClientRect().top < vh * .35) current = i; });
-      subLinks.forEach((a, i) => a.classList.toggle('is-active', i === current && subTargets[0].getBoundingClientRect().top < vh * .35));
+      const started = subTargets[0].getBoundingClientRect().top < vh * .35;
+      subLinks.forEach((a, i) => {
+        const on = started && i === current;
+        if (on && !a.classList.contains('is-active')) {
+          const bar = a.parentElement;
+          bar.scrollTo({ left: a.offsetLeft - (bar.clientWidth - a.offsetWidth) / 2, behavior: reduce ? 'auto' : 'smooth' });
+        }
+        a.classList.toggle('is-active', on);
+      });
     }
   };
   const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } };
