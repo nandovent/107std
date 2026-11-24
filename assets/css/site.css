@@ -17,7 +17,7 @@
 }
 .light{--bg:var(--cream);--fg:var(--black);--muted:var(--gray-ink);--border:rgba(16,16,16,.14);--border-strong:rgba(16,16,16,.55);--surface:rgba(16,16,16,.04)}
 .orange{--bg:var(--orange);--fg:var(--black);--muted:rgba(16,16,16,.72);--border:rgba(16,16,16,.2);--border-strong:rgba(16,16,16,.55);--surface:rgba(16,16,16,.06)}
-.light,.orange{background:var(--bg);color:var(--fg)}
+.light,.orange,.card.light,.card.orange{background:var(--bg);color:var(--fg)}
 
 /* ---------- base ---------- */
 *{box-sizing:border-box}
@@ -343,9 +343,16 @@ a.member:hover .member-photo img{transform:scale(calc(var(--s,1) * 1.04))}
 .field b{display:block;margin-top:4px;font-size:16px;font-weight:800;overflow-wrap:anywhere}
 .copy{flex:none;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--border-strong);background:transparent;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;transition:all .25s}
 .copy:hover{background:var(--fg);color:var(--bg)}
-.pix{font-size:clamp(28px,6vw,76px);line-height:1;letter-spacing:-.05em;font-weight:900;overflow-wrap:anywhere}
-.toast{position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));z-index:90;padding:14px 22px;border-radius:999px;background:var(--orange);color:var(--cream);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;transform:translate(-50%,140%);transition:transform .5s var(--ease)}
-.toast.show{transform:translate(-50%,0)}
+.pix-band{display:grid;gap:22px;align-items:end;padding:clamp(26px,5vw,56px);border-radius:var(--radius);margin-bottom:14px}
+.pix-band small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.pix-band .pix{margin:12px 0 0;color:var(--black);font-size:clamp(30px,5.6vw,80px);line-height:.92;letter-spacing:-.06em;font-weight:900;white-space:nowrap}
+.pix-band p{margin:12px 0 0;font-size:15px;font-weight:700;color:var(--muted)}
+.pix-band .btn{justify-self:start;white-space:nowrap}
+.pix-band>div{min-width:0}
+@media(min-width:900px){.pix-band{grid-template-columns:1fr auto}.pix-band .btn{justify-self:end;min-height:58px;padding:0 30px}}
+@media(max-width:420px){.pix-band .pix{font-size:clamp(24px,7.6vw,36px)}}
+.toast{position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));z-index:90;padding:14px 22px;border-radius:999px;background:var(--orange);color:var(--cream);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;transform:translate(-50%,calc(100% + 60px));visibility:hidden;transition:transform .5s var(--ease),visibility 0s .5s}
+.toast.show{transform:translate(-50%,0);visibility:visible;transition:transform .5s var(--ease)}
 
 /* ---------- chamada final e rodapé ---------- */
 .cta-logo{width:110px;margin-bottom:34px}

@@ -19,9 +19,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=5">
+<link rel="stylesheet" href="/assets/css/site.css?v=7">
 <script>document.documentElement.classList.add('js')</script>
-<script src="/assets/js/site.js?v=5" defer></script>
+<script src="/assets/js/site.js?v=7" defer></script>
 </head>
 <body>
 
@@ -54,7 +54,7 @@
   <section class="wrap page-head">
     <span class="eyebrow" data-reveal>107 Studios · Institucional</span>
     <h1 class="title md" aria-label="Dados cadastrais e bancários.">
-      <span class="line nowrap"><span style="--i:0">Dados cadastrais</span></span>
+      <span class="line"><span style="--i:0">Dados cadastrais</span></span>
       <span class="line accent"><span style="--i:1">e bancários.</span></span>
     </h1>
     <p class="lead" data-reveal style="--d:.5s">Informações oficiais para cadastro de fornecedor, emissão de nota fiscal e pagamentos. Toque em "Copiar" ao lado de cada informação.</p>
@@ -62,25 +62,21 @@
   </section>
 
   <section class="wrap" style="padding-bottom:clamp(80px,13vh,150px)">
-    <!-- Pix em primeiro plano: acesso imediato no celular e desktop -->
-    <div class="card orange" data-reveal style="--d:.1s;margin-bottom:14px;padding:clamp(28px,5vw,52px)">
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
-        <div style="min-width:0;flex:1 1 340px">
-          <span class="eyebrow" style="color:var(--black);opacity:.8">Pagamento rápido · Pix</span>
-          <h2 style="color:var(--black);font-size:clamp(30px,5vw,58px);line-height:1;letter-spacing:-.055em;margin:14px 0 18px;font-weight:900">Chave Pix · CNPJ</h2>
-          <p class="pix" style="font-size:clamp(22px,4vw,42px);overflow-wrap:anywhere;margin:0">70.246.009/0001-62</p>
-          <p class="body" style="margin-top:12px;color:var(--black)">Titular: <strong>107 STUDIOS LTDA</strong></p>
-        </div>
-        <div style="flex:0 1 auto">
-          <button class="btn dark" id="copy-pix" type="button" style="min-height:52px">Copiar chave Pix ↗</button>
-        </div>
-      </div>
-    </div>
-    <div class="split">
-      <div class="card" data-reveal style="--d:.15s"><h3>01 · Dados cadastrais</h3><div class="fields" id="cadastro"></div></div>
+    <!-- PIX EM DESTAQUE -->
+    <div class="pix-band orange" data-reveal="scale">
       <div>
-        <div class="card" data-reveal style="--d:.2s"><h3>02 · Dados bancários</h3><div class="fields" id="banco"></div></div>
-        <div class="card" data-reveal style="--d:.25s;margin-top:14px"><h3>03 · Contato</h3><div class="fields" id="contato"></div></div>
+        <small>Pix · Chave CNPJ</small>
+        <p class="pix">70.246.009/0001-62</p>
+        <p>Titular: 107 STUDIOS LTDA · Nubank</p>
+      </div>
+      <button class="btn dark" id="copy-pix" type="button">Copiar chave Pix</button>
+    </div>
+
+    <div class="split">
+      <div class="card" data-reveal><h3>01 · Dados cadastrais</h3><div class="fields" id="cadastro"></div></div>
+      <div>
+        <div class="card" data-reveal style="--d:.1s"><h3>02 · Dados bancários</h3><div class="fields" id="banco"></div></div>
+        <div class="card" data-reveal style="--d:.2s;margin-top:14px"><h3>03 · Contato</h3><div class="fields" id="contato"></div></div>
       </div>
     </div>
   </section>
