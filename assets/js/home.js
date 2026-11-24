@@ -146,7 +146,7 @@
             const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(img, 0, 0, 48, 24);
             const d = x.getImageData(0, 0, 48, 24).data; let sum = 0, n = 0;
             for (let i = 0; i < d.length; i += 4) if (d[i + 3] > 128) { sum += .3 * d[i] + .59 * d[i + 1] + .11 * d[i + 2]; n++; }
-            if (n && sum / n < 150) img.classList.add('is-dark');
+            if (n && sum / n < 165) img.classList.add('is-dark');
           } catch (_) {}
         };
         img.complete && img.naturalWidth ? check() : img.addEventListener('load', check, { once: true });
