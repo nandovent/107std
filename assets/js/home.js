@@ -122,34 +122,43 @@
     .then(d => renderTeam(Array.isArray(d) ? d : []))
     .catch(() => renderTeam([]));
 
-  /* ---------- clientes (lidos do admin: /data/clientes.json) ---------- */
-  const logoUrl = item => {
-    const path = String(item.arquivo || '').replace(/^\/+/, '');
-    return path.startsWith('assets/clientes/') ? `/api/clientes?asset=${encodeURIComponent(path)}&v=${encodeURIComponent(item.id || 'logo')}` : item.arquivo;
+  /* ---------- carrosséis de logos (clientes e parceiros, lidos de /data/*.json) ---------- */
+  const markDark = img => {
+    const check = () => {
+      try {
+        const c = document.createElement('canvas'); c.width = 48; c.height = 24;
+        const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(img, 0, 0, 48, 24);
+        const d = x.getImageData(0, 0, 48, 24).data; let sum = 0, n = 0;
+        for (let i = 0; i < d.length; i += 4) if (d[i + 3] > 128) { sum += .3 * d[i] + .59 * d[i + 1] + .11 * d[i + 2]; n++; }
+        if (n && sum / n < 165) img.classList.add('is-dark');
+      } catch (_) {}
+    };
+    img.complete && img.naturalWidth ? check() : img.addEventListener('load', check, { once: true });
   };
-  fetch('/data/clientes.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : Promise.reject())
-    .then(data => {
-      const list = (Array.isArray(data) ? data : []).filter(i => i.publicado !== false && i.arquivo).sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
-      if (!list.length) return;
-      const section = $('[data-clients]'), track = $('[data-clients-track]');
-      const per = isMobile ? 140 : 170;
-      const reps = Math.max(1, Math.ceil(innerWidth * 1.2 / (per * list.length)));
-      const seq = Array.from({ length: reps }, () => list).flat();
-      const group = seq.map(i => `<div class="logo"><img src="${esc(logoUrl(i))}" alt="${esc(i.nome || 'Cliente')}" loading="eager" style="--s:${clamp((Number(i.escala) || 100) / 100, .55, 2.5)}" onerror="this.parentElement.remove()"></div>`).join('');
-      track.innerHTML = `<div class="marquee-group">${group}</div><div class="marquee-group" aria-hidden="true">${group}</div>`;
-      track.style.setProperty('--dur', `${Math.max(18, seq.length * 3)}s`);
-      section.hidden = false;
-      $$('img', track).forEach(img => {
-        const check = () => {
-          try {
-            const c = document.createElement('canvas'); c.width = 48; c.height = 24;
-            const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(img, 0, 0, 48, 24);
-            const d = x.getImageData(0, 0, 48, 24).data; let sum = 0, n = 0;
-            for (let i = 0; i < d.length; i += 4) if (d[i + 3] > 128) { sum += .3 * d[i] + .59 * d[i + 1] + .11 * d[i + 2]; n++; }
-            if (n && sum / n < 165) img.classList.add('is-dark');
-          } catch (_) {}
-        };
-        img.complete && img.naturalWidth ? check() : img.addEventListener('load', check, { once: true });
-      });
-    }).catch(() => {});
+  $$('[data-logos]').forEach(section => {
+    const { logos: src, logosAsset: assetDir, logosApi: api } = section.dataset;
+    const track = $('[data-logos-track]', section);
+    const url = item => {
+      const path = String(item.arquivo || '').replace(/^\/+/, '');
+      if (api && assetDir && path.startsWith(assetDir)) return `${api}?asset=${encodeURIComponent(path)}&v=${encodeURIComponent(item.id || 'logo')}`;
+      return /^https?:/.test(item.arquivo) ? item.arquivo : '/' + path;
+    };
+    fetch(src, { cache: 'no-cache' }).then(r => r.ok ? r.json() : Promise.reject())
+      .then(data => {
+        const list = (Array.isArray(data) ? data : []).filter(i => i.publicado !== false && i.arquivo).sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
+        if (!list.length) return;
+        const per = isMobile ? 140 : 180;
+        const reps = Math.max(1, Math.ceil(innerWidth * 1.2 / (per * list.length)));
+        const seq = Array.from({ length: reps }, () => list).flat();
+        const group = seq.map(i => {
+          const img = `<img src="${esc(url(i))}" alt="${esc(i.nome || 'Logo')}" style="--s:${clamp((Number(i.escala) || 100) / 100, .55, 2.5)}" onerror="this.closest('.logo').remove()">`;
+          return i.link ? `<a class="logo" href="${esc(i.link)}" target="_blank" rel="noopener">${img}</a>` : `<div class="logo">${img}</div>`;
+        }).join('');
+        track.innerHTML = `<div class="marquee-group">${group}</div><div class="marquee-group" aria-hidden="true">${group}</div>`;
+        track.style.setProperty('--dur', `${Math.max(18, seq.length * 3)}s`);
+        if (track.hasAttribute('data-reverse')) track.style.animationDirection = 'reverse';
+        section.hidden = false;
+        $$('img', track).forEach(markDark);
+      }).catch(() => {});
+  });
 })();

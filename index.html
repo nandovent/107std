@@ -17,9 +17,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/home.css?v=2">
+<link rel="stylesheet" href="assets/css/home.css?v=4">
 <script>document.documentElement.classList.add('js')</script>
-<script src="assets/js/home.js?v=3" defer></script>
+<script src="assets/js/home.js?v=4" defer></script>
 </head>
 <body>
 
@@ -78,9 +78,9 @@
   </section>
 
   <!-- CLIENTES -->
-  <section class="clients" data-clients hidden aria-label="Clientes da 107 Studios">
+  <section class="clients" data-logos="/data/clientes.json" data-logos-asset="assets/clientes/" data-logos-api="/api/clientes" hidden aria-label="Clientes da 107 Studios">
     <p class="clients-title">Marcas que confiam na 107</p>
-    <div class="marquee"><div class="marquee-track" data-clients-track></div></div>
+    <div class="marquee"><div class="marquee-track" data-logos-track></div></div>
   </section>
 
   <!-- FRASE QUE ACENDE -->
@@ -99,6 +99,12 @@
       <a class="path" href="cases/" data-reveal style="--d:.1s"><span class="path-n">02</span><h3>Cases</h3><p>Processo, números e resultados.</p><span class="arrow" aria-hidden="true">↗</span></a>
       <a class="path" href="#equipe" data-reveal style="--d:.2s"><span class="path-n">03</span><h3>Equipe</h3><p>Núcleo interno e rede.</p><span class="arrow" aria-hidden="true">↗</span></a>
     </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section class="clients partners" data-logos="/data/parceiros.json" hidden aria-label="Parceiros da 107 Studios">
+    <p class="clients-title">Parcerias que fortalecem negócios</p>
+    <div class="marquee"><div class="marquee-track" data-logos-track data-reverse></div></div>
   </section>
 
   <!-- CASE EM DESTAQUE -->
