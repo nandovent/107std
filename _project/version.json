@@ -1,5 +1,5 @@
 {
-  "version": "v05.0.0-teste",
+  "version": "v05.1.0-teste",
   "base": "v04.2.24",
-  "change": "Nova home: animações no scroll, vídeo otimizado (80 MB → 6,5 MB), mobile-first, SEO/prévia de link; corrige carrossel duplicado do portfólio"
+  "change": "Site público inteiro no padrão v05: base única (site.css/site.js), portfólio, cases, G4, Festa da Tainha e dados refeitos; vídeos e imagens otimizados"
 }

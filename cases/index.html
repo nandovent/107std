@@ -2,144 +2,112 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101010">
+<meta name="format-detection" content="telephone=no">
 <title>Cases — 107 Studios</title>
 <meta name="description" content="Cases da 107 Studios: contexto, operação, entregas e resultados.">
-<link rel="icon" href="../assets/images/star.png">
-<link rel="stylesheet" href="../assets/css/system.css">
-<script src="../assets/js/system.js" defer></script>
-<style>
-/* Cards de cases | mesmo acabamento de vídeo monocromático */
-.cases-list .case-list-card.case-video-card {
-  position: relative; isolation: isolate; overflow: hidden;
-  min-height: 240px; background: #0e0e0e; color: #FCFAE3;
-  border: 1px solid rgba(252,250,227,.19);
-  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-}
-.cases-list .case-list-card.case-video-card:hover {
-  border-color: var(--orange); background: #0e0e0e;
-  box-shadow: 0 22px 42px rgba(0,0,0,.20);
-}
-.cases-list .case-video-card .case-media {
-  position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
-  background: linear-gradient(140deg, #252525, #080808);
-}
-.cases-list .case-video-card .case-media video {
-  display: block; width: 100%; height: 100%; object-fit: cover;
-  filter: grayscale(1) contrast(1.12) brightness(.68);
-  transform: scale(1.025); transition: transform .6s ease;
-}
-.cases-list .case-video-card:hover .case-media video { transform: scale(1.075); }
-.cases-list .case-video-card .case-media::before {
-  content: ""; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(90deg, rgba(9,9,9,.86) 0%, rgba(9,9,9,.73) 49%, rgba(9,9,9,.55) 100%);
-}
-.cases-list .case-video-card .case-media::after {
-  content: ""; position: absolute; inset: 0; z-index: 2;
-  background: repeating-linear-gradient(135deg, rgba(252,250,227,.075) 0 1px, transparent 1px 24px);
-  opacity: .72;
-}
-.cases-list .case-video-card > :not(.case-media) { position: relative; z-index: 3; }
-.cases-list .case-video-card h3 { color: #FCFAE3; }
-.cases-list .case-video-card p { color: rgba(252,250,227,.85); }
-.cases-list .case-video-card .video-meta { color: rgba(252,250,227,.90); }
-.cases-list .case-video-card .video-meta span {
-  padding: 8px 10px; border-radius: 999px;
-  background: rgba(252,250,227,.09); border: 1px solid rgba(252,250,227,.20);
-}
-.cases-list .case-video-card .case-index { color: var(--orange); text-shadow: 0 8px 28px rgba(0,0,0,.45); }
-.cases-list .case-video-card .case-arrow { color: #FCFAE3; }
-@media (max-width: 900px) {
-  .cases-list .case-video-card.case-list-card { min-height: 300px; }
-  .cases-list .case-video-card .case-media::before {
-    background: linear-gradient(180deg, rgba(9,9,9,.7), rgba(9,9,9,.77) 52%, rgba(9,9,9,.88));
-  }
-  .cases-list .case-video-card .video-meta { flex-wrap: wrap; justify-content: flex-start; gap: 8px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .cases-list .case-video-card .case-media video { transition: none; }
-}
-</style>
+<link rel="canonical" href="https://107std.com/cases/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="107 Studios">
+<meta property="og:title" content="Cases — 107 Studios">
+<meta property="og:description" content="Cases da 107 Studios: contexto, operação, entregas e resultados.">
+<meta property="og:image" content="https://107std.com/assets/media/teaser-poster.jpg">
+<meta property="og:url" content="https://107std.com/cases/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/images/star.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v=5">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/assets/js/site.js?v=5" defer></script>
 </head>
 <body>
-<main class="shell">
 
-<nav class="nav">
-  <a href="../"><img class="nav-logo brand-logo on-dark" src="../assets/images/logo-vertical-offwhite.png" alt="107 Studios"></a>
-  <button class="menu-button" data-menu aria-label="Abrir menu">☰</button>
-  <div class="nav-links">
-    <a href="../">Home</a>
-    <a href="../portfolio/">Portfólio</a>
-    <a class="active" href="./">Cases</a>
-    <a href="../#equipe">Equipe</a>
-    <a href="../#contato">Contato</a>
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="107 Studios — início"><img src="/assets/images/logo-vertical-offwhite.png" alt="107 Studios" width="86" height="44"></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="/portfolio/">Portfólio</a>
+      <a href="/cases/" aria-current="page">Cases</a>
+      <a href="/#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5547996685069" target="_blank" rel="noopener">Fale com a 107</a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
   </div>
-</nav>
+</header>
 
-<section class="panel reveal">
-  <span class="kicker">Cases</span>
-  <h1 class="display">Projetos que viraram prova.</h1>
-  <p class="copy">Contexto. Operação. Entregas. Números. Cada case mostra o que foi feito e o que ficou de resultado.</p>
-</section>
+<div class="menu" data-menu aria-hidden="true">
+  <nav class="menu-links" aria-label="Menu">
+    <a href="/" style="--i:0">Home</a>
+    <a href="/portfolio/" style="--i:1">Portfólio</a>
+    <a href="/cases/" aria-current="page" style="--i:2">Cases</a>
+    <a href="/#equipe" style="--i:3">Equipe</a>
+    <a href="#contato" style="--i:4">Contato</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="--i:5">WhatsApp</a>
+</div>
 
-<section class="panel light reveal">
-  <span class="kicker">Todos os cases</span>
-  <h2 class="title">Soluções integradas gerando resultados</h2>
+<main>
+  <section class="wrap page-head">
+    <span class="eyebrow" data-reveal>Cases</span>
+    <h1 class="title" aria-label="Projetos que viraram prova.">
+      <span class="line nowrap"><span style="--i:0">Projetos que</span></span>
+      <span class="line accent"><span style="--i:1">viraram prova.</span></span>
+    </h1>
+    <p class="lead" data-reveal style="--d:.5s">Contexto, operação, entregas e números. Cada case mostra o que foi feito e o que ficou de resultado.</p>
+  </section>
 
-  <div class="cases-list">
-    <a class="case-list-card case-video-card tainha-card" href="festa-da-tainha-2026/">
-      <div class="case-media" aria-hidden="true">
-        <video autoplay muted loop playsinline preload="auto">
-          <source src="festa-da-tainha-2026/video/teaser.mp4" type="video/mp4">
-        </video>
+  <section class="wrap" style="padding-bottom:clamp(90px,14vh,160px)">
+    <div class="case-list">
+    <a class="case-card" href="/cases/festa-da-tainha-2026/" data-reveal="scale" style="--d:0s">
+      <div class="hero-media" aria-hidden="true">
+        <video muted loop playsinline preload="none" poster="/assets/media/teaser-poster.jpg" data-src="/assets/media/teaser-loop.mp4"></video>
+        <div class="grain"></div>
+        <div class="shade"></div>
       </div>
-      <div class="case-index">01</div>
-      <div>
-        <h3>Festa da Tainha 2026</h3>
-        <p>Central de mídia, identidade visual, campanha, social, audiovisual, fotografia e cobertura em tempo real.</p>
-        <div class="video-meta">
-          <span>1,35M views</span>
-          <span>2200 fotos</span>
-          <span>127 publicações</span>
-        </div>
-      </div>
-      <div class="case-arrow">↗</div>
+      <span class="case-index">01</span>
+      <h2>Festa da Tainha 2026</h2>
+      <p>Central de mídia, identidade visual, campanha, social, audiovisual, fotografia e cobertura em tempo real.</p>
+      <div class="chips"><span class="chip">1,35M views</span><span class="chip">2200 fotos</span><span class="chip">127 publicações</span></div>
+      <span class="arrow" aria-hidden="true">↗</span>
     </a>
-    <a class="case-list-card case-video-card g4-card" href="g4-valley-alfredo-soares-2026/">
-      <div class="case-media" aria-hidden="true">
-        <video autoplay muted loop playsinline webkit-playsinline preload="metadata">
-          <source src="../assets/videos/case_g4_2.mp4" type="video/mp4">
-        </video>
+    <a class="case-card" href="/cases/g4-valley-alfredo-soares-2026/" data-reveal="scale" style="--d:0.1s">
+      <div class="hero-media" aria-hidden="true">
+        <video muted loop playsinline preload="none" poster="/assets/media/g4-poster.jpg" data-src="/assets/media/g4-loop.mp4"></video>
+        <div class="grain"></div>
+        <div class="shade"></div>
       </div>
-      <div class="case-index">02</div>
-      <div>
-        <h3>G4 Valley 2026</h3>
-        <p>Operação audiovisual para o time de Alfredo Soares, em parceria com a Doze Films. Três dias de cobertura, captação e edição.</p>
-        <div class="video-meta">
-          <span>58 vídeos</span>
-          <span>9 aftermovies</span>
-          <span>4 profissionais</span>
-        </div>
-      </div>
-      <div class="case-arrow">↗</div>
+      <span class="case-index">02</span>
+      <h2>G4 Valley 2026</h2>
+      <p>Operação audiovisual para o time de Alfredo Soares, em parceria com a Doze Films. Três dias de cobertura, captação e edição.</p>
+      <div class="chips"><span class="chip">58 vídeos</span><span class="chip">9 aftermovies</span><span class="chip">4 profissionais</span></div>
+      <span class="arrow" aria-hidden="true">↗</span>
     </a>
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="panel reveal">
-  <div class="footer">
-    <div>
-      <img class="footer-brand" src="../assets/images/logo-vertical-offwhite.png" alt="107 Studios" style="margin-bottom:22px">
-      <h2 class="title">O próximo case começa antes da gravação.</h2>
-      <div class="button-row">
-        <a class="button whatsapp-pulse" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="button ghost" href="../">Voltar para Home</a>
+  <!-- CONTATO -->
+  <section class="orange" id="contato">
+    <div class="wrap sec">
+      <img class="cta-logo" src="/assets/images/logo-vertical-black.png" alt="107 Studios" data-reveal>
+      <h2 class="cta-title" data-reveal style="--d:.1s">O próximo case começa antes da gravação.</h2>
+      <div class="btn-row" data-reveal style="--d:.2s">
+        <a class="btn dark" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="/portfolio/">Ver portfólio</a>
       </div>
     </div>
-    <img class="footer-star" src="../assets/images/icon-orange.png" alt="">
-  </div>
-</section>
+  </section>
 
 </main>
+
+<footer class="footer">
+  <span>© <span data-year>2026</span> 107 Studios</span>
+  <a href="/dados/">Dados da empresa</a>
+  <a class="footer-admin" href="/admin/" aria-label="Painel administrativo" title="Painel administrativo"><img src="/assets/images/icon-orange.png" alt=""></a>
+</footer>
+
 </body>
 </html>
