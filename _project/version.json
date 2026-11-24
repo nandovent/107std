@@ -1,5 +1,5 @@
 {
-  "version": "v04.2.24",
-  "base": "v04.2.23 + base completa v04.2.18 e patches preservados",
-  "change": "Módulo de propostas no admin: upload HTML, senha 107, listagem, abrir/copiar link, substituir e excluir"
+  "version": "v05.1.0-teste",
+  "base": "v04.2.24",
+  "change": "Site público inteiro no padrão v05: base única (site.css/site.js), portfólio, cases, G4, Festa da Tainha e dados refeitos; vídeos e imagens otimizados"
 }

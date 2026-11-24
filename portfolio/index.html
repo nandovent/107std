@@ -2,55 +2,99 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101010">
+<meta name="format-detection" content="telephone=no">
 <title>Portfólio — 107 Studios</title>
-<meta name="description" content="Portfólio audiovisual da 107 Studios. Filmes institucionais, campanhas, eventos e outras produções.">
-<link rel="icon" href="../assets/images/star.png">
-<link rel="stylesheet" href="../assets/css/system.css">
-<script src="../assets/js/system.js" defer></script>
+<meta name="description" content="Portfólio audiovisual da 107 Studios: filmes institucionais, videoclipes, making of, eventos e campanhas.">
+<link rel="canonical" href="https://107std.com/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="107 Studios">
+<meta property="og:title" content="Portfólio — 107 Studios">
+<meta property="og:description" content="Portfólio audiovisual da 107 Studios: filmes institucionais, videoclipes, making of, eventos e campanhas.">
+<meta property="og:image" content="https://107std.com/assets/media/teaser-poster.jpg">
+<meta property="og:url" content="https://107std.com/portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/images/star.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v=5">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/assets/js/site.js?v=5" defer></script>
 </head>
 <body>
-<main class="shell">
 
-<nav class="nav">
-  <a href="../"><img class="nav-logo brand-logo on-dark" src="../assets/images/logo-vertical-offwhite.png" alt="107 Studios"></a>
-  <button class="menu-button" data-menu aria-label="Abrir menu">☰</button>
-  <div class="nav-links">
-    <a href="../">Home</a>
-    <a class="active" href="./">Portfólio</a>
-    <a href="../cases/">Cases</a>
-    <a href="../#equipe">Equipe</a>
-    <a href="../#contato">Contato</a>
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="107 Studios — início"><img src="/assets/images/logo-vertical-offwhite.png" alt="107 Studios" width="86" height="44"></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="/portfolio/" aria-current="page">Portfólio</a>
+      <a href="/cases/">Cases</a>
+      <a href="/#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5547996685069" target="_blank" rel="noopener">Fale com a 107</a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
   </div>
-</nav>
+</header>
 
-<section class="panel reveal">
-  <span class="kicker">Portfólio</span>
-  <h1 class="display">O trabalho fala primeiro.</h1>
-  
-</section>
+<div class="menu" data-menu aria-hidden="true">
+  <nav class="menu-links" aria-label="Menu">
+    <a href="/" style="--i:0">Home</a>
+    <a href="/portfolio/" aria-current="page" style="--i:1">Portfólio</a>
+    <a href="/cases/" style="--i:2">Cases</a>
+    <a href="/#equipe" style="--i:3">Equipe</a>
+    <a href="#contato" style="--i:4">Contato</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="--i:5">WhatsApp</a>
+</div>
 
-<div id="portfolio-categories" aria-live="polite">
-  <section class="panel light reveal visible">
-    <span class="kicker">Carregando</span>
-    <h2 class="title">Preparando o portfólio.</h2>
+<main>
+  <section class="wrap page-head">
+    <span class="eyebrow" data-reveal>Portfólio</span>
+    <h1 class="title" aria-label="O trabalho fala primeiro.">
+      <span class="line nowrap"><span style="--i:0">O trabalho</span></span>
+      <span class="line accent"><span style="--i:1">fala primeiro.</span></span>
+    </h1>
+    <p class="lead" data-reveal style="--d:.5s">Filmes, clipes e bastidores organizados por linguagem. Toque em qualquer vídeo para assistir.</p>
+    <nav class="filters" data-filters aria-label="Categorias" data-reveal style="--d:.6s"></nav>
   </section>
-</div><section class="panel reveal">
-  <div class="footer">
-    <div>
-      <img class="footer-brand" src="../assets/images/logo-vertical-offwhite.png" alt="107 Studios" style="margin-bottom:22px">
-      <h2 class="title">Seu projeto pode ser o próximo.</h2>
-      <div class="button-row">
-        <a class="button whatsapp-pulse" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="button ghost" href="../">Voltar para Home</a>
+
+  <div data-portfolio aria-live="polite">
+    <div class="wrap"><div class="empty"><strong>Carregando</strong>Preparando o portfólio.</div></div>
+  </div>
+
+  <div style="height:clamp(80px,12vh,140px)"></div>
+
+  <!-- CONTATO -->
+  <section class="orange" id="contato">
+    <div class="wrap sec">
+      <img class="cta-logo" src="/assets/images/logo-vertical-black.png" alt="107 Studios" data-reveal>
+      <h2 class="cta-title" data-reveal style="--d:.1s">Seu projeto pode ser o próximo.</h2>
+      <div class="btn-row" data-reveal style="--d:.2s">
+        <a class="btn dark" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="/cases/">Ver cases</a>
       </div>
     </div>
-    <img class="footer-star" src="../assets/images/icon-orange.png" alt="">
-  </div>
-</section>
+  </section>
 
 </main>
-<script src="../assets/js/portfolio-data.js"></script>
+
+<div class="modal" data-modal aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vídeo">
+  <button class="modal-close" type="button" data-modal-close aria-label="Fechar vídeo">✕</button>
+  <div class="modal-box">
+    <div class="frame" data-modal-frame></div>
+    <h3 data-modal-title></h3>
+    <p data-modal-desc></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <span>© <span data-year>2026</span> 107 Studios</span>
+  <a href="/dados/">Dados da empresa</a>
+  <a class="footer-admin" href="/admin/" aria-label="Painel administrativo" title="Painel administrativo"><img src="/assets/images/icon-orange.png" alt=""></a>
+</footer>
+<script src="/assets/js/portfolio.js?v=5" defer></script>
 </body>
 </html>

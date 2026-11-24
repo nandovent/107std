@@ -1,107 +1,185 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>107 Studios — Home Teste v01</title><link rel="icon" href="assets/images/star.png"><link rel="stylesheet" href="assets/css/system.css"><script src="assets/js/system.js" defer></script><script src="assets/js/client-logos.js" defer></script><script src="assets/js/team.js?v=20261111-equipe" defer></script><style>
-/* Home 107 — teaser da Tainha: video P&B com textura, sem alterar os outros cards */
-.hero .hero-video{pointer-events:none;border-radius:inherit;background:#0b0b0b}
-.hero .hero-video video{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.16) brightness(.60) !important}
-.hero .hero-video::before{z-index:1;background:linear-gradient(90deg,rgba(7,7,7,.76) 0%,rgba(7,7,7,.49) 50%,rgba(7,7,7,.47) 100%)}
-.hero .hero-video::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.24;background:repeating-linear-gradient(135deg,transparent 0 27px,rgba(252,250,227,.13) 28px 29px),repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 4px)}
-.hero .hero-copy{position:relative;z-index:3}
-@media(max-width:700px){.hero .hero-video::before{background:linear-gradient(90deg,rgba(7,7,7,.80),rgba(7,7,7,.60))}}
-</style></head><body><main class="shell">
-<nav class="nav"><a href="#"><img class="nav-logo brand-logo on-dark" src="assets/images/logo-vertical-offwhite.png" alt="107 Studios"></a><button class="menu-button" data-menu>☰</button><div class="nav-links"><a class="active" href="#">Home</a><a href="portfolio/">Portfólio</a><a href="cases/">Cases</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a></div></nav>
-<section class="panel reveal hero"><div class="hero-grid"><div class="hero-copy"><span class="kicker">We build media operations</span><h1 class="hero-heading">
-      <span class="hero-line">Comunicação.</span>
-      <span class="hero-line">Design.</span>
-      <span class="hero-line">Audiovisual.</span>
-      <span class="hero-line">Como um só.</span>
-    </h1><p class="copy">Fazendo o simples virar cinema.</p><div class="button-row"><a class="button" href="cases/">Ver cases</a><a class="button ghost" href="#contato">Falar com a 107</a></div></div><div class="hero-video">
-<video autoplay muted loop playsinline preload="auto" aria-hidden="true">
-<source src="cases/festa-da-tainha-2026/video/teaser.mp4" type="video/mp4">
-</video>
-</div></div></section>
-<section class="panel light reveal"><span class="kicker">Escolha o caminho</span><h2 class="title">A 107 em poucas páginas.</h2><div class="grid"><a class="card span-4 float" href="#portfolio"><h3>Portfólio</h3><p>Trabalhos finais por formato.</p></a><a class="card span-4 float" href="#cases"><h3>Cases</h3><p>Processo, números e resultados.</p></a><a class="card span-4 float" href="#equipe"><h3>Equipe</h3><p>Núcleo interno e rede.</p></a></div></section>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101010">
+<meta name="format-detection" content="telephone=no">
+<title>107 Studios — Comunicação, Design e Audiovisual</title>
+<meta name="description" content="107 Studios: comunicação, design e audiovisual como um só. Filmes institucionais, eventos, campanhas e operações de conteúdo.">
+<link rel="canonical" href="https://107std.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="107 Studios">
+<meta property="og:title" content="107 Studios — Comunicação, Design e Audiovisual">
+<meta property="og:description" content="107 Studios: comunicação, design e audiovisual como um só. Filmes institucionais, eventos, campanhas e operações de conteúdo.">
+<meta property="og:image" content="https://107std.com/assets/media/teaser-poster.jpg">
+<meta property="og:url" content="https://107std.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/images/star.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v=5">
+<script>document.documentElement.classList.add('js')</script>
+<script src="/assets/js/site.js?v=5" defer></script>
+</head>
+<body>
 
-<section class="panel reveal" id="portfolio">
-  <div class="portfolio-preview">
-    <div>
-      <span class="kicker">Portfólio</span>
-      <h2 class="title">Filmes que fazem seu projeto ganhar vida.</h2>
-      <p class="copy">Uma seleção de trabalhos organizada por linguagem.</p>
-      <div class="button-row"><a class="button" href="portfolio/">Abrir portfólio</a></div>
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="107 Studios — início"><img src="/assets/images/logo-vertical-offwhite.png" alt="107 Studios" width="86" height="44"></a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="/portfolio/">Portfólio</a>
+      <a href="/cases/">Cases</a>
+      <a href="/#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5547996685069" target="_blank" rel="noopener">Fale com a 107</a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" data-menu aria-hidden="true">
+  <nav class="menu-links" aria-label="Menu">
+    <a href="/" aria-current="page" style="--i:0">Home</a>
+    <a href="/portfolio/" style="--i:1">Portfólio</a>
+    <a href="/cases/" style="--i:2">Cases</a>
+    <a href="/#equipe" style="--i:3">Equipe</a>
+    <a href="#contato" style="--i:4">Contato</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="--i:5">WhatsApp</a>
+</div>
+
+<main>
+
+  <!-- TOPO COM VÍDEO -->
+  <section class="hero">
+    <div class="hero-media" data-hero-media>
+      <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/teaser-poster.jpg" aria-hidden="true" data-src-desktop="/assets/media/teaser-1080.mp4" data-src-mobile="/assets/media/teaser-720.mp4"></video>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="shade" aria-hidden="true"></div>
     </div>
-    <div>
-      <div class="video-frame">
+    <div class="hero-content">
+      <span class="eyebrow" data-reveal>We build media operations</span>
+      <h1 class="title" aria-label="Comunicação. Design. Audiovisual. Como um só.">
+      <span class="line nowrap"><span style="--i:0">Comunicação.</span></span>
+      <span class="line nowrap"><span style="--i:1">Design.</span></span>
+      <span class="line nowrap"><span style="--i:2">Audiovisual.</span></span>
+      <span class="line nowrap accent"><span style="--i:3">Como um só.</span></span>
+    </h1>
+      <div class="hero-foot" data-reveal style="--d:.7s">
+        <p class="lead">Fazendo o simples virar cinema.</p>
+        <div class="btn-row">
+          <a class="btn" href="/cases/">Ver cases</a>
+          <a class="btn ghost" href="#contato">Falar com a 107</a>
+        </div>
+      </div>
+      <a class="hero-credit" href="/cases/festa-da-tainha-2026/" data-reveal style="--d:1s"><span>No vídeo</span>Festa da Tainha 2026 ↗</a>
+    </div>
+  </section>
+
+  <!-- CLIENTES -->
+  <section class="logos" data-logos="/data/clientes.json" data-logos-asset="assets/clientes/" data-logos-api="/api/clientes" hidden aria-label="Clientes da 107 Studios">
+    <p class="logos-title">Marcas que confiam na 107</p>
+    <div class="marquee"><div class="marquee-track" data-logos-track></div></div>
+  </section>
+
+  <!-- FRASE QUE ACENDE -->
+  <section class="wrap sec">
+    <p class="statement-text" data-words="juntos.|certo.">Comunicação, design e audiovisual pensados juntos. Uma equipe só, do primeiro roteiro ao último corte, para a sua marca aparecer do jeito certo.</p>
+  </section>
+
+  <!-- CAMINHOS -->
+  <section class="wrap" style="padding-bottom:clamp(90px,14vh,160px)">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Escolha o caminho</span>
+      <h2 class="h2">A 107 em poucas páginas.</h2>
+    </div>
+    <div class="path-grid">
+      <a class="path" href="/portfolio/" data-reveal style="--d:0s"><span class="path-n">01</span><h3>Portfólio</h3><p>Trabalhos finais por formato.</p><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="path" href="/cases/" data-reveal style="--d:.1s"><span class="path-n">02</span><h3>Cases</h3><p>Processo, números e resultados.</p><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="path" href="#equipe" data-reveal style="--d:.2s"><span class="path-n">03</span><h3>Equipe</h3><p>Núcleo interno e rede.</p><span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <!-- PARCEIROS (aparece quando houver logos em data/parceiros.json) -->
+  <section class="logos partners" data-logos="/data/parceiros.json" hidden aria-label="Parceiros da 107 Studios">
+    <p class="logos-title">Parcerias que fortalecem negócios</p>
+    <div class="marquee"><div class="marquee-track" data-logos-track data-reverse></div></div>
+  </section>
+
+  <!-- CASE EM DESTAQUE -->
+  <section class="light rounded-top">
+    <div class="wrap sec">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Case em destaque</span>
+        <h2 class="h2">Entrega comprovada.</h2>
+      </div>
+      <div class="big-number" data-reveal>
+        <strong data-count>58</strong>
+        <span>vídeos produzidos<br>em três dias</span>
+      </div>
+      <div class="split end" style="margin-top:40px">
+        <div data-reveal>
+          <span class="case-meta">Alfredo Soares Team · 107 Studios + Doze Films</span>
+          <h3 class="h2" style="font-size:clamp(36px,5vw,64px)">G4 Valley 2026</h3>
+          <p class="body">Captação, direção e edição audiovisual em uma operação conjunta durante três dias de evento.</p>
+          <div class="btn-row">
+            <a class="btn dark" href="/cases/g4-valley-alfredo-soares-2026/">Abrir case</a>
+            <a class="btn ghost" href="/cases/">Ver todos os cases</a>
+          </div>
+        </div>
+        <div class="stats three">
+          <div class="stat" data-reveal style="--d:0s"><strong data-count>9</strong><span>Aftermovies</span></div>
+          <div class="stat" data-reveal style="--d:.1s"><strong data-count>49</strong><span>Cortes</span></div>
+          <div class="stat" data-reveal style="--d:.2s"><strong data-count>4</strong><span>Profissionais</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFÓLIO -->
+    <div class="wrap reel" style="padding-bottom:clamp(80px,12vh,140px)" id="portfolio">
+      <div data-reveal>
+        <span class="eyebrow">Portfólio</span>
+        <h2 class="h2">Filmes que fazem seu projeto ganhar vida.</h2>
+        <p class="lead">Uma seleção de trabalhos organizada por linguagem.</p>
+        <div class="btn-row"><a class="btn" href="/portfolio/">Abrir portfólio</a></div>
+      </div>
+      <div class="frame" data-reveal="scale">
         <iframe src="https://player.vimeo.com/video/1209079889?title=0&byline=0&portrait=0&badge=0&autopause=0" title="Prévia de filme institucional da 107 Studios" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen loading="lazy"></iframe>
       </div>
-      <div class="video-meta"><span>Filmes institucionais</span><span>001</span></div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- EQUIPE -->
+  <section class="wrap sec" id="equipe">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Equipe</span>
+      <h2 class="h2">Quem faz a 107 acontecer.</h2>
+      <p class="lead">Um núcleo multidisciplinar para pensar, produzir e finalizar projetos do início ao fim.</p>
+    </div>
+    <div class="team-grid" data-team></div>
+  </section>
 
-<section class="panel light reveal" id="cases">
-  <span class="kicker">Case em destaque</span>
-  <h2 class="title">Entrega comprovada.</h2>
-
-  <div class="case-summary">
-    <a class="card case-metric" href="cases/g4-valley-alfredo-soares-2026/">
-      <div>
-        <div class="metric">58</div>
-        <span class="label">Vídeos produzidos em três dias</span>
+  <!-- CONTATO -->
+  <section class="orange" id="contato">
+    <div class="wrap sec">
+      <img class="cta-logo" src="/assets/images/logo-vertical-black.png" alt="107 Studios" data-reveal>
+      <h2 class="cta-title" data-reveal style="--d:.1s">Vamos construir o próximo case?</h2>
+      <div class="btn-row" data-reveal style="--d:.2s">
+        <a class="btn dark" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="https://instagram.com/107std" target="_blank" rel="noopener">@107std</a>
       </div>
-      <strong>G4 Valley 2026 ↗</strong>
-    </a>
+    </div>
+  </section>
 
-    <article class="card case-details">
-      <div>
-        <span class="kicker">Alfredo Soares Team · 107 Studios + Doze Films</span>
-        <h3 style="margin-top:22px">G4 Valley 2026</h3>
-        <p>Captação, direção e edição audiovisual em uma operação conjunta durante três dias de evento.</p>
-      </div>
+</main>
 
-      <div class="case-stats">
-        <div class="case-stat"><strong>9</strong><span>Aftermovies</span></div>
-        <div class="case-stat"><strong>49</strong><span>Cortes</span></div>
-        <div class="case-stat"><strong>4</strong><span>Profissionais</span></div>
-      </div>
+<footer class="footer">
+  <span>© <span data-year>2026</span> 107 Studios</span>
+  <a href="/dados/">Dados da empresa</a>
+  <a class="footer-admin" href="/admin/" aria-label="Painel administrativo" title="Painel administrativo"><img src="/assets/images/icon-orange.png" alt=""></a>
+</footer>
 
-      <div class="button-row">
-        <a class="button" href="cases/g4-valley-alfredo-soares-2026/">Abrir case</a>
-        <a class="button ghost" href="cases/">Ver todos os cases</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="panel reveal home-team-section" id="equipe">
-  <span class="kicker">Equipe</span>
-  <h2 class="title">Quem faz a 107 acontecer.</h2>
-  <p class="copy home-team-intro">Um núcleo multidisciplinar para pensar, produzir e finalizar projetos do início ao fim.</p>
-  <div class="home-team-grid" id="home-team-grid">
-    <a class="home-team-member home-team-member-featured is-clickable" href="https://www.instagram.com/nandovent/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Fernando Venturini">
-      <div class="home-team-photo has-image" aria-label="Foto de Fernando Venturini"><img src="/assets/equipe/fernando-venturini.png" alt="Fernando Venturini" loading="eager" decoding="async" style="--team-scale:1.1"></div>
-      <div class="home-team-info"><h3>Fernando Venturini</h3><p>Proprietário e diretor.</p><span class="home-team-instagram">@nandovent</span></div>
-    </a>
-    <a class="home-team-member is-clickable" href="https://www.instagram.com/yagowolf_/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Yago Wolf">
-      <div class="home-team-photo has-image" aria-label="Foto de Yago Wolf"><img src="/assets/equipe/yago-wolf.png" alt="Yago Wolf" loading="lazy" decoding="async" style="--team-scale:1"></div>
-      <div class="home-team-info"><h3>Yago Wolf</h3><p>Videomaker e editor</p><span class="home-team-instagram">@yagowolf_</span></div>
-    </a>
-    <a class="home-team-member is-clickable" href="https://www.instagram.com/llauravidall/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Laura Vidal">
-      <div class="home-team-photo has-image" aria-label="Foto de Laura Vidal"><img src="/assets/equipe/laura-vidal.png" alt="Laura Vidal" loading="lazy" decoding="async" style="--team-scale:1.05"></div>
-      <div class="home-team-info"><h3>Laura Vidal</h3><p>Storymaker e editora</p><span class="home-team-instagram">@llauravidall</span></div>
-    </a>
-    <a class="home-team-member is-clickable" href="https://www.instagram.com/wiillmoser/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Will Moser">
-      <div class="home-team-photo has-image" aria-label="Foto de Will Moser"><img src="/assets/equipe/will-moser.png" alt="Will Moser" loading="lazy" decoding="async" style="--team-scale:1"></div>
-      <div class="home-team-info"><h3>Will Moser</h3><p>Editor</p><span class="home-team-instagram">@wiillmoser</span></div>
-    </a>
-    <a class="home-team-member is-clickable" href="https://www.instagram.com/matheusyurirosa/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Matheus Yuri">
-      <div class="home-team-photo has-image" aria-label="Foto de Matheus Yuri"><img src="/assets/equipe/matheus-yuri.png" alt="Matheus Yuri" loading="lazy" decoding="async" style="--team-scale:1"></div>
-      <div class="home-team-info"><h3>Matheus Yuri</h3><p>Videomaker</p><span class="home-team-instagram">@matheusyurirosa</span></div>
-    </a>
-    <a class="home-team-member is-clickable" href="https://www.instagram.com/bevieiraa/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Beatriz Vieira">
-      <div class="home-team-photo has-image" aria-label="Foto de Beatriz Vieira"><img src="/assets/equipe/beatriz-vieira.png" alt="Beatriz Vieira" loading="lazy" decoding="async" style="--team-scale:1"></div>
-      <div class="home-team-info"><h3>Beatriz Vieira</h3><p>Influencer e apresentadora</p><span class="home-team-instagram">@bevieiraa</span></div>
-    </a>
-  </div>
-</section>
-<section class="panel light reveal" id="contato"><div class="footer"><div><img class="footer-brand" src="assets/images/logo-vertical-black.png" alt="107 Studios" style="margin-bottom:22px"><h2 class="title">Vamos construir o próximo case?</h2><div class="button-row"><a class="button whatsapp-pulse" href="https://wa.me/5547996685069" target="_blank">WhatsApp</a><a class="button ghost" href="https://instagram.com/107std" target="_blank">@107std</a></div></div><a class="footer-admin-link" href="admin/" aria-label="Acessar painel administrativo" title="Painel administrativo"><img class="footer-star" src="assets/images/icon-black.png" alt=""></a></div></section>
-</main></body></html>
+</body>
+</html>
