@@ -117,6 +117,77 @@
     });
   });
 
+  /* ---------- player da trilha (home) ---------- */
+  const music = $('[data-music]');
+  if (music) {
+    const KEY = '107-trilha-fechada';
+    let closed = false;
+    try { closed = sessionStorage.getItem(KEY) === '1'; } catch (_) {}
+    if (!closed) {
+      const audio = $('audio', music), wave = $('[data-music-wave]', music), time = $('[data-music-time]', music);
+      const play = $('[data-music-play]', music);
+      const peaks = JSON.parse(music.dataset.peaks || '[]');
+      const bars = peaks.map((h, k) => `<i style="--h:${h};--k:${k}"></i>`).join('');
+      wave.innerHTML = `<div class="wave-bars">${bars}</div><div class="wave-bars wave-fill" aria-hidden="true">${bars}</div>`;
+      const dur = () => audio.duration || Number(music.dataset.duration) || 0;
+      const mmss = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+      const paint = () => {
+        const p = dur() ? audio.currentTime / dur() : 0;
+        wave.style.setProperty('--p', p.toFixed(4));
+        wave.setAttribute('aria-valuenow', Math.round(audio.currentTime));
+        wave.setAttribute('aria-valuetext', `${mmss(audio.currentTime)} de ${mmss(dur())}`);
+        time.textContent = `${mmss(audio.currentTime)} / ${mmss(dur())}`;
+      };
+      const fadeIn = () => {
+        audio.volume = 0;
+        const t0 = performance.now();
+        const step = now => { audio.volume = clamp((now - t0) / 900) * .85; if (audio.volume < .85 && !audio.paused) requestAnimationFrame(step); };
+        requestAnimationFrame(step);
+      };
+      const toggle = () => {
+        if (audio.paused) { audio.play().then(fadeIn).catch(() => {}); } else audio.pause();
+      };
+      play.addEventListener('click', toggle);
+      audio.addEventListener('play', () => { music.classList.add('is-playing'); play.setAttribute('aria-label', 'Pausar a trilha'); });
+      audio.addEventListener('pause', () => { music.classList.remove('is-playing'); play.setAttribute('aria-label', 'Ouvir a trilha'); });
+      ['timeupdate', 'loadedmetadata', 'seeked'].forEach(ev => audio.addEventListener(ev, paint));
+
+      /* clicar ou arrastar na onda para avançar */
+      const seekTo = x => {
+        const r = wave.getBoundingClientRect();
+        const p = clamp((x - r.left) / r.width);
+        if (audio.readyState < 1) { audio.preload = 'auto'; audio.addEventListener('loadedmetadata', () => { audio.currentTime = p * dur(); }, { once: true }); audio.load(); }
+        else audio.currentTime = p * dur();
+        wave.style.setProperty('--p', p.toFixed(4));
+      };
+      let dragging = false;
+      wave.addEventListener('pointerdown', e => { dragging = true; wave.setPointerCapture(e.pointerId); seekTo(e.clientX); });
+      wave.addEventListener('pointermove', e => { if (dragging) seekTo(e.clientX); });
+      wave.addEventListener('pointerup', () => { dragging = false; });
+      wave.addEventListener('keydown', e => {
+        const d = { ArrowRight: 5, ArrowLeft: -5 }[e.key];
+        if (d) { e.preventDefault(); audio.currentTime = clamp(audio.currentTime + d, 0, dur()); }
+        if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggle(); }
+      });
+
+      $('[data-music-close]', music).addEventListener('click', () => {
+        audio.pause();
+        music.classList.remove('is-visible');
+        try { sessionStorage.setItem(KEY, '1'); } catch (_) {}
+        setTimeout(() => { music.hidden = true; }, 700);
+      });
+
+      /* controles na tela de bloqueio do celular */
+      if ('mediaSession' in navigator) {
+        navigator.mediaSession.metadata = new MediaMetadata({ title: music.dataset.title, artist: '107 Studios', artwork: [{ src: $('img', music).src, sizes: '160x160', type: 'image/jpeg' }] });
+      }
+
+      music.hidden = false;
+      paint();
+      setTimeout(() => music.classList.add('is-visible'), 1800);
+    }
+  }
+
   /* ---------- frase que acende palavra por palavra ---------- */
   const words = $('[data-words]');
   let wordEls = [];
