@@ -21,6 +21,7 @@
   let lastFocus = null;
   const open = item => {
     lastFocus = document.activeElement;
+    $('[data-music] audio')?.pause(); // o som do vídeo não disputa com a música tema
     frame.innerHTML = `<iframe src="${esc(item.video.embed)}" title="${esc(item.titulo)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
     mTitle.textContent = item.titulo || '';
     mDesc.textContent = item.descricao || '';

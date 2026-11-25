@@ -447,3 +447,8 @@ html:has(.subnav){scroll-padding-top:150px}
 body.menu-open .music{opacity:0;pointer-events:none}
 @media(max-width:600px){.music{left:12px;right:12px;width:auto;bottom:max(12px,env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){.music.is-playing .wave-bars i{animation:none}.music{transition:opacity .3s}}
+
+/* ---------- troca de página sem recarregar ---------- */
+main,.footer{transition:opacity .3s var(--ease)}
+.is-leaving main,.is-leaving .footer{opacity:0;transition-duration:.2s}
+main:focus{outline:none}
