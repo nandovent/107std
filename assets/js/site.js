@@ -102,8 +102,8 @@
     sync();
   });
 
-  /* ---------- briefing: monta a mensagem e abre o WhatsApp da 107 ---------- */
-  $$('[data-briefing]').forEach(form => {
+  /* ---------- pedido de orçamento: monta a mensagem e abre o WhatsApp da 107 ---------- */
+  $$('[data-orcamento]').forEach(form => {
     const params = new URLSearchParams(location.search);
     const pre = params.get('servico');
     if (pre && form.elements.servico) form.elements.servico.value = pre;

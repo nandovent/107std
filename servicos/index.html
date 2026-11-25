@@ -19,9 +19,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=11">
+<link rel="stylesheet" href="/assets/css/site.css?v=12">
 <script>document.documentElement.classList.add('js')</script>
-<script src="/assets/js/site.js?v=11" defer></script>
+<script src="/assets/js/site.js?v=12" defer></script>
 </head>
 <body>
 
@@ -35,7 +35,7 @@
       <a href="/#equipe">Equipe</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="nav-cta" href="https://wa.me/5547996685069" target="_blank" rel="noopener">Fale com a 107</a>
+    <a class="nav-cta" href="/servicos/#contato"><span class="nav-cta-long">Pedir&nbsp;</span>orçamento</a>
     <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
   </div>
 </header>
@@ -49,7 +49,7 @@
     <a href="/#equipe" style="--i:4">Equipe</a>
     <a href="#contato" style="--i:5">Contato</a>
   </nav>
-  <a class="btn" href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="--i:6">WhatsApp</a>
+  <div class="btn-row" style="--i:6"><a class="btn" href="/servicos/#contato">Pedir orçamento</a><a class="btn ghost" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a></div>
 </div>
 
 <main>
@@ -63,7 +63,7 @@
     <div class="chips" data-reveal style="--d:.6s"><span class="chip">Equipamento próprio</span><span class="chip">Equipe sob medida</span><span class="chip">Nacional e internacional</span></div>
   </section>
 
-  <nav class="subnav" data-subnav aria-label="Seções da página"><div class="subnav-inner"><a href="#filmes">Filmes</a><a href="#eventos">Eventos</a><a href="#conteudo">Conteúdo</a><a href="#fotografia">Fotografia</a><a href="#capacidade">Capacidade</a><a href="#processo">Processo</a><a href="#contratar">Como contratar</a><a href="#contato">Briefing</a></div></nav>
+  <nav class="subnav" data-subnav aria-label="Seções da página"><div class="subnav-inner"><a href="#filmes">Filmes</a><a href="#eventos">Eventos</a><a href="#conteudo">Conteúdo</a><a href="#fotografia">Fotografia</a><a href="#capacidade">Capacidade</a><a href="#processo">Processo</a><a href="#contratar">Como contratar</a><a href="#contato">Orçamento</a></div></nav>
 
   <!-- AS 4 FRENTES -->
   <section class="wrap" style="padding-top:clamp(40px,6vh,70px);padding-bottom:clamp(70px,11vh,120px)">
@@ -176,11 +176,11 @@
   <section class="light rounded-top" id="contato">
     <div class="wrap sec">
       <div class="section-head" data-reveal>
-        <span class="eyebrow">Briefing</span>
-        <h2 class="h2">Conte o projeto. A gente responde rápido.</h2>
-        <p class="lead">Preencha o que souber. Ao enviar, abrimos o WhatsApp da 107 com tudo organizado. Nada fica salvo no site.</p>
+        <span class="eyebrow">Orçamento</span>
+        <h2 class="h2">Peça seu orçamento.</h2>
+        <p class="lead">Conte o que precisa e preencha o que souber. Ao enviar, abrimos o WhatsApp da 107 com tudo organizado e respondemos rápido. Nada fica salvo no site.</p>
       </div>
-      <form class="form" data-briefing data-reveal>
+      <form class="form" data-orcamento data-reveal>
         <label>Seu nome *<input name="nome" required autocomplete="name"></label>
         <label>Empresa<input name="empresa" autocomplete="organization"></label>
         <label>Serviço *<select name="servico" required><option value="" disabled selected>Escolha uma opção</option><option>Filmes e Publicidade</option><option>Eventos e Operações de Mídia</option><option>Conteúdo Recorrente</option><option>Fotografia</option><option>Edição e pós-produção</option><option>Diária de captação</option><option>Contrato mensal de conteúdo</option><option>Outro</option></select></label>
@@ -188,7 +188,7 @@
         <label>Local<input name="local" placeholder="Cidade / estado"></label>
         <label>Investimento previsto<select name="investimento"><option value="">Prefiro conversar</option><option>Até R$ 5 mil</option><option>R$ 5 a 15 mil</option><option>R$ 15 a 50 mil</option><option>Acima de R$ 50 mil</option></select></label>
         <label class="full">Sobre o projeto<textarea name="mensagem" placeholder="Objetivo, público, formatos que imagina, referências…"></textarea></label>
-        <button class="btn dark" type="submit">Enviar pelo WhatsApp</button>
+        <button class="btn dark" type="submit">Pedir orçamento pelo WhatsApp</button>
         <p class="form-note">Prefere conversar direto? <a href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="color:var(--orange);font-weight:800">47 99668-5069</a></p>
       </form>
     </div>
