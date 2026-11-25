@@ -5,6 +5,10 @@
 - [x] Portfólio, Cases, G4 Valley, Festa da Tainha e Dados no padrão v05 — aguardando aprovação
 
 ## Próximos
+- [ ] Página de Serviços — aguardando aprovação (prévia)
+- [ ] Showreel de 60–90s para o topo da home
+- [ ] Mais 2–3 cases no formato G4/Tainha
+- [ ] Depoimentos de clientes
 - [ ] **Admin › Parceiros**: página para cadastrar logos de parceiros, igual à de Clientes.
       A home já lê `data/parceiros.json` (campos: id, nome, arquivo, escala, ordem, publicado, link opcional)
       e as imagens ficam em `assets/parceiros/`. O bloco "Parcerias que fortalecem negócios" só aparece quando há logos.

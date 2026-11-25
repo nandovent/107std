@@ -19,9 +19,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=9">
+<link rel="stylesheet" href="/assets/css/site.css?v=11">
 <script>document.documentElement.classList.add('js')</script>
-<script src="/assets/js/site.js?v=9" defer></script>
+<script src="/assets/js/site.js?v=11" defer></script>
 </head>
 <body>
 
@@ -29,6 +29,7 @@
   <div class="nav-inner">
     <a class="nav-logo" href="/" aria-label="107 Studios — início"><img src="/assets/images/logo-vertical-offwhite.png" alt="107 Studios" width="86" height="44"></a>
     <nav class="nav-links" aria-label="Principal">
+      <a href="/servicos/">Serviços</a>
       <a href="/portfolio/">Portfólio</a>
       <a href="/cases/">Cases</a>
       <a href="/#equipe">Equipe</a>
@@ -42,12 +43,13 @@
 <div class="menu" data-menu aria-hidden="true">
   <nav class="menu-links" aria-label="Menu">
     <a href="/" aria-current="page" style="--i:0">Home</a>
-    <a href="/portfolio/" style="--i:1">Portfólio</a>
-    <a href="/cases/" style="--i:2">Cases</a>
-    <a href="/#equipe" style="--i:3">Equipe</a>
-    <a href="#contato" style="--i:4">Contato</a>
+    <a href="/servicos/" style="--i:1">Serviços</a>
+    <a href="/portfolio/" style="--i:2">Portfólio</a>
+    <a href="/cases/" style="--i:3">Cases</a>
+    <a href="/#equipe" style="--i:4">Equipe</a>
+    <a href="#contato" style="--i:5">Contato</a>
   </nav>
-  <a class="btn" href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="--i:5">WhatsApp</a>
+  <a class="btn" href="https://wa.me/5547996685069" target="_blank" rel="noopener" style="--i:6">WhatsApp</a>
 </div>
 
 <main>
@@ -89,17 +91,19 @@
     <p class="statement-text" data-words="juntos.|certo.">Comunicação, design e audiovisual pensados juntos. Uma equipe só, do primeiro roteiro ao último corte, para a sua marca aparecer do jeito certo.</p>
   </section>
 
-  <!-- CAMINHOS -->
+  <!-- O QUE FAZEMOS -->
   <section class="wrap" style="padding-bottom:clamp(90px,14vh,160px)">
     <div class="section-head" data-reveal>
-      <span class="eyebrow">Escolha o caminho</span>
-      <h2 class="h2">A 107 em poucas páginas.</h2>
+      <span class="eyebrow">O que a 107 faz</span>
+      <h2 class="h2">Quatro frentes. Uma equipe só.</h2>
     </div>
-    <div class="path-grid">
-      <a class="path" href="/portfolio/" data-reveal style="--d:0s"><span class="path-n">01</span><h3>Portfólio</h3><p>Trabalhos finais por formato.</p><span class="arrow" aria-hidden="true">↗</span></a>
-      <a class="path" href="/cases/" data-reveal style="--d:.1s"><span class="path-n">02</span><h3>Cases</h3><p>Processo, números e resultados.</p><span class="arrow" aria-hidden="true">↗</span></a>
-      <a class="path" href="#equipe" data-reveal style="--d:.2s"><span class="path-n">03</span><h3>Equipe</h3><p>Núcleo interno e rede.</p><span class="arrow" aria-hidden="true">↗</span></a>
+    <div class="pillar-grid">
+      <a class="pillar-card" href="/servicos/#filmes" data-reveal style="--d:0.00s"><span class="pillar-n">01</span><h3>Filmes e publicidade</h3><p>Institucionais, campanhas, corporativos, clipes e documentários.</p><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="pillar-card" href="/servicos/#eventos" data-reveal style="--d:0.08s"><span class="pillar-n">02</span><h3>Eventos e operações de mídia</h3><p>Cobertura, tempo real, entrega no mesmo dia e central de mídia.</p><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="pillar-card" href="/servicos/#conteudo" data-reveal style="--d:0.16s"><span class="pillar-n">03</span><h3>Conteúdo recorrente</h3><p>Reels, YouTube, tráfego pago, séries e videoaulas.</p><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="pillar-card" href="/servicos/#fotografia" data-reveal style="--d:0.24s"><span class="pillar-n">04</span><h3>Fotografia</h3><p>Corporativa, publicitária, eventos, produtos e aérea.</p><span class="arrow" aria-hidden="true">↗</span></a>
     </div>
+    <div class="btn-row" data-reveal><a class="btn" href="/servicos/">Ver todos os serviços</a><a class="btn ghost" href="/servicos/#contato">Enviar briefing</a></div>
   </section>
 
   <!-- PARCEIROS (aparece quando houver logos em data/parceiros.json) -->
@@ -168,7 +172,7 @@
       <h2 class="cta-title" data-reveal style="--d:.1s">Vamos construir o próximo case?</h2>
       <div class="btn-row" data-reveal style="--d:.2s">
         <a class="btn dark" href="https://wa.me/5547996685069" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn ghost" href="https://instagram.com/107std" target="_blank" rel="noopener">@107std</a>
+        <a class="btn ghost" href="/servicos/#contato">Enviar briefing</a>
       </div>
     </div>
   </section>
@@ -177,6 +181,8 @@
 
 <footer class="footer">
   <span>© <span data-year>2026</span> 107 Studios</span>
+  <a href="/servicos/">Serviços</a>
+  <a href="https://instagram.com/107std" target="_blank" rel="noopener">@107std</a>
   <a href="/dados/">Dados da empresa</a>
   <a class="footer-admin" href="/admin/" aria-label="Painel administrativo" title="Painel administrativo"><img src="/assets/images/icon-orange.png" alt=""></a>
 </footer>

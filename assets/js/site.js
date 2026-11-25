@@ -102,6 +102,21 @@
     sync();
   });
 
+  /* ---------- briefing: monta a mensagem e abre o WhatsApp da 107 ---------- */
+  $$('[data-briefing]').forEach(form => {
+    const params = new URLSearchParams(location.search);
+    const pre = params.get('servico');
+    if (pre && form.elements.servico) form.elements.servico.value = pre;
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const v = n => (form.elements[n]?.value || '').trim();
+      const fields = [['Nome', 'nome'], ['Empresa', 'empresa'], ['Serviço', 'servico'], ['Data / prazo', 'quando'], ['Local', 'local'], ['Investimento previsto', 'investimento']]
+        .filter(([, n]) => v(n)).map(([label, n]) => `*${label}:* ${v(n)}`);
+      const text = ['Olá, 107! Quero conversar sobre um projeto.', '', ...fields, ...(v('mensagem') ? ['', `*Sobre o projeto:* ${v('mensagem')}`] : [])].join('\n');
+      window.open(`https://wa.me/5547996685069?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    });
+  });
+
   /* ---------- frase que acende palavra por palavra ---------- */
   const words = $('[data-words]');
   let wordEls = [];
