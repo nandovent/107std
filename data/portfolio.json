@@ -9,15 +9,6 @@
     "publicado": true
   },
   {
-    "id": "institucional-youtube",
-    "categoria": "Filmes Institucionais",
-    "titulo": "Institucional",
-    "descricao": "Segundo filme da categoria, incorporado pelo YouTube.",
-    "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
-    "ordem": 2,
-    "publicado": true
-  },
-  {
     "id": "31c7c8b0-efca-492d-9899-d1d08bae7488",
     "categoria": "Videoclipes",
     "titulo": "RENNE ROOTS - NA RAÇA",
@@ -59,15 +50,6 @@
     "titulo": "MINI DOC - DREYSSON RODRIGUES",
     "descricao": "Uma trip com um dos maiores DJs de Mega Funk do Brasil até Caxias do Sul - RS.",
     "link": "https://www.youtube.com/watch?v=tTHLhFMzoPI",
-    "ordem": 2,
-    "publicado": true
-  },
-  {
-    "id": "86279d13-eb9e-4755-941c-7025334ecc35",
-    "categoria": "MAKING OF",
-    "titulo": "TESTE DO TESTE",
-    "descricao": "DSADASDASDASDASD",
-    "link": "https://www.youtube.com/watch?v=yXfsIj4TptE",
     "ordem": 2,
     "publicado": true
   }

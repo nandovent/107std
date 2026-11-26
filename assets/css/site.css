@@ -519,3 +519,12 @@ html.locked body::before{z-index:101}
 /* janela de conteúdo (ex.: lista completa de peças) */
 .modal-box.sheet{max-height:min(86vh,900px);overflow:auto;padding:clamp(22px,4vw,44px);border-radius:var(--radius);background:var(--cream);color:var(--black);--bg:var(--cream);--fg:var(--black);--muted:var(--gray-ink);--border:rgba(16,16,16,.14);--surface:rgba(16,16,16,.04);overscroll-behavior:contain}
 .modal-box.sheet .h2{margin-top:12px;font-size:clamp(30px,4vw,52px)}
+
+/* aviso de portfólio em construção */
+.notice{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:30px;padding:18px 22px;border-radius:22px;border:1px dashed rgba(239,67,29,.6);background:rgba(239,67,29,.07)}
+.notice-tag{display:inline-flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:var(--orange)}
+.notice-tag::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--orange);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,67,29,.6)}50%{box-shadow:0 0 0 7px rgba(239,67,29,0)}}
+.notice p{flex:1 1 300px;margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
+.notice a{color:var(--fg);font-weight:800;text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){.notice-tag::before{animation:none}}
