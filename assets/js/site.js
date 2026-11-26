@@ -232,6 +232,21 @@
       });
     });
 
+    /* janelas: botão [data-dialog-open="id"] abre <div class="modal" id="id" data-dialog> */
+    $$('[data-dialog-open]').forEach(btn => {
+      const box = document.getElementById(btn.dataset.dialogOpen);
+      if (!box) return;
+      const close = () => { box.classList.remove('is-open'); box.setAttribute('aria-hidden', 'true'); document.body.classList.remove('menu-open'); btn.focus(); };
+      btn.addEventListener('click', () => {
+        box.classList.add('is-open'); box.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('menu-open');
+        $('[data-dialog-close]', box)?.focus();
+      });
+      $$('[data-dialog-close]', box).forEach(b => b.addEventListener('click', close));
+      box.addEventListener('click', e => { if (e.target === box) close(); });
+      box.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    });
+
     /* frase que acende palavra por palavra */
     page.words = $('[data-words]');
     page.wordEls = [];

@@ -498,3 +498,24 @@ main:focus{outline:none}
   .table-wrap{overflow:visible}
   a{text-decoration:none}
 }
+
+/* tela de senha simples das propostas */
+.lock{display:none}
+html.locked .lock{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;background:var(--black);color:var(--cream)}
+html.locked body>*:not(.lock){display:none!important}
+html.locked body::before{z-index:101}
+.lock-card{width:min(440px,100%);padding:clamp(26px,5vw,40px);border-radius:var(--radius);border:1px solid rgba(252,250,227,.14);background:var(--coal)}
+.lock-card img{width:96px}
+.lock-card h1{overflow-wrap:anywhere;margin:26px 0 8px;font-size:clamp(30px,6vw,40px);line-height:.92;letter-spacing:-.05em;text-transform:uppercase;font-weight:900}
+.lock-card p{margin:0 0 22px;color:var(--gray);font-size:14px;line-height:1.5}
+.lock-row{display:flex;gap:8px}
+.lock-row input{min-width:0;flex:1;min-height:54px;padding:0 18px;border-radius:16px;border:1px solid rgba(252,250,227,.3);background:transparent;color:var(--cream);font:800 18px Montserrat,system-ui,sans-serif;letter-spacing:.2em}
+.lock-row input:focus{outline:none;border-color:var(--orange)}
+.lock-row .btn{min-height:54px}
+.lock-error{min-height:18px;margin-top:12px;color:#ff8f78;font-size:12px;font-weight:700}
+.lock-card.shake{animation:shake .4s}
+@keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+
+/* janela de conteúdo (ex.: lista completa de peças) */
+.modal-box.sheet{max-height:min(86vh,900px);overflow:auto;padding:clamp(22px,4vw,44px);border-radius:var(--radius);background:var(--cream);color:var(--black);--bg:var(--cream);--fg:var(--black);--muted:var(--gray-ink);--border:rgba(16,16,16,.14);--surface:rgba(16,16,16,.04);overscroll-behavior:contain}
+.modal-box.sheet .h2{margin-top:12px;font-size:clamp(30px,4vw,52px)}
