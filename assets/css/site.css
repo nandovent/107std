@@ -415,7 +415,7 @@ html:has(.subnav){scroll-padding-top:150px}
 .member-photo .initials{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(44px,6vw,84px);font-weight:900;letter-spacing:-.08em;color:var(--orange);background:repeating-linear-gradient(135deg,#222 0 18px,#272727 18px 19px)}
 
 /* títulos das frentes de serviço cabem em meia coluna */
-.pillar .h2{font-size:clamp(34px,4.4vw,62px);max-width:13ch}
+.pillar .h2,.split .h2{font-size:clamp(34px,4.4vw,62px);max-width:13ch}
 @media(min-width:900px){.pillar .split{grid-template-columns:.95fr 1.05fr;align-items:start}.pillar .svc{margin-top:clamp(0px,8vw,120px)}}
 
 /* ---------- player da trilha (home) ---------- */
@@ -452,3 +452,49 @@ body.menu-open .music{opacity:0;pointer-events:none}
 main,.footer{transition:opacity .3s var(--ease)}
 .is-leaving main,.is-leaving .footer{opacity:0;transition-duration:.2s}
 main:focus{outline:none}
+
+/* ---------- propostas comerciais ---------- */
+.proposal-nav .nav-inner{gap:8px}
+.proposal-nav .nav-actions{display:flex;gap:6px;margin-left:auto}
+.proposal-nav .nav-actions .btn{min-height:40px;padding:0 16px;font-size:10.5px}
+@media(max-width:520px){.proposal-nav .nav-actions .ghost{display:none}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px;margin-top:34px}
+.fact{padding:18px 20px;border-radius:20px;border:1px solid var(--border);background:var(--surface)}
+.fact small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.fact b{display:block;margin-top:8px;font-size:18px;line-height:1.15;letter-spacing:-.02em;font-weight:900;text-transform:uppercase}
+.phase{display:inline-block;padding:5px 10px;border-radius:999px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;white-space:nowrap;background:var(--surface);border:1px solid var(--border)}
+.table.compact td{font-size:14.5px;font-weight:700;letter-spacing:0;padding:13px 16px}
+.table.compact td:first-child{font-weight:900;color:var(--orange);white-space:nowrap}
+.table.compact tr.more td{color:var(--muted);font-style:italic}
+.price-card{display:grid;gap:26px;padding:clamp(26px,5vw,56px);border-radius:var(--radius)}
+@media(min-width:900px){.price-card{grid-template-columns:1fr 1fr;align-items:start}}
+.price{margin:14px 0 0;font-size:clamp(64px,11vw,150px);line-height:.85;letter-spacing:-.07em;font-weight:900;white-space:nowrap}
+.price small{font-size:.32em;letter-spacing:-.02em;vertical-align:.95em;margin-right:.1em}
+.price-note{margin:16px 0 0;font-size:16px;font-weight:800;color:var(--muted)}
+.price-card .svc{columns:1}
+.addons{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:10px;margin-top:14px}
+.addon{padding:20px;border-radius:20px;border:1px solid var(--border);background:var(--surface)}
+.addon strong{display:block;font-size:26px;letter-spacing:-.04em;font-weight:900;color:var(--orange)}
+.addon span{display:block;margin-top:6px;font-size:14px;line-height:1.4;color:var(--muted);font-weight:700}
+.terms{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+@media(min-width:900px){.terms{grid-template-columns:1fr 1fr}}
+.terms li{padding:18px 20px;border-radius:18px;border:1px solid var(--border);background:var(--surface);font-size:15px;line-height:1.5;color:var(--muted)}
+.terms b{display:block;margin-bottom:4px;color:var(--fg);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+
+/* PDF / impressão: fundo claro, sem menu, botões e animações */
+@media print{
+  @page{size:A4;margin:12mm}
+  html,body{background:#fff!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;animation:none!important;transition:none!important}
+  body::before,.nav,.menu,.music,.no-print,.grain,.footer-admin{display:none!important}
+  .js [data-reveal],.js .title .line>span,.statement-text .w{opacity:1!important;transform:none!important}
+  body{--bg:#fff;--fg:#101010;--muted:#55534c;--border:rgba(16,16,16,.16);--border-strong:rgba(16,16,16,.5);--surface:rgba(16,16,16,.035);color:#101010}
+  main>section:not(.orange):not(.light),.page-head{background:#fff;color:#101010}
+  .sec{padding-top:12mm;padding-bottom:12mm}
+  .page-head{padding-top:6mm}
+  .title{font-size:44pt}.h2{font-size:28pt}.price{font-size:60pt}
+  .rounded-top{border-radius:0}
+  section,.card,.price-card,.addon,.terms li,.fact,.timeline li,.stat,tr{break-inside:avoid}
+  .table-wrap{overflow:visible}
+  a{text-decoration:none}
+}
